@@ -4,3 +4,4 @@ hypothesis
 pyperf
 pytest
 pytest-coverage
+pytest-flake8
