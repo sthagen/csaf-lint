@@ -5,12 +5,12 @@
 import os
 import sys
 
-import csaf_lint.lint as ag
+import csaf_lint.lint as csaf_lint
 
 
 # pylint: disable=expression-not-assigned
 def main(argv=None):
     """Process the job."""
     argv = sys.argv[1:] if argv is None else argv
-    ag.main(argv)
+    csaf_lint.main(argv)
     
