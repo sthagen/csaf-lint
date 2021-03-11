@@ -28,8 +28,8 @@ image:
 	--tag $(package) . ;\
 
 	@echo "Result: $$(docker inspect -f \
-	'ref=v{{index .Config.Labels "org.opencontainers.image.version"}}\
-	ts={{index .Config.Labels "org.opencontainers.image.created"}}\
+	'version={{index .Config.Labels "org.opencontainers.image.version"}}\
+	timestamp={{index .Config.Labels "org.opencontainers.image.created"}}\
 	revision=sha1:{{index .Config.Labels "org.opencontainers.image.revision"}}' \
 	$(package))" ;\
 
@@ -37,8 +37,8 @@ available:
 	@echo "- publishing container image on hub.docker.com"
 	@echo " + docker inspect says:"
 	@echo "   $$(docker inspect -f \
-	'ref=v{{index .Config.Labels "org.opencontainers.image.version"}}\
-	ts={{index .Config.Labels "org.opencontainers.image.created"}}\
+	'version={{index .Config.Labels "org.opencontainers.image.version"}}\
+	timestamp={{index .Config.Labels "org.opencontainers.image.created"}}\
 	revision=sha1:{{index .Config.Labels "org.opencontainers.image.revision"}}' \
 	$(package))" ;\
 	docker push $(package) ;\
