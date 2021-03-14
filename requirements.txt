@@ -1,3 +1,4 @@
 attrs
 jsonschema
+lxml
 xmlschema
