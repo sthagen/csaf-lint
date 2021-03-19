@@ -1,0 +1,184 @@
+{
+  "document": {
+    "csaf_version": "2.0",
+    "publisher": {
+      "type": "vendor",
+      "vendor_id": "officia",
+      "contact_details": "irure nulla esse voluptate",
+      "issuing_authority": "sunt consequat"
+    },
+    "title": "ea est et dolore ipsum",
+    "tracking": {
+      "current_release_date": "1955-03-22T21:36:18.752Z",
+      "id": "Excepteur nulla non sed reprehenderit",
+      "initial_release_date": "1948-07-08T08:59:23.56Z",
+      "revision_history": [
+        {
+          "date": "1966-02-20T00:23:56.081Z",
+          "number": "263061919",
+          "summary": "reprehenderit dolore Lorem"
+        }
+      ],
+      "status": "interim",
+      "version": "1467.65963655",
+      "aliases": [
+        "ad incididunt nisi",
+        "eiusmod amet",
+        "pariatur irure anim velit",
+        "aute amet cupidatat ut"
+      ],
+      "generator": {
+        "engine": "non laborum",
+        "date": "1997-07-13T00:15:49.832Z"
+      }
+    },
+    "type": "ipsum aute",
+    "aggregate_severity": {
+      "text": "irure incididunt in fugiat et",
+      "namespace": "http://MlNgGwuWKAurwQVPzfHoVTqROzuAXQG.domiSC44AhnJzENY51pVMvqVtqGiiExUkQ0cPJDiPBI1xugwKBdKvFtC7ZfYZO1WLMO2"
+    },
+    "lang": "MeG",
+    "acknowledgments": [
+      {
+        "summary": "occaecat mollit sed cupidatat",
+        "names": [
+          "aliquip",
+          "consequat Ut",
+          "Duis cupidatat dolor",
+          "Lorem ullamco",
+          "aliquip reprehenderit voluptate Lorem nulla"
+        ],
+        "urls": [
+          "https://uUXmmQA.fqbyT1GFNHpbIw1YjbFMM0kzGj.8uL3Mvc1zTMHDnNdC11kwuw8olXEos"
+        ]
+      }
+    ],
+    "notes": [
+      {
+        "text": "nulla",
+        "type": "legal_disclaimer",
+        "title": "id veniam commodo aute amet",
+        "audience": "ut do ut commodo officia"
+      },
+      {
+        "text": "ut labore Excepteur",
+        "type": "description",
+        "audience": "fugiat commodo",
+        "title": "reprehenderit dolore dolor elit"
+      }
+    ],
+    "distribution": {
+      "text": "fugiat in sed amet laborum",
+      "aute3d": true,
+      "dolor0e": -26820297
+    },
+    "source_lang": "il-7m#OVXdA ",
+    "references": [
+      {
+        "summary": "nisi laborum consectetur dolore",
+        "url": "http://WgrAjQqWiwmjmKBbCNn.rsxKt8pXuVL7Ya",
+        "type": "self"
+      },
+      {
+        "summary": "Lorem Excepteur est laboris",
+        "url": "http://xzNqddaCitvQigCSPHWDPJfhDdZCH.jzwAth6ZPh6dvILIBjNhiaFWLSWq-",
+        "type": "self"
+      },
+      {
+        "summary": "commodo",
+        "url": "http://GjDhksXLttwbIuTYocdxPyEW.jval-Lg.AlDCeQ8g2Ih",
+        "type": "external"
+      },
+      {
+        "summary": "et ad elit",
+        "url": "http://VKTgrSLbNwiMWPvIbzyfVK.qptDjutmiLzbw0QSfKYtdBtJNPJ4fUhuFzo8GF0w",
+        "type": "external"
+      }
+    ]
+  },
+  "product_tree": {
+    "product_groups": [
+      {
+        "group_id": "eiusmod cillum",
+        "product_ids": [
+          "ut voluptate laborum Excepteur proident",
+          "ea in"
+        ],
+        "summary": "amet dolore sed pariatur deserunt"
+      },
+      {
+        "group_id": "Ut Duis ipsum commodo",
+        "product_ids": [
+          "aliqua est Ut ullamco dolor",
+          "ea quis",
+          "do",
+          "fugiat ipsum dolore officia"
+        ]
+      },
+      {
+        "group_id": "veniam deserunt et esse",
+        "product_ids": [
+          "laboris in",
+          "commodo ullamco est",
+          "ea aliquip",
+          "tempor",
+          "minim enim dolore reprehenderit"
+        ],
+        "summary": "sit ullamco laboris cupidatat dolore"
+      }
+    ],
+    "full_product_names": [
+      {
+        "name": "ipsum Lorem esse in nostrud",
+        "product_id": "aute",
+        "cpe": "cpe:2.3:*:??\\\\WvJAg\\#ieeu?????:\\\"\\%a\\:*:*:-:*:JtP-Ig:-:?????P\\#??????????:*\\^\\`??:\\(T?????"
+      },
+      {
+        "name": "ea reprehenderit laborum incididunt ullamco",
+        "product_id": "consectetur occaecat dolore do",
+        "cpe": "cpe:2.3:a:h*:????????F5\\~x_j\\*of*:??????w\\/q9\\=s*:-:*:-:??????.\\#\\>\\#dT\\>\\:????????:\\:\\#l\\'\\@x\\[\\%*:*\\+K\\:\\>4W\\?\\*OQ:-"
+      },
+      {
+        "name": "eu magna dolor et",
+        "product_id": "officia cupidatat deserunt eiusmod enim",
+        "cpe": "cPe:/A:K279Z~Q:2v8LHH6"
+      },
+      {
+        "name": "nisi sed ad",
+        "product_id": "veniam sunt minim eiusmod"
+      },
+      {
+        "name": "exercitation",
+        "product_id": "incididunt exercitation consectetur voluptate Excepteur",
+        "cpe": "cpe:2.3:-:-:????????\\^nL*:*:?????s\\)\\:\\,t\\`S_?????????:???????\\+2B.9\\|1:-:*\\*M\\/I??????:*\\`z8*:-:-"
+      }
+    ],
+    "branches": [
+      {
+        "name": "tempor magna nostrud non",
+        "type": "legacy",
+        "est_c80": true
+      },
+      {
+        "name": "dolor laborum",
+        "type": "product_name",
+        "in_b": -66827909.962108746
+      },
+      {
+        "name": "fugiat dolor occaecat nostrud pariatur",
+        "type": "specification",
+        "product": {
+          "name": "voluptate non Ut Lorem",
+          "product_id": "quis in in eiusmod",
+          "cpe": "cPE:/H:C0a2cSFV0"
+        }
+      },
+      {
+        "name": "adipisicing cillum veniam",
+        "type": "architecture",
+        "pariatur__e0": false
+      }
+    ],
+    "ullamco28": 79781555
+  }
+}
