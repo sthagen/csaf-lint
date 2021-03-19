@@ -1,0 +1,218 @@
+{
+  "document": {
+    "csaf_version": "2.0",
+    "publisher": {
+      "type": "coordinator",
+      "issuing_authority": "aliquip dolor consequat",
+      "contact_details": "elit laborum",
+      "vendor_id": "veniam sit sed"
+    },
+    "title": "sint dolore",
+    "tracking": {
+      "current_release_date": "1982-01-28T23:46:57.149Z",
+      "id": "sit aute commodo cupidatat magna",
+      "initial_release_date": "1974-10-28T15:06:43.548Z",
+      "revision_history": [
+        {
+          "date": "1976-10-05T21:22:12.965Z",
+          "number": "311324.83480889.0.4561",
+          "summary": "irure culpa laboris sunt"
+        },
+        {
+          "date": "2017-07-15T22:00:21.239Z",
+          "number": "0.7811971604",
+          "summary": "irure"
+        }
+      ],
+      "status": "interim",
+      "version": "0.409",
+      "aliases": [
+        "eiusmod deserunt do Ut"
+      ],
+      "generator": {
+        "engine": "ad",
+        "date": "1981-03-05T13:04:37.449Z"
+      }
+    },
+    "type": "voluptate anim dolor",
+    "acknowledgments": [
+      {
+        "organizations": [
+          "reprehenderit qui esse in"
+        ],
+        "summary": "do et cillum",
+        "magna1": true,
+        "estc6": "tempor anim dolore"
+      },
+      {
+        "organizations": [
+          "nulla reprehenderit laboris magna eu",
+          "cupidatat esse deserunt labore"
+        ],
+        "names": [
+          "in esse veniam",
+          "laborum quis dolor",
+          "dolore culpa sunt dolor",
+          "incididunt"
+        ],
+        "cupidatat__": true,
+        "et6ab": false
+      },
+      {
+        "organizations": [
+          "mollit veniam Ut",
+          "Lorem nulla elit aute laborum",
+          "id ea nisi"
+        ],
+        "urls": [
+          "http://UcAkgWwvqjfQokhwxZjcfsMbJxiTPu.fomcCdOAihsFU.GJ-PtD.FsJlnhD,7We-Kn3oAg8UfBlkyQaoe5,-tZzl"
+        ],
+        "names": [
+          "non id sint",
+          "fugiat culpa"
+        ]
+      },
+      {
+        "names": [
+          "laboris consequat magna"
+        ],
+        "summary": "Ut cillum nisi",
+        "organizations": [
+          "labore deserunt",
+          "commodo elit fugiat consequat cupidatat",
+          "non",
+          "cillum sed proident anim",
+          "eu aliqua in"
+        ],
+        "nullad30": -23769630.28879404,
+        "aliquip0a": "dolor in adipisicing",
+        "sit9e": 23301273,
+        "do3": "sunt officia dolor aute",
+        "exercitation_52": "qui Lorem proident"
+      },
+      {
+        "organizations": [
+          "ex voluptate commodo veniam nostrud",
+          "elit ipsum quis ex velit",
+          "aliquip do adipisicing laborum",
+          "cupidatat labore amet aliqua",
+          "voluptate commodo ea in"
+        ],
+        "in_9": 75430817.60637066,
+        "minim_b7f": "nostrud",
+        "veniam_6": 30926733,
+        "laborum_2": -97861282.88154967
+      }
+    ],
+    "references": [
+      {
+        "summary": "labore",
+        "url": "http://nWPEdcMiITxUUUdRlhAbXTWgC.iyswwBOamcQQvKCwhyYelBnjWxyl85+-",
+        "type": "self"
+      },
+      {
+        "summary": "incididunt sit nulla Excepteur labore",
+        "url": "https://DbweEucZboqDPCjwYAeCTmIWWisWgK.giguwTujBTg7KO1Gz8",
+        "type": "external"
+      }
+    ],
+    "source_lang": "HGS-x"
+  },
+  "product_tree": {
+    "product_groups": [
+      {
+        "group_id": "ullamco",
+        "product_ids": [
+          "fugiat consectetur",
+          "Excepteur irure culpa adipisicing"
+        ],
+        "summary": "ut aute nulla in"
+      }
+    ],
+    "full_product_names": [
+      {
+        "name": "sed aliqua pariatur",
+        "product_id": "in velit",
+        "cpe": "cpE:/h:gt:OVnHo_v.l:0iX:LZjzcL"
+      },
+      {
+        "name": "enim Lorem ipsum",
+        "product_id": "commodo nulla",
+        "cpe": "cpE:/A:f_3~GFO5h:WcmA2P~:uNPaCU:8s%-PEGR-P:PNPC"
+      },
+      {
+        "name": "cillum aute officia pariatur",
+        "product_id": "qui ullamco",
+        "cpe": "cpe:2.3:a:?????????\\]*:-:-:-:??????????A:Cf:Q\\+\\(5u\\'???????:*:*\\~\\`\\/\\`1O4\\]\\#*:*"
+      },
+      {
+        "name": "consectetur velit adipisicing dolor enim",
+        "product_id": "occaecat nostrud",
+        "cpe": "cpe:/A:tX_Mdsxz::33:J:jkzHUJZJl"
+      },
+      {
+        "name": "exercitation",
+        "product_id": "officia",
+        "cpe": "cpE:/h:S64UPd94G8:G:p"
+      }
+    ],
+    "branches": [
+      {
+        "name": "ad nulla",
+        "type": "patch_level",
+        "product": {
+          "name": "Ut nostrud cupidatat",
+          "product_id": "est",
+          "cpe": "cpe:2.3:a:*:-:*:-:*:Ynq-222:J:-:?????????O\\=.U\\,0\\:i????????:-"
+        }
+      },
+      {
+        "name": "est",
+        "type": "product_version",
+        "branches": [
+          {
+            "name": "ipsum",
+            "type": "host_name",
+            "product": {
+              "name": "mollit in",
+              "product_id": "commodo culpa non fugiat",
+              "cpe": "cpe:2.3:-:\\+K\\$\\(jv\\^??:-:B\\$\\,\\,k???:*:*:dc:???\\\\\\{\\>\\:\\}-2??:???B\\$*:*L\\^H:*"
+            }
+          },
+          {
+            "name": "consequat",
+            "type": "product_name",
+            "product": {
+              "name": "adipisicing veniam magna",
+              "product_id": "enim",
+              "cpe": "cpe:2.3:o:????J??????:??????????Dv\\<\\`\\/\\^LHSM?????:????????\\}*:-:*:*:*\\~mwHh\\\\*:*\\~\\|mO??????????:-:-"
+            }
+          }
+        ]
+      },
+      {
+        "name": "consequat veniam",
+        "type": "architecture",
+        "product": {
+          "name": "eu",
+          "product_id": "irure est",
+          "cpe": "cpe:2.3:a:?????\\`\\@\\~????:*:?????????b\\/\\)w\\[:??????\\@Yn\\+\\#\\:\\&\\(h*:???p\\!\\\\\\|\\+I\\,MP*:pP:-:-:-:v\\)W\\@\\|-\\[x\\*z????????"
+        }
+      },
+      {
+        "name": "in nulla cupidatat",
+        "type": "service_pack",
+        "branches": [
+          {
+            "name": "in",
+            "type": "host_name",
+            "product": {
+              "name": "dolor laboris",
+              "product_id": "do laborum aliqua ut sed"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
