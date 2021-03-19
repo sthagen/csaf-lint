@@ -1,0 +1,33 @@
+{
+  "document": {
+    "csaf_version": "2.0",
+    "publisher": {
+      "contact_details": "consectetur laboris",
+      "issuing_authority": "quis nisi in veniam minim",
+      "vendor_id": "aliquip dolore Excepteur in cillum"
+    },
+    "title": "Lorem sunt qui",
+    "tracking": {
+      "current_release_date": "2018-01-23T02:18:21.871Z",
+      "id": "ea commodo",
+      "initial_release_date": "1965-04-14T22:48:23.223Z",
+      "revision_history": [
+        {
+          "date": "1981-09-30T12:02:18.434Z",
+          "number": "1180661991.0",
+          "summary": "ut qui nisi velit"
+        }
+      ],
+      "status": "final",
+      "version": "0",
+      "aliases": [
+        "Ut cupidatat laborum"
+      ],
+      "generator": {
+        "engine": "cillum labore ea in",
+        "date": "1978-12-25T05:01:41.778Z"
+      }
+    },
+    "type": "veniam sint ex tempor occaecat"
+  }
+}
