@@ -1,0 +1,38 @@
+{
+  "document": {
+    "csaf_version": "2.0",
+    "publisher": {
+      "type": "user",
+      "issuing_authority": "voluptate tempor Duis sed consequat",
+      "contact_details": "Excepteur eu",
+      "vendor_id": "in"
+    },
+    "title": "irure quis proident",
+    "tracking": {
+      "current_release_date": "2002-03-14T22:40:48.938Z",
+      "id": "sint tempor adipisicing",
+      "initial_release_date": "2012-09-11T20:04:15.369Z",
+      "revision_history": [
+        {
+          "date": "1963-06-19T05:41:52.16Z",
+          "number": "465",
+          "summary": "ex in est"
+        }
+      ],
+      "status": "draft",
+      "version": "0",
+      "generator": {
+        "engine": "eiusmod aliqua",
+        "date": "1992-04-18T20:27:39.73Z"
+      },
+      "aliases": [
+        "est",
+        "ad dolore reprehenderit ullamco",
+        "cupidatat nisi exercitation fugiat",
+        "cupidatat",
+        "laborum nostrud esse ipsum"
+      ]
+    },
+    "type": "do commodo aute reprehenderit"
+  }
+}
