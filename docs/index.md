@@ -1,5 +1,12 @@
 # Fluffy Funicular
-Experimental envelope and body profile validator.
+Experimental CSAF envelope and body profile validator.
+
+Available on [PyPI as csaf-lint](https://pypi.org/project/csaf-lint/) and [hub.docker.com as shagen/csaf-lint](https://hub.docker.com/r/shagen/csaf-lint)
+
+## Status
+Experimental.
+
+## Random Statements
 
 Cascaded shape schema validation via russian doll design? Maybe.
 
