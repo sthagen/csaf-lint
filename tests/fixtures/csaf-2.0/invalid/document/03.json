@@ -1,0 +1,44 @@
+{
+  "document": {
+    "csaf_version": "2.0",
+    "title": "exercitation in nisi in commodo",
+    "tracking": {
+      "current_release_date": "1977-01-29T20:43:44.74Z",
+      "id": "ipsum dolor cupidatat laborum consectetur",
+      "initial_release_date": "2007-12-19T08:42:06.072Z",
+      "revision_history": [
+        {
+          "date": "2001-07-28T09:47:06.811Z",
+          "number": "57.48.0.71",
+          "summary": "proident magna adipisicing mollit"
+        },
+        {
+          "date": "1985-11-26T18:20:25.929Z",
+          "number": "0.5989214464.52590.419465",
+          "summary": "est dolor aliquip do"
+        },
+        {
+          "date": "1951-05-01T18:03:10.494Z",
+          "number": "0.0.0.4106",
+          "summary": "cupidatat ullamco nisi quis"
+        },
+        {
+          "date": "1979-05-10T21:43:15.279Z",
+          "number": "4.0.0.2930833",
+          "summary": "irure ullamco"
+        }
+      ],
+      "status": "draft",
+      "version": "0.0.4334.81580615238",
+      "aliases": [
+        "Ut sit officia ut voluptate",
+        "cupidatat amet officia do"
+      ],
+      "generator": {
+        "engine": "commodo sunt in",
+        "date": "1951-03-15T00:15:18.749Z"
+      }
+    },
+    "type": "mollit deserunt laboris"
+  }
+}
