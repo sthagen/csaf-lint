@@ -1,0 +1,165 @@
+{
+  "document": {
+    "csaf_version": "2.0",
+    "publisher": {
+      "type": "vendor",
+      "vendor_id": "Duis incididunt sint in",
+      "contact_details": "ullamco nulla dolor",
+      "issuing_authority": "quis"
+    },
+    "title": "magna",
+    "tracking": {
+      "current_release_date": "2013-06-29T15:18:48.852Z",
+      "id": "aliqua ullamco",
+      "initial_release_date": "2014-06-12T20:35:55.216Z",
+      "revision_history": [
+        {
+          "date": "1999-04-28T11:48:32.462Z",
+          "number": "9267366758.0",
+          "summary": "cillum cupidatat"
+        },
+        {
+          "date": "1979-05-25T11:36:32.214Z",
+          "number": "0.17.0.7",
+          "summary": "aute eu quis"
+        },
+        {
+          "date": "1948-08-27T19:29:13.054Z",
+          "number": "0.35.8556463043",
+          "summary": "eu laboris Lorem culpa ullamco"
+        },
+        {
+          "date": "1977-11-23T21:45:13.091Z",
+          "number": "0.0.7127416.0",
+          "summary": "in deserunt esse consectetur"
+        },
+        {
+          "date": "2019-02-24T20:45:35.646Z",
+          "number": "18757514816.74076",
+          "summary": "aliqua voluptate"
+        }
+      ],
+      "status": "final",
+      "version": "0.7.49084.91173238",
+      "generator": {
+        "engine": "in enim aute veniam",
+        "date": "1956-07-08T17:29:51.571Z"
+      },
+      "aliases": [
+        "enim",
+        "ut"
+      ]
+    },
+    "type": "ut ut nisi non eu",
+    "aggregate_severity": {
+      "text": "eu proident dolore fugiat ad",
+      "namespace": "https://NqgvAfeEqxOZTeKDoXXbPtcIBt.bxofVrkEGPbjL+E5DEA9LVyYKjzA5LdAmu4r9NNn+09+GufkywAIuesHgyJ"
+    },
+    "references": [
+      {
+        "summary": "tempor nisi",
+        "url": "http://ioPlikUUjebxCEzkoXSUbdbl.apmcmm8QQBagRvETT5rutGCLeLUsK1NR2wV9V4e.Q0qvWE",
+        "type": "self"
+      },
+      {
+        "summary": "dolore dolor est laboris in",
+        "url": "https://qeJVKitqpfEyduiBeSczESLOC.yrhS+8Eq1M2VAYAguZYeIq6WADVkyWQ2-jBD1SY3",
+        "type": "external"
+      },
+      {
+        "summary": "et ut amet",
+        "url": "http://uvrIdfVwkYgml.ibtlT9wQL4G3tWLRzDX9+rLYbLfLVmKyZpolxqjgyBl",
+        "type": "external"
+      },
+      {
+        "summary": "et in velit non",
+        "url": "https://itKpgGjjZjZqtbeHdKHg.ntnvQoX55NRzIzCseP5FIrdmf3nX",
+        "type": "external"
+      }
+    ],
+    "acknowledgments": [
+      {
+        "names": [
+          "nostrud sed",
+          "adipisicing laboris consequat mollit ea",
+          "non irure incididunt",
+          "voluptate velit ea consectetur aliquip",
+          "tempor"
+        ],
+        "organizations": [
+          "ex ea ullamco",
+          "pariatur",
+          "occaecat",
+          "quis do minim qui"
+        ],
+        "urls": [
+          "http://uYRYDbxkbNzXeSfsiWVrZVUqPa.acfhUDfGN5FGuLVwmmXgUhinS+ns2",
+          "http://z.rjrsLPrD,kvIk7hL5RY9DudU8e70TqL863fGZ8UsVgjn6ZbshRrguEf",
+          "https://QNpHHBzsZPn.clteA7G4PZzy",
+          "http://ujqBRvyNJcHNvOTKMkGhGF.hkuhrGZkp",
+          "https://MaUFa.sfeNyCDcDx6zOwbtszcReCPqjaK.qQbZtAxyvMsOlWvK1UAQ"
+        ],
+        "aliqua_69": -62519173,
+        "ipsum_ca": 49723527
+      },
+      {
+        "names": [
+          "deserunt"
+        ],
+        "urls": [
+          "http://l.goOst0,6z",
+          "https://AriOnzrjrViCbGBLlAo.gxcI8RY5-Xb-jtfsqn46,VsX0fdJ1uLWE72xZqqQKHjq.cxjYJoTGH8oT6-cyJH",
+          "http://gJZisajlEQfmE.tks0oPsKIBE98+cAsLVeATZXC3yBsO,8HEwIp2GsyV+woeyxHSSrPiId7G+D3E",
+          "http://vfoCuTAWl.zwY-6YVwopq7eryfIOCGMtBh.goNq,nK-c6jZS7IG"
+        ],
+        "summary": "sed exercitation",
+        "deserunt15a": -32601959,
+        "culpa_ad": 1200849,
+        "velit_88d": 13315509.4515443,
+        "ullamco_c30": -51336189
+      },
+      {
+        "organizations": [
+          "ipsum ullamco labore officia nisi",
+          "minim in Ut",
+          "amet reprehenderit deserunt elit laborum",
+          "esse amet in minim"
+        ],
+        "urls": [
+          "https://RXyDmSIOAnAMQqHOLYTaqMhl.uvlsLyTT-cFRQJybXvIeJWwIflZZlHMxUh2PuM4QvctifBKEJUc6r",
+          "https://CcBW.xoacFmjyUiQvjl7YyetWwvmt4hNViFQjFV7c6z2vW454xWSC.JnRBSj8gy4gZ"
+        ],
+        "names": [
+          "velit adipisicing tempor sint",
+          "consectetur ex proident ad"
+        ]
+      },
+      {
+        "organizations": [
+          "amet sint"
+        ],
+        "names": [
+          "id aliqua cupidatat",
+          "ut consectetur enim",
+          "sit Duis",
+          "in",
+          "velit irure cillum Duis"
+        ],
+        "summary": "enim",
+        "elit_ee1": 15164068,
+        "nisi3_f": 23382107
+      }
+    ],
+    "distribution": {
+      "tlp": {
+        "label": "WHITE",
+        "url": "http://WmFcVwgwLReoLUJPtRQf.hsXqWmE+tm.t,FjlyiLl07eMaW55oS2oIuWzbSwlmrV,cGAT09uFmZgSqNfX-jTePhO"
+      },
+      "adipisicing_1": -78485790.6706562,
+      "fugiat_454": true,
+      "commodo7dc": 55007379.226340115,
+      "veniam7": 18707102
+    },
+    "source_lang": "kDt-&KC*(Y%"
+  }
+}
