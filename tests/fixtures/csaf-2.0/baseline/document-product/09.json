@@ -162,12 +162,19 @@
       },
       {
         "name": "ut voluptate sint sed",
-        "type": "host_name"
+        "type": "host_name",
+        "product": {
+          "name": "ex in",
+          "product_id": "panem"
+        }
       },
       {
         "name": "consectetur eu Lorem",
         "type": "vendor",
-        "adipisicingb35": false
+        "product": {
+          "name": "circes",
+          "product_id": "dolorum"
+        }
       }
     ],
     "product_groups": [
