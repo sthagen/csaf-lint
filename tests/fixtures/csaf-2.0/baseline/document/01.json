@@ -1,0 +1,34 @@
+{
+  "document": {
+    "csaf_version": "2.0",
+    "publisher": {
+      "type": "discoverer",
+      "contact_details": "tempor elit in nostrud",
+      "issuing_authority": "commodo dolor anim dolore",
+      "vendor_id": "fugiat"
+    },
+    "title": "laboris adipisicing reprehenderit in",
+    "tracking": {
+      "current_release_date": "2019-07-06T05:52:49.714Z",
+      "id": "cupidatat velit ad laborum",
+      "initial_release_date": "1944-02-05T15:33:20.867Z",
+      "revision_history": [
+        {
+          "date": "2000-08-01T16:49:19.572Z",
+          "number": "0",
+          "summary": "in amet dolor"
+        }
+      ],
+      "status": "final",
+      "version": "0",
+      "generator": {
+        "engine": "ex commodo nisi cupidatat",
+        "date": "1957-06-13T16:04:51.347Z"
+      },
+      "aliases": [
+        "aute cillum ex in"
+      ]
+    },
+    "type": "in ad"
+  }
+}
