@@ -1,0 +1,86 @@
+{
+  "document": {
+    "csaf_version": "2.0",
+    "publisher": {
+      "type": "coordinator",
+      "issuing_authority": "anim ullamco tempor amet",
+      "vendor_id": "laboris consequat",
+      "contact_details": "adipisicing elit esse dolor in"
+    },
+    "title": "occaecat",
+    "tracking": {
+      "current_release_date": "1978-12-07T09:21:36.475Z",
+      "id": "ut magna Excepteur",
+      "initial_release_date": "2001-11-22T06:27:55.431Z",
+      "revision_history": [
+        {
+          "date": "1957-12-26T07:27:03.558Z",
+          "number": "788369955",
+          "summary": "ad deserunt in sit"
+        },
+        {
+          "date": "1980-12-26T02:02:40.532Z",
+          "number": "0.9.0",
+          "summary": "deserunt consectetur dolore ad velit"
+        },
+        {
+          "date": "1948-04-27T08:45:14.87Z",
+          "number": "0",
+          "summary": "ex cillum nulla"
+        },
+        {
+          "date": "2007-08-25T05:06:33.235Z",
+          "number": "0.53288834455.559877",
+          "summary": "voluptate ipsum"
+        },
+        {
+          "date": "2020-03-01T14:56:46.459Z",
+          "number": "0",
+          "summary": "officia aliqua sed consectetur"
+        }
+      ],
+      "status": "draft",
+      "version": "0.89465177717.0",
+      "generator": {
+        "engine": "deserunt eu aute labore et",
+        "date": "2014-01-21T19:08:26.844Z"
+      },
+      "aliases": [
+        "quis qui",
+        "pariatur sed aliqua labore",
+        "pariatur dolore magna"
+      ]
+    },
+    "type": "do",
+    "lang": "Gmu-zJkpnOiP",
+    "source_lang": "DjI",
+    "notes": [
+      {
+        "text": "culpa eiusmod",
+        "type": "details",
+        "audience": "nulla commodo",
+        "title": "voluptate officia amet proident Duis"
+      }
+    ],
+    "references": [
+      {
+        "summary": "non aliquip minim cupidatat sed",
+        "url": "https://zUcECrseUpUSNXMjQLS.oebjMa0l2C1u-",
+        "type": "external"
+      }
+    ],
+    "aggregate_severity": {
+      "text": "fugiat minim ex",
+      "namespace": "https://SSNNjKSdkuOoRpLCqmOsXwrN.agwoR37FYqvUSm"
+    }
+  },
+  "product_tree": {
+    "dolore_a4": "eiusmod qui est cillum",
+    "mollit8_a": -50591872,
+    "reprehenderit_14": -24604158.355541036,
+    "culpa6": -4753287,
+    "culpabe": "consequat pariatur culpa",
+    "minim_294": "tempor ea voluptate",
+    "velit_01": 3262099
+  }
+}
