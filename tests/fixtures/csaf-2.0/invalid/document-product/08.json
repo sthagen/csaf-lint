@@ -1,0 +1,97 @@
+{
+  "document": {
+    "csaf_version": "2.0",
+    "publisher": {
+      "type": "coordinator",
+      "vendor_id": "Lorem",
+      "contact_details": "aute dolor aliquip veniam"
+    },
+    "title": "laborum",
+    "tracking": {
+      "current_release_date": "1970-11-13T22:15:59.484Z",
+      "id": "consectetur dolore laboris non",
+      "initial_release_date": "1996-07-16T15:17:06.541Z",
+      "revision_history": [
+        {
+          "date": "1988-09-03T22:05:00.547Z",
+          "number": "8961765",
+          "summary": "dolore minim eiusmod tempor laborum"
+        },
+        {
+          "date": "1981-03-18T22:18:02.555Z",
+          "number": "748.8200620524.0",
+          "summary": "pariatur consequat"
+        },
+        {
+          "date": "2019-03-20T17:01:10.031Z",
+          "number": "0.0",
+          "summary": "mollit Excepteur cillum eiusmod"
+        },
+        {
+          "date": "1998-04-10T13:43:36.467Z",
+          "number": "113634406.6087.9213",
+          "summary": "in nostrud eu fugiat"
+        },
+        {
+          "date": "2007-04-06T11:05:06.272Z",
+          "number": "0.0",
+          "summary": "dolore pariatur consectetur ad"
+        }
+      ],
+      "status": "final",
+      "version": "0",
+      "generator": {
+        "engine": "cupidatat",
+        "date": "2017-01-28T02:56:22.798Z"
+      },
+      "aliases": [
+        "aute laboris consectetur magna",
+        "culpa ut"
+      ]
+    },
+    "type": "in aute id mollit",
+    "source_lang": "TI",
+    "acknowledgments": [
+      {
+        "names": [
+          "ex et",
+          "esse irure eiusmod",
+          "consequat dolor sint Ut aute",
+          "aliqua"
+        ],
+        "organizations": [
+          "sunt ad voluptate culpa dolore",
+          "in enim fugiat",
+          "id nostrud aliqua",
+          "laborum aliquip dolore Excepteur enim"
+        ],
+        "Lorem_1": "ea veniam ipsum anim dolor",
+        "quis_46b": true,
+        "Duis1": -86279031.71884017
+      },
+      {
+        "summary": "sint veniam fugiat reprehenderit tempor",
+        "names": [
+          "eiusmod sit occaecat reprehenderit"
+        ],
+        "organizations": [
+          "sint dolore ex Ut aliquip"
+        ]
+      }
+    ]
+  },
+  "product_tree": {
+    "product_groups": [
+      {
+        "product_ids": [
+          "dolore dolor",
+          "dolore"
+        ]
+      },
+      {
+        "group_id": "minim incididunt",
+        "summary": "magna exercitation labore consequat minim"
+      }
+    ]
+  }
+}
