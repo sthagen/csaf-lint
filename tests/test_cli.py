@@ -8,7 +8,7 @@ import pytest  # type: ignore
 
 import csaf_lint.cli as cli
 
-A_SCHEMA_PATH = pathlib.Path('csaf_lint', 'schema', 'csaf', '2.0', 'csaf.json')
+
 CONTENT_FEATURES = ('document', 'document-product', 'document-vulnerability', 'full', 'spam')
 USAGE_ERROR_TOKENS = ('Usage:', 'schema', 'document', 'or:')
 
@@ -41,14 +41,3 @@ def test_main_nok_three_args(capsys):
     out, err = capsys.readouterr()
     for term in USAGE_ERROR_TOKENS:
         assert term in out
-
-
-def test_main_nok_non_existing_folder_(capsys):
-    nef = non_existing_folder_path = 'folder_does_not_exist'
-    a_document_path = pathlib.Path(nef, 'no_doc.json')
-    assert pathlib.Path(nef).is_dir() is False, f"Unexpected folder {nef} exists which breaks this test"
-    message = r"\[Errno 2\] No such file or directory: '%s'" % (a_document_path,)
-    with pytest.raises(FileNotFoundError, match=message):
-        cli.main([A_SCHEMA_PATH, a_document_path])
-    out, err = capsys.readouterr()
-
