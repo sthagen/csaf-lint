@@ -154,7 +154,10 @@
       {
         "name": "ex ut consectetur elit",
         "type": "patch_level",
-        "id59": false
+        "product": {
+          "name": "ex",
+          "product_id": "machina"
+        }
       },
       {
         "name": "cillum do aliqua in",
@@ -166,7 +169,11 @@
       },
       {
         "name": "et culpa aliqua exercitation nostrud",
-        "type": "product_version"
+        "type": "product_version",
+        "product": {
+          "name": "labora",
+          "product_id": "salute"
+        }
       }
     ]
   }
