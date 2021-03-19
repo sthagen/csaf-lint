@@ -27,7 +27,7 @@ def test_main_nok_read_empty_json_object_from_stdin(monkeypatch):
         cli.main([])
 
 
-def test_main_nok_int_(capsys):
+def test_main_nok_int(capsys):
     with pytest.raises(TypeError):
         cli.main(42)
     out, err = capsys.readouterr()
@@ -35,8 +35,8 @@ def test_main_nok_int_(capsys):
     assert not err
 
 
-def test_main_nok_ints_(capsys):
-    sequence_of_ints = [1, 2, 3]
+def test_main_nok_three_args(capsys):
+    sequence_of_ints = ['/1', '/2', '/3']
     assert cli.main(sequence_of_ints) == 2
     out, err = capsys.readouterr()
     for term in USAGE_ERROR_TOKENS:
