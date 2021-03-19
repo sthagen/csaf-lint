@@ -1,0 +1,71 @@
+{
+  "document": {
+    "csaf_version": "2.0",
+    "publisher": {
+      "type": "vendor",
+      "issuing_authority": "qui culpa irure",
+      "vendor_id": "adipisicing sint magna",
+      "contact_details": "cillum sunt"
+    },
+    "title": "et minim officia",
+    "tracking": {
+      "current_release_date": "1948-03-14T00:39:19.022Z",
+      "id": "veniam elit in",
+      "initial_release_date": "1951-07-12T23:55:06.348Z",
+      "revision_history": [
+        {
+          "date": "1966-11-28T07:53:04.481Z",
+          "number": "0.387960775",
+          "summary": "magna aliqua consequat aliquip"
+        },
+        {
+          "date": "1971-02-08T08:05:13.944Z",
+          "number": "64526.0",
+          "summary": "nostrud dolore Duis"
+        },
+        {
+          "date": "2014-10-07T23:51:10.122Z",
+          "number": "89459076.0.8186056677.0",
+          "summary": "ex"
+        }
+      ],
+      "status": "interim",
+      "version": "1893628040.510530.0.83889049",
+      "aliases": [
+        "quis aliquip sint eiusmod qui",
+        "dolor labore minim pariatur"
+      ],
+      "generator": {
+        "engine": "dolore et in dolor ullamco",
+        "date": "2000-11-24T21:06:10.828Z"
+      }
+    },
+    "type": "laboris minim",
+    "acknowledgments": [
+      {
+        "summary": "veniam cillum",
+        "ullamco_cb": "ad aliquip ut aliqua minim",
+        "elite54": -30159860.383745477,
+        "voluptate5": false,
+        "enim4ed": -12302797,
+        "in_ff": 9533840
+      }
+    ],
+    "distribution": {
+      "sed__": -39205337,
+      "proident06b": false,
+      "deserunt_d": -65383996
+    },
+    "references": [
+      {
+        "summary": "eu dolor voluptate exercitation nulla",
+        "url": "https://IdhHlLUdggWwFsuQehkNZbEXCt.hmwzrplXniCAK58ys0MkMHQp7M5,8mHkLlQZBwd3OpKYt5rKMz5qZUYx",
+        "type": "self"
+      }
+    ]
+  },
+  "product_tree": {
+    "full_product_names": [
+    ]
+  }
+}
