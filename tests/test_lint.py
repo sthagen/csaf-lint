@@ -12,6 +12,17 @@ CONTENT_FEATURES = ('document', 'document-product', 'document-vulnerability', 'f
 USAGE_ERROR_TOKENS = ('requires', 'two', 'schema', 'document')
 
 
+def test_main_validate_spam_default_ok(capsys):
+    n = 1
+    nn = f'{n:02d}'
+    a_document_path = pathlib.Path('tests', 'fixtures', 'csaf-2.0/', 'baseline', 'spam', f'{nn}.json')
+    argv = [a_document_path]
+    assert cli.main(argv=argv) == 0
+    out, err = capsys.readouterr()
+    assert not out
+    assert not err
+
+
 def test_main_validate_spam_ok(capsys):
     """
     python -m csaf_lint csaf_lint/schema/csaf/2.0/csaf.json tests/fixtures/csaf-2.0/baseline/spam/01.json
