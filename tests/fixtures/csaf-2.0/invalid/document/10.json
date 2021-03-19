@@ -1,0 +1,50 @@
+{
+  "document": {
+    "csaf_version": "2.0",
+    "publisher": {
+      "type": "coordinator",
+      "issuing_authority": "velit labore Lorem"
+    },
+    "title": "exercitation elit",
+    "tracking": {
+      "current_release_date": "2001-05-18T15:06:58.6Z",
+      "id": "proident",
+      "initial_release_date": "2011-07-14T12:16:35.628Z",
+      "revision_history": [
+        {
+          "date": "2010-10-11T00:49:09.281Z",
+          "number": "9.96894.196",
+          "summary": "Duis proident voluptate"
+        },
+        {
+          "date": "1960-01-21T09:26:14.229Z",
+          "number": "0",
+          "summary": "Ut amet Excepteur fugiat"
+        },
+        {
+          "date": "1976-01-05T10:28:46.422Z",
+          "number": "37656797.0.0.2022100843",
+          "summary": "Ut aliquip reprehenderit"
+        },
+        {
+          "date": "1947-09-21T00:19:48.263Z",
+          "number": "0.0",
+          "summary": "anim deserunt enim"
+        },
+        {
+          "date": "1978-12-10T12:37:00.35Z",
+          "number": "86.55854434",
+          "summary": "sit sint labore in"
+        }
+      ],
+      "status": "interim",
+      "version": "46946486845.16266581236.1323.39578677443",
+      "generator": {
+        "engine": "ut"
+      },
+      "aliases": [
+        "voluptate Duis"
+      ]
+    }
+  }
+}
