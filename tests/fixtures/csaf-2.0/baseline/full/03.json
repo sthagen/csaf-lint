@@ -136,7 +136,11 @@
       },
       {
         "name": "Ut id et",
-        "type": "vendor"
+        "type": "vendor",
+        "product": {
+          "name": "ipsum ut aute",
+          "product_id": "minim pariatur irure"
+        }
       },
       {
         "name": "deserunt",
@@ -149,7 +153,10 @@
       {
         "name": "Excepteur cillum ea ex dolor",
         "type": "architecture",
-        "dolore__ba": true
+        "product": {
+          "name": "ipsum dolore",
+          "product_id": "panem minim irure"
+        }
       }
     ],
     "relationships": [

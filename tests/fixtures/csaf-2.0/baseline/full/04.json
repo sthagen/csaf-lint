@@ -914,7 +914,11 @@
             "branches": [
               {
                 "name": "dolore et",
-                "type": "product_version"
+                "type": "product_version",
+                "product": {
+                  "name": "minim qui",
+                  "product_id": "laboris do"
+                }
               },
               {
                 "name": "ad dolore ut cupidatat",
@@ -927,7 +931,12 @@
               },
               {
                 "name": "do ad",
-                "type": "legacy"
+                "type": "legacy",
+                "product": {
+                  "name": "ipsum minim qui",
+                  "product_id": "doloris laboris do",
+                  "cpe": "cpe:2.3:h:\\{Z0\\]R-\\%C\\`?????????:*:*\\=JK\\;J??????????:????????RN\\^b.\\@\\#*:*si.???:Jf:*:-:-:*\\`\\:m\\}-Y\\<H\\{MB??????????"
+                }
               }
             ]
           },

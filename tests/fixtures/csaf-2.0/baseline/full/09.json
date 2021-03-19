@@ -116,11 +116,21 @@
     "branches": [
       {
         "name": "aute eiusmod",
-        "type": "product_name"
+        "type": "product_name",
+        "product": {
+          "name": "est unem",
+          "product_id": "adx",
+          "cpe": "cPE:/:jxYZ:rA::J.OOO0CH~3bI"
+        }
       },
       {
         "name": "laboris fugiat dolore minim",
-        "type": "product_family"
+        "type": "product_family",
+        "product": {
+          "name": "fiat nulla",
+          "product_id": "ady",
+          "cpe": "cPE:/:jxYZ:rA::J.0CCCCH~3bI"
+        }
       },
       {
         "name": "dolor deserunt sunt",
@@ -133,7 +143,12 @@
       },
       {
         "name": "nostrud",
-        "type": "legacy"
+        "type": "legacy",
+        "product": {
+          "name": "amet dolore Excepteur",
+          "product_id": "dolore ea elit",
+          "cpe": "cPE:/:7kaMMMM:GrJemnVlD:gtIg.:Jn:Fw:"
+        }
       },
       {
         "name": "non deserunt officia ex velit",

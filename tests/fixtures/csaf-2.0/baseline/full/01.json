@@ -174,7 +174,11 @@
     "branches": [
       {
         "name": "velit sint consequat",
-        "type": "specification"
+        "type": "specification",
+        "product": {
+          "name": "ex in",
+          "product_id": "panem"
+        }
       }
     ],
     "relationships": [
