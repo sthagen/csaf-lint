@@ -1,0 +1,33 @@
+{
+  "document": {
+    "csaf_version": "2.0",
+    "publisher": {
+      "type": "other",
+      "contact_details": "exercitation veniam est consectetur nulla"
+    },
+    "tracking": {
+      "current_release_date": "1972-02-29T16:55:39.165Z",
+      "id": "exercitation cillum Duis est magna",
+      "initial_release_date": "1986-07-12T21:46:49.286Z",
+      "revision_history": [
+        {
+          "date": "2005-01-08T02:06:32.567Z",
+          "number": "2195829.66.0.0",
+          "summary": "nisi proident magna laborum cupidatat"
+        },
+        {
+          "date": "1980-08-25T06:56:42.915Z",
+          "number": "0",
+          "summary": "quis eiusmod aute laboris"
+        }
+      ],
+      "status": "interim",
+      "version": "0.0",
+      "generator": {
+        "engine": "non in proident",
+        "date": "1956-06-11T00:57:58.04Z"
+      }
+    },
+    "type": "elit in magna"
+  }
+}
