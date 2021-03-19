@@ -12,4 +12,4 @@ import csaf_lint.lint as csaf_lint
 def main(argv=None):
     """Process the job."""
     argv = sys.argv[1:] if argv is None else argv
-    csaf_lint.main(argv)
+    return csaf_lint.main(argv)
