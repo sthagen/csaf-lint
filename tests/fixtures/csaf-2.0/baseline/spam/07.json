@@ -1,0 +1,37 @@
+{
+  "document": {
+    "csaf_version": "2.0",
+    "publisher": {
+      "type": "other",
+      "issuing_authority": "cillum sunt",
+      "contact_details": "incididunt ipsum ut dolore non",
+      "vendor_id": "sint id nostrud exercitation"
+    },
+    "title": "ut dolor veniam",
+    "tracking": {
+      "current_release_date": "2011-12-03T19:01:49.703Z",
+      "id": "qui Lorem consequat nostrud eu",
+      "initial_release_date": "1996-01-13T15:00:51.501Z",
+      "revision_history": [
+        {
+          "date": "1980-06-23T00:30:49.334Z",
+          "number": "986.58.0",
+          "summary": "officia in labore"
+        },
+        {
+          "date": "1955-09-06T20:11:19.618Z",
+          "number": "675.0.28764.0",
+          "summary": "ut dolore elit"
+        },
+        {
+          "date": "2006-08-25T15:59:05.386Z",
+          "number": "0.0.0",
+          "summary": "est dolor"
+        }
+      ],
+      "status": "draft",
+      "version": "0.0"
+    },
+    "type": "nisi commodo adipisicing enim dolor"
+  }
+}
