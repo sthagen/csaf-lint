@@ -12,7 +12,7 @@ README += (HERE / "docs" / "index.md").read_text()
 # This call to setup() does all the work
 setup(
     name="csaf-lint",
-    version="0.0.1",
+    version="0.0.2",
     description="Experimental CSAF validator for envelope and body profiles.",
     long_description=README,
     long_description_content_type="text/markdown",
