@@ -47,6 +47,11 @@ CVRF_VERSION_NS_MAP = {
     '1.1': f'{CVRF_OASIS_NS_ROOT}v1.1/cvrf',
 }
 
+CVRF_VERSION_CATALOG_MAP = {
+    '1.2': CVRF_DEFAULT_CATALOG,
+    '1.1': CVRF_PRE_OASIS_CATALOG,
+}
+
 DEBUG_VAR = "CSL_DEBUG"
 DEBUG = os.getenv(DEBUG_VAR)
 
@@ -63,6 +68,13 @@ def load(file_path):
         return json.load(handle)
 
 
+def version_from(schema_path):
+    """HACK A DID ACK derives non-default 1.1 version from path."""
+    if CRVF_PRE_OASIS_SEMANTIC_VERSION in str(schema_path):
+        return CRVF_PRE_OASIS_SEMANTIC_VERSION
+    return CRVF_DEFAULT_SEMANTIC_VERSION
+
+
 def validate(document, schema, conformance=None):
     """Validate the document against the schema."""
     if isinstance(document, dict):  # HACK A DID ACK
@@ -70,9 +82,18 @@ def validate(document, schema, conformance=None):
         return jsonschema.validate(document, schema, format_checker=conformance)
     xml_tree, message = load_xml(document)
     if not xml_tree:
+        print(message)
         return 1
-    found, version, ns = versions_xml(xml_tree, CRVF_DEFAULT_SEMANTIC_VERSION)
-    status, message = xml_validate(schema, CVRF_DEFAULT_CATALOG, xml_tree, CRVF_DEFAULT_SEMANTIC_VERSION)
+    request_version = version_from(schema)
+    DEBUG and print(f"DEBUG>>> {schema=}, {request_version=}")
+    found, version, ns = versions_xml(xml_tree, request_version)
+    DEBUG and print(f"DEBUG>>> {found=}, {version=}, {ns=}")
+    catalog = CVRF_VERSION_CATALOG_MAP[request_version]
+    DEBUG and print(f"DEBUG>>> caller site validation: {schema=}, {catalog=}, {xml_tree=}, {request_version=}")
+    status, message = xml_validate(schema, catalog, xml_tree, request_version)
+    if not DEBUG and not status:
+        print(message)
+    DEBUG and print(f"DEBUG>>> {status=}, {message=}")
     return None if status else 1
 
 
@@ -109,7 +130,7 @@ def derive_version_from_namespace(root):
 def versions_xml(xml_tree, request_version):
     """Versions from cvrf namespace in xml tree and request version."""
     sem_ver, doc_cvrf_version = derive_version_from_namespace(xml_tree.getroot())
-    req_cvrf_version = "http://docs.oasis-open.org/csaf/ns/csaf-cvrf/v1.2/cvrf"
+    req_cvrf_version = f"http://docs.oasis-open.org/csaf/ns/csaf-cvrf/v{request_version}/cvrf"
 
     if doc_cvrf_version:
         return (True if doc_cvrf_version == req_cvrf_version else False), doc_cvrf_version, req_cvrf_version
@@ -140,6 +161,7 @@ def cvrf_validate(f, xml_tree):
 
 def xml_validate(schema, catalog, xml_tree, request_version):
     """Validate xml tree against given xml schema of request version assisted by catalog."""
+    DEBUG and print(f"DEBUG>>> parameters: {schema=}, {catalog=}, {xml_tree=}, {request_version=}")
     fallback_catalog = CVRF_DEFAULT_CATALOG
     if request_version != CRVF_DEFAULT_SEMANTIC_VERSION:
         fallback_catalog = CVRF_PRE_OASIS_CATALOG
@@ -164,6 +186,7 @@ def xml_validate(schema, catalog, xml_tree, request_version):
 
     except IOError as err:
         return False, f"validation of {xml_tree} against {schema} failed with IO error: {err}"
+    DEBUG and print(f"DEBUG>>> {catalog=}, {schema=}")
 
     code, result = cvrf_validate(f, xml_tree)
     f.close()
