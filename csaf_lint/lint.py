@@ -65,10 +65,12 @@ def load(file_path):
 
 def validate(document, schema, conformance=None):
     """Validate the document against the schema."""
-    if str(document).endswith('json'):
+    if isinstance(document, dict):  # HACK A DID ACK
         conformance = conformance if conformance else jsonschema.draft7_format_checker
         return jsonschema.validate(document, schema, format_checker=conformance)
     xml_tree, message = load_xml(document)
+    if not xml_tree:
+        return 1
     found, version, ns = versions_xml(xml_tree, CRVF_DEFAULT_SEMANTIC_VERSION)
     status, message = xml_validate(schema, CVRF_DEFAULT_CATALOG, xml_tree, CRVF_DEFAULT_SEMANTIC_VERSION)
     return None if status else 1
@@ -180,7 +182,9 @@ def main(argv=None, embedded=False):
         print("   or: csaf-lint < document.json")
         return 2
 
-    if len(argv) and argv[-1].endswith('json'):
+    # HACK A DID ACK
+    document, schema = '', ''
+    if len(argv) and str(argv[-1]).endswith('json'):
         if len(argv) == 2:  # Schema file path is first
             schema = json.loads(argv[0]) if embedded else load(argv[0])
             document = json.loads(argv[1]) if embedded else load(argv[1])
@@ -190,7 +194,7 @@ def main(argv=None, embedded=False):
                 document = load(argv[0])
             else:
                 document = read_stdin()
-    elif len(argv) and argv[-1].endswith('xml'):
+    elif len(argv) and str(argv[-1]).endswith('xml'):
         if embedded:
             print("Usage: csaf-lint [schema.xsd] document.xml")
             print(" note: no embedding supported for xsd/xml")
