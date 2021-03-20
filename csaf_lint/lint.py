@@ -80,6 +80,8 @@ def validate(document, schema, conformance=None):
     if isinstance(document, dict):  # HACK A DID ACK
         conformance = conformance if conformance else jsonschema.draft7_format_checker
         return jsonschema.validate(document, schema, format_checker=conformance)
+
+    DEBUG and print(f"DEBUG>>> caller site loading {document=}, {schema=}, {conformance=}")
     xml_tree, message = load_xml(document)
     if not xml_tree:
         print(message)
@@ -197,8 +199,11 @@ def xml_validate(schema, catalog, xml_tree, request_version):
         return True, f"validation of {xml_tree} against {schema} succeeded with result: {result}"
 
 
-def main(argv=None, embedded=False):
+def main(argv=None, embedded=False, debug=False):
     """Drive the validator."""
+    global DEBUG
+    if debug:
+        DEBUG = True
     argv = argv if argv else sys.argv[1:]
     if len(argv) > 2:  # Unclear what the inputs beyond two may be
         print("Usage: csaf-lint [schema.json] document.json")
