@@ -16,7 +16,28 @@ import jsonschema  # type: ignore
 
 ENCODING = "utf-8"
 
-CSAF_2_0_SCHEMA_PATH = pathlib.Path('csaf_lint', 'schema', 'csaf', '2.0', 'csaf.json')
+CSAF_DEFAULT_SEMANTIC_VERSION = '2.0'
+CRVF_DEFAULT_SEMANTIC_VERSION = '1.2'
+CRVF_PRE_OASIS_SEMANTIC_VERSION = '1.1'
+CRVF_KNOWN_SEMANTIC_VERSIONS = (CRVF_DEFAULT_SEMANTIC_VERSION, CRVF_PRE_OASIS_SEMANTIC_VERSION)
+CVRF_PARTS = ('cvrf', 'vuln', 'prod')
+CSAF_2_0_SCHEMA_PATH = pathlib.Path('csaf_lint', 'schema', 'csaf', CSAF_DEFAULT_SEMANTIC_VERSION, 'csaf.json')
+
+CVRF_OASIS_ROOT = 'http://docs.oasis-open.org/csaf/csaf-cvrf/'
+
+CVRF_DEFAULT_SCHEMA = f'{CVRF_OASIS_ROOT}v{CRVF_DEFAULT_SEMANTIC_VERSION}/cs01/schemas/cvrf.xsd'
+CVRF_DEFAULT_NAMESPACES = {part.upper(): '{{{CVRF_OASIS_ROOT}v{CRVF_DEFAULT_SEMANTIC_VERSION}/{part}}}' for part in CVRF_PARTS}
+
+CVRF_DEFAULT_CATALOG = f'schemata/catalog_{CRVF_DEFAULT_SEMANTIC_VERSION.replace(".", "_")}.xml'
+CVRF_DEFAULT_SCHEMA_FILE = f'schemata/cvrf/{CRVF_DEFAULT_SEMANTIC_VERSION}/cvrf.xsd'
+
+CVRF_PRE_OASIS_ROOT = 'http://www.icasi.org/CVRF/schema/cvrf/'
+
+CVRF_PRE_OASIS_SCHEMA = f'{CVRF_PRE_OASIS_ROOT}{CRVF_PRE_OASIS_SEMANTIC_VERSION}/cs01/schemas/cvrf.xsd'
+CVRF_PRE_OASIS_NAMESPACES = {part.upper(): '{{{CVRF_OASIS_ROOT}v{CRVF_DEFAULT_SEMANTIC_VERSION}/{part}}}' for part in CVRF_PARTS}
+
+CVRF_PRE_OASIS_CATALOG = f'schemata/catalog_{CRVF_PRE_OASIS_SEMANTIC_VERSION.replace(".", "_")}.xml'
+CVRF_PRE_OASIS_SCHEMA_FILE = f'schemata/cvrf/{CRVF_PRE_OASIS_SEMANTIC_VERSION}/cvrf.xsd'
 
 DEBUG_VAR = "CSL_DEBUG"
 DEBUG = os.getenv(DEBUG_VAR)
