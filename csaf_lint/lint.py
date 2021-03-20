@@ -30,16 +30,16 @@ CVRF_OASIS_ROOT = 'http://docs.oasis-open.org/csaf/csaf-cvrf/'
 CVRF_DEFAULT_SCHEMA = f'{CVRF_OASIS_ROOT}v{CRVF_DEFAULT_SEMANTIC_VERSION}/cs01/schemas/cvrf.xsd'
 CVRF_DEFAULT_NAMESPACES = {part.upper(): '{{{CVRF_OASIS_ROOT}v{CRVF_DEFAULT_SEMANTIC_VERSION}/{part}}}' for part in CVRF_PARTS}
 
-CVRF_DEFAULT_CATALOG = f'schema/catalog_{CRVF_DEFAULT_SEMANTIC_VERSION.replace(".", "_")}.xml'
-CVRF_DEFAULT_SCHEMA_FILE = f'schema/cvrf/{CRVF_DEFAULT_SEMANTIC_VERSION}/cvrf.xsd'
+CVRF_DEFAULT_CATALOG = pathlib.Path('csaf_lint', 'schema', f'catalog_{CRVF_DEFAULT_SEMANTIC_VERSION.replace(".", "_")}.xml')
+CVRF_DEFAULT_SCHEMA_FILE = pathlib.Path('csaf_lint', 'schema', 'cvrf', f'{CRVF_DEFAULT_SEMANTIC_VERSION}/cvrf.xsd')
 
 CVRF_PRE_OASIS_ROOT = 'http://www.icasi.org/CVRF/schema/cvrf/'
 
 CVRF_PRE_OASIS_SCHEMA = f'{CVRF_PRE_OASIS_ROOT}{CRVF_PRE_OASIS_SEMANTIC_VERSION}/cs01/schemas/cvrf.xsd'
 CVRF_PRE_OASIS_NAMESPACES = {part.upper(): '{{{CVRF_OASIS_ROOT}v{CRVF_DEFAULT_SEMANTIC_VERSION}/{part}}}' for part in CVRF_PARTS}
 
-CVRF_PRE_OASIS_CATALOG = f'schema/catalog_{CRVF_PRE_OASIS_SEMANTIC_VERSION.replace(".", "_")}.xml'
-CVRF_PRE_OASIS_SCHEMA_FILE = f'schema/cvrf/{CRVF_PRE_OASIS_SEMANTIC_VERSION}/cvrf.xsd'
+CVRF_PRE_OASIS_CATALOG = pathlib.Path('csaf_lint', 'schema', f'catalog_{CRVF_PRE_OASIS_SEMANTIC_VERSION.replace(".", "_")}.xml')
+CVRF_PRE_OASIS_SCHEMA_FILE = pathlib.Path('csaf_lint', 'schema', 'cvrf', f'{CRVF_PRE_OASIS_SEMANTIC_VERSION}/cvrf.xsd')
 
 CVRF_OASIS_NS_ROOT = 'http://docs.oasis-open.org/csaf/ns/csaf-cvrf/'
 CVRF_VERSION_NS_MAP = {
@@ -150,7 +150,7 @@ def xml_validate(schema, catalog, xml_tree, request_version):
             f = open(schema, 'r')
 
             # If the supplied file is not a valid catalog.xml or doesn't exist lxml will fall back to using remote validation
-            os.environ.update(XML_CATALOG_FILES=catalog)
+            os.environ.update(XML_CATALOG_FILES=str(catalog))
         else:
             # try to use local schema file
             fallback_schema = CVRF_DEFAULT_SCHEMA_FILE
@@ -160,7 +160,7 @@ def xml_validate(schema, catalog, xml_tree, request_version):
             f = open(schema, 'r')
 
             catalog = catalog if catalog else fallback_catalog
-            os.environ.update(XML_CATALOG_FILES=catalog)
+            os.environ.update(XML_CATALOG_FILES=str(catalog))
 
     except IOError as err:
         return False, f"validation of {xml_tree} against {schema} failed with IO error: {err}"
