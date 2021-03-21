@@ -4,11 +4,26 @@ site_description: Experimental CSAF envelope and body profile validator.
 theme:
   name: 'material'
   palette:
-    scheme: slate
-    primary: black
-    accent: indigo
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue grey
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
 
 extra:
+  generator: false
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/sthagen/fluffy-funicular
