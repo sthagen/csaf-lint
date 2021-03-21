@@ -14,6 +14,11 @@ CONTENT_FEATURES = ('document', 'document-product', 'document-vulnerability', 'f
 USAGE_ERROR_TOKENS = ('requires', 'two', 'schema', 'document')
 
 
+def test_version_from_explicit_cvrf_1_x_in_schema_path():
+    for indicator in (lint.CRVF_DEFAULT_SEMANTIC_VERSION, lint.CRVF_PRE_OASIS_SEMANTIC_VERSION):
+        assert lint.version_from(schema_path=indicator, document_path=None) == indicator
+
+
 def test_main_validate_spam_default_ok(capsys):
     n = 1
     nn = f'{n:02d}'
