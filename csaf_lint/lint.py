@@ -74,7 +74,7 @@ def load(file_path):
         return json.load(handle)
 
 
-def version_peek(schema_path):
+def version_peek(document_path):
     """HACK A DID ACK derives schema version from reading the first lines from path.
     Something like:
 
@@ -101,14 +101,19 @@ def version_peek(schema_path):
       xmlns="http://docs.oasis-open.org/csaf/ns/csaf-cvrf/v1.2/cvrf"
       >
     """
-    cvrf_element_token = '<cvrfdoc'
+    cvrf_element_start = '<cvrfdoc'
+    cvrf_element_end = '>'
     naive = []
-    with open(schema_path) as handle:
-        for line in handle.readline():
-            if cvrf_element_token in line or naive:
-                naive.append(line)
-            if all(">" in chunk for chunk in naive):
+    with open(document_path) as handle:
+        for line in handle.readlines():
+            DEBUG and print(f"DEBUG>>> scanner line {line=}")
+            if cvrf_element_start in line or naive:
+                naive.append(line.strip())
+                DEBUG and print(f"DEBUG>>> parser triggered {cvrf_element_start=}, {naive=}")
+            if naive and any(cvrf_element_end in chunk for chunk in naive):
+                DEBUG and print(f"DEBUG>>> harvest done triggered {cvrf_element_end=}, {naive=}")
                 break
+            DEBUG and print(f"DEBUG>>> normal harvest {naive=}")
 
     oasis_token = f'"http://docs.oasis-open.org/csaf/ns/csaf-cvrf/v{CRVF_DEFAULT_SEMANTIC_VERSION}/cvrf"'
     if any(oasis_token in chunk for chunk in naive):
@@ -120,13 +125,15 @@ def version_peek(schema_path):
     return None
 
 
-def version_from(schema_path):
+def version_from(schema_path, document_path):
     """HACK A DID ACK derives non-default 1.1 version from path."""
+    DEBUG and print(f"DEBUG>>> xml version derivation flat inspection {schema_path=}")
     if CRVF_PRE_OASIS_SEMANTIC_VERSION in str(schema_path):
         return CRVF_PRE_OASIS_SEMANTIC_VERSION
     if CRVF_DEFAULT_SEMANTIC_VERSION in str(schema_path):
         return CRVF_DEFAULT_SEMANTIC_VERSION
-    return version_peek(schema_path)
+    DEBUG and print(f"DEBUG>>> xml version derivation deep call {document_path=}")
+    return version_peek(document_path)
 
 
 def validate(document, schema, conformance=None):
@@ -141,7 +148,7 @@ def validate(document, schema, conformance=None):
     if not xml_tree:
         print(message)
         return 1
-    request_version = version_from(schema)
+    request_version = version_from(schema, document)
     DEBUG and print(f"DEBUG>>> {schema=}, {request_version=}")
     found, version, ns = versions_xml(xml_tree, request_version)
     DEBUG and print(f"DEBUG>>> {found=}, {version=}, {ns=}")
@@ -309,6 +316,6 @@ def main(argv=None, embedded=False, debug=False):
                 print("Usage: csaf-lint [schema.xsd] document.xml")
                 print(" note: no embedding supported for xsd/xml")
                 return 2
-            schema = CVRF_VERSION_SCHEMA_MAP[version_from(document)]
+            schema = CVRF_VERSION_SCHEMA_MAP[version_from(None, document)]
 
     return 0 if validate(document, schema) is None else 1
