@@ -22,10 +22,8 @@ def test_main_nok_more_than_two_int_args(capsys):
 def test_main_nok_read_empty_json_object_from_stdin(monkeypatch):
     monkeypatch.setattr('sys.stdin', io.StringIO('{}'))
     message = r"'document' is a required property"
-    # Temp fix for xml blast-from-past bootstrapping
-    # with pytest.raises(jsonschema.exceptions.ValidationError, match=message):
-    #     cli.main([])
-    assert cli.main([]) == 1
+    with pytest.raises(jsonschema.exceptions.ValidationError, match=message):
+        cli.main([])
 
 
 def test_main_nok_int(capsys):
