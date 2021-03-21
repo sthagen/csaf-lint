@@ -17,6 +17,8 @@ extra:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/shage
 
+copyright: Copyright &copy; 2021 Stefan Hagen under the MIT license
+
 repo_name: sthagen/fluffy-funicular
 repo_url: https://github.com/sthagen/fluffy-funicular
 edit_uri: ""
