@@ -1,15 +1,9 @@
 # -*- coding: utf-8 -*-
 # pylint: disable=expression-not-assigned,line-too-long
 """Visit CSAF/CVRF files and validate them against envelope (core) and given body profiles."""
-import copy
-import csv
-import datetime as dti
-import hashlib
 import json
-import lzma
 import os
 import pathlib
-import subprocess
 import sys
 
 import jsonschema  # type: ignore
@@ -62,9 +56,9 @@ DEBUG = os.getenv(DEBUG_VAR)
 
 
 def read_stdin():
-    """Create JSON object from stdin data."""
-    DEBUG and print(f"DEBUG>>> call site loading from stdin")
-    return json.load(sys.stdin)
+    """Create document from stdin data."""
+    DEBUG and print("DEBUG>>> call site loading from stdin")
+    return sys.stdin.read()
 
 
 def load(file_path):
@@ -209,7 +203,7 @@ def versions_xml(xml_tree, request_version):
 
     DEBUG and print(f"DEBUG>>> versions xml callee site {sem_ver=}, {doc_cvrf_version=}, {xml_tree=}")
     if doc_cvrf_version:
-        return (True if doc_cvrf_version == req_cvrf_version else False), doc_cvrf_version, req_cvrf_version
+        return doc_cvrf_version == req_cvrf_version, doc_cvrf_version, req_cvrf_version
 
     return False, None, req_cvrf_version
 
@@ -245,7 +239,7 @@ def push_catalog(catalog, request_version):
     # If the supplied file is not a valid catalog.xml or doesn't exist lxml will fall back to using remote validation
     os.environ["XML_CATALOG_FILES"] = str(catalog)
 
-    return catalog, fallback_catalog
+    return catalog
 
 
 def derive_schema_path(catalog, request_version, schema):
@@ -265,7 +259,7 @@ def derive_schema_path(catalog, request_version, schema):
 def xml_validate(schema, catalog, xml_tree, request_version):
     """Validate xml tree against given xml schema of request version assisted by catalog."""
     DEBUG and print(f"DEBUG>>> xml validate parameters: {schema=}, {catalog=}, {xml_tree=}, {request_version=}")
-    catalog, fallback_catalog = push_catalog(catalog, request_version)
+    catalog = push_catalog(catalog, request_version)
     schema = derive_schema_path(catalog, request_version, schema)
 
     try:
@@ -277,8 +271,8 @@ def xml_validate(schema, catalog, xml_tree, request_version):
 
     if code is False:
         return False, f"validation of {xml_tree} against {schema} failed with error: {result}"
-    else:
-        return True, f"validation of {xml_tree} against {schema} succeeded with result: {result}"
+
+    return True, f"validation of {xml_tree} against {schema} succeeded with result: {result}"
 
 
 def main(argv=None, embedded=False, debug=False):
@@ -292,38 +286,56 @@ def main(argv=None, embedded=False, debug=False):
         DEBUG = True
     argv = argv if argv else sys.argv[1:]
     num_args = len(argv)
+    DEBUG and print(f"DEBUG>>> guarded dispatch {embedded=}, {argv=}, {num_args=}")
     if num_args > 2:  # Unclear what the inputs beyond two may be
         print("Usage: csaf-lint [schema.json] document.json")
         print("   or: csaf-lint < document.json")
         return 2
     pos_args = tuple(argv[n] if n < num_args and argv[n] else None for n in range(3))
-    json_token, xml_token = '.json', '.xml'
-    is_json = any(arg and str(arg).endswith(json_token) for arg in pos_args) if num_args else True  # TODO(sthagen) We can easily peek for type in stdin
-    is_xml = not is_json and any(arg and str(arg).endswith(xml_token) for arg in pos_args)
-    DEBUG and print(f"DEBUG>>> dispatch {argv=}, {num_args=}, {pos_args=}, {is_json=}, {is_xml=}")
-    # HACK A DID ACK
-    document, schema = '', ''
+
+    if embedded:
+        DEBUG and print(f"DEBUG>>> embedded dispatch {embedded=}, {argv=}, {num_args=}, {pos_args=}")
+        json_token, xml_token = '{', '<'
+        is_json = any(arg and str(arg).startswith(json_token) for arg in pos_args)
+        is_xml = not is_json and any(arg and str(arg).startswith(xml_token) for arg in pos_args)
+    else:
+        DEBUG and print(f"DEBUG>>> non-embedded dispatch {embedded=}, {argv=}, {num_args=}, {pos_args=}")
+        json_token, xml_token = '.json', '.xml'
+        is_json = any(arg and str(arg).endswith(json_token) for arg in pos_args)
+        is_xml = not is_json and any(arg and str(arg).endswith(xml_token) for arg in pos_args)
+
+    document_data, document, schema = '', '', ''
+    if not (embedded or is_json or is_xml):
+        DEBUG and print(f"DEBUG>>> streaming dispatch {embedded=}, {argv=}, {num_args=}, {pos_args=}, {is_json=}, {is_xml=}")
+        document_data = read_stdin()
+        json_token, xml_token = '{', '<'
+        is_json = document_data.startswith(json_token)
+        is_xml = not is_json and document_data.startswith(xml_token)
+
+    DEBUG and print(f"DEBUG>>> post dispatch {embedded=}, {argv=}, {num_args=}, {pos_args=}, {is_json=}, {is_xml=}")
+
     if is_json:
         if num_args == 2:  # Schema file path is first
-            if embedded:
-                schema = json.loads(pos_args[0])
-            else:
-                schema = load(pos_args[0])
+            schema = json.loads(pos_args[0]) if embedded else load(pos_args[0])
             document = json.loads(pos_args[1]) if embedded else load(pos_args[1])
         else:
             schema = load(CSAF_2_0_SCHEMA_PATH)
             if num_args == 1:  # Assume schema implicit, argument given is document file path
-                document = load(pos_args[0])
+                document = json.loads(pos_args[0]) if embedded else load(pos_args[0])
             else:
-                document = read_stdin()
+                document = json.loads(document_data)
 
         return 0 if validate(document, schema) is None else 1
 
-    if num_args and not is_xml:
-        if embedded:
-            print("Usage: csaf-lint [schema.xsd] document.xml")
-            print(" note: no embedding supported for xsd/xml")
-            return 2
+    if embedded and not is_xml and not is_json:
+        print("Usage: csaf-lint [schema.xsd] document.xml")
+        print(" note: no embedding support for non xml/json data")
+        return 2
+
+    if embedded and is_xml:
+        print("Usage: csaf-lint [schema.xsd] document.xml")
+        print(" note: no embedding supported for xsd/xml")
+        return 2
 
     if num_args and is_xml:
         if num_args == 2:  # Schema file path is first
