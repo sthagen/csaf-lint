@@ -200,7 +200,11 @@ def xml_validate(schema, catalog, xml_tree, request_version):
 
 
 def main(argv=None, embedded=False, debug=False):
-    """Drive the validator."""
+    """Drive the validator.
+    This function acts as the command line interface backend.
+    There is some duplication to support testability.
+    TODO(sthagen) the dispatch has become Rococo - needs Bauhaus again.
+    """
     global DEBUG
     if debug:
         DEBUG = True
