@@ -13,10 +13,27 @@ import csaf_lint.lint as lint
 CONTENT_FEATURES = ('document', 'document-product', 'document-vulnerability', 'full', 'spam')
 USAGE_ERROR_TOKENS = ('requires', 'two', 'schema', 'document')
 
+CVRF_IMPLICIT_1_2_DOCUMENT_PATH = pathlib.Path('tests', 'fixtures', 'cvrf-no-version-given', 'is_wun_two.xml')  # cvrf_1.2_example_a.xml
+CVRF_IMPLICIT_1_1_DOCUMENT_PATH = pathlib.Path('tests', 'fixtures', 'cvrf-no-version-given', 'is_wun_wun.xml')  # CVRF-1.1-cisco-sa-20110525-rvs4000.xml
+
 
 def test_version_from_explicit_cvrf_1_x_in_schema_path():
     for indicator in (lint.CRVF_DEFAULT_SEMANTIC_VERSION, lint.CRVF_PRE_OASIS_SEMANTIC_VERSION):
         assert lint.version_from(schema_path=indicator, document_path=None) == indicator
+
+
+def test_version_from_explicit_cvrf_1_x_in_document_path():
+    for indicator in (lint.CRVF_DEFAULT_SEMANTIC_VERSION, lint.CRVF_PRE_OASIS_SEMANTIC_VERSION):
+        assert lint.version_from(schema_path='', document_path=indicator) == indicator
+
+
+def test_version_from_implicit_cvrf_1_x_in_document_path():
+    version_document_map = {
+        lint.CRVF_DEFAULT_SEMANTIC_VERSION: CVRF_IMPLICIT_1_2_DOCUMENT_PATH,
+        lint.CRVF_PRE_OASIS_SEMANTIC_VERSION: CVRF_IMPLICIT_1_1_DOCUMENT_PATH,
+    }
+    for version, document_path in version_document_map.items():
+        assert lint.version_from(schema_path='', document_path=document_path) == version
 
 
 def test_main_validate_spam_default_ok(capsys):
@@ -95,7 +112,7 @@ def test_main_validate_xml_cvrf_1_2_document_only_version_in_path_ok(capsys):
 @pytest.mark.serial
 @mock.patch.dict(os.environ, {"XML_CATALOG_FILES": ""}, clear=True)
 def test_main_validate_xml_cvrf_1_2_document_only_version_not_in_path_ok(capsys):
-    a_document_path = pathlib.Path('tests', 'fixtures', 'cvrf-no-version-given', 'is_wun_two.xml')  # cvrf_1.2_example_a.xml
+    a_document_path = CVRF_IMPLICIT_1_2_DOCUMENT_PATH
     argv = [str(a_document_path)]
     assert lint.main(argv=argv, embedded=False, debug=False) == 0
     out, err = capsys.readouterr()
@@ -106,7 +123,7 @@ def test_main_validate_xml_cvrf_1_2_document_only_version_not_in_path_ok(capsys)
 @pytest.mark.serial
 @mock.patch.dict(os.environ, {"XML_CATALOG_FILES": ""}, clear=True)
 def test_main_validate_xml_cvrf_1_1_document_only_version_not_in_path_ok(capsys):
-    a_document_path = pathlib.Path('tests', 'fixtures', 'cvrf-no-version-given', 'is_wun_wun.xml')  # CVRF-1.1-cisco-sa-20110525-rvs4000.xml
+    a_document_path = CVRF_IMPLICIT_1_1_DOCUMENT_PATH
     argv = [str(a_document_path)]
     try:
         assert lint.main(argv=argv, embedded=False, debug=False) == 0
