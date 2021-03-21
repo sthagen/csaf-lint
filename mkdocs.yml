@@ -13,9 +13,9 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/sthagen/fluffy-funicular
     - icon: fontawesome/brands/docker
-      link: https://hub.docker.com/r/shagen
+      link: https://hub.docker.com/r/shagen/csaf-lint
     - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/shage/csaf-lint
+      link: https://www.linkedin.com/in/shage
 
 repo_name: sthagen/fluffy-funicular
 repo_url: https://github.com/sthagen/fluffy-funicular
