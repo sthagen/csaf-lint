@@ -3,6 +3,19 @@ site_description: Experimental CSAF envelope and body profile validator.
 
 theme:
   name: 'material'
+  palette:
+    scheme: slate
+    primary: black
+    accent: indigo
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/sthagen/fluffy-funicular
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/r/shagen
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/shage/csaf-lint
 
 repo_name: sthagen/fluffy-funicular
 repo_url: https://github.com/sthagen/fluffy-funicular
@@ -20,5 +33,3 @@ markdown_extensions:
   - pymdownx.superfences
 
 extra_javascript:
-  - 'js/chat.js'
-  - 'js/sidecar-1.5.0.js'
