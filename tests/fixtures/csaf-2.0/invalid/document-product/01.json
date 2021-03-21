@@ -1,0 +1,87 @@
+{
+  "document": {
+    "csaf_version": "2.0",
+    "publisher": {
+      "type": "discoverer",
+      "contact_details": "voluptate eu",
+      "vendor_id": "non cillum",
+      "issuing_authority": "eiusmod enim amet"
+    },
+    "title": "sed dolor ad velit",
+    "tracking": {
+      "current_release_date": "2019-07-01T19:30:54.046Z",
+      "id": "veniam nostrud dolore",
+      "initial_release_date": "1954-12-17T16:03:11.716Z",
+      "revision_history": [
+        {
+          "date": "1956-09-18T14:06:43.884Z",
+          "number": "0.0.908399643",
+          "summary": "ullamco magna exercitation sit qui"
+        }
+      ],
+      "status": "final",
+      "version": "0.365.289302.50934401",
+      "aliases": [
+        "deserunt ex dolore",
+        "aute",
+        "est",
+        "sed enim aliquip",
+        "in sint elit ipsum"
+      ],
+      "generator": {
+        "engine": "ipsum",
+        "date": "1966-09-20T11:46:58.069Z"
+      }
+    },
+    "type": "consequat ea",
+    "notes": [
+      {
+        "text": "deserunt est enim",
+        "type": "faq",
+        "audience": "Duis id"
+      }
+    ],
+    "aggregate_severity": {
+      "text": "in qui cillum do pariatur",
+      "namespace": "https://kTkQCzJXchWZGPLAHdxDgFEbpUGIJJ.mdiwC8Ehld+W9EM7NRwCF9aO3th0pRC7E1u655n"
+    },
+    "distribution": {
+      "tlp": {
+        "label": "AMBER",
+        "url": "https://vlBfueCtYtNn.nssrFmqT8Ft3gkbNe-tYaQuHTZa+qsAGtcXvp4"
+      },
+      "reprehenderit7": "minim sunt ullamco"
+    },
+    "references": [
+      {
+        "summary": "ut",
+        "url": "https://JHF.ueqdi0EBJKex7MisR6N2lZzRdPaaAEIrlKgNfOA2,LALhpWSt",
+        "type": "external"
+      }
+    ],
+    "acknowledgments": [
+      {
+        "urls": [
+          "http://qVQYMdQYYoaeclbVB.shJhEkmEywjiTzNcoDvJakwqlBDzfGgU",
+          "http://WstOBaknqGMWOWgEmeUdUIKAfkZkppg.jhNzIAaMmICoSX0B0EB7IQn8zkN+6QNXx52SU6U+n8HMr4cmN5GV2",
+          "http://QfFueNgqqfzNFBYLsDDMDqrSOXN.wzopRBKzNGjWlUUxWDnNj6symLQ2vbrj8yXS8bjRQFhDK"
+        ],
+        "names": [
+          "Excepteur culpa",
+          "do enim sit anim consequat",
+          "aliquip ea consectetur"
+        ],
+        "summary": "fugiat consequat consectetur aliqua",
+        "nisie4d": 55572497.79558396,
+        "exe7": true,
+        "mollit_0f": 59242817,
+        "aute_2b3": "fugiat et ad",
+        "aute_fda": 2168209.8614074886
+      }
+    ],
+    "source_lang": "xBz",
+    "lang": "IiR->"
+  },
+  "product_tree": {
+  }
+}

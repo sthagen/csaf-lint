@@ -1,0 +1,92 @@
+{
+  "document": {
+    "csaf_version": "2.0",
+    "publisher": {
+      "type": "other",
+      "vendor_id": "Lorem aliquip",
+      "contact_details": "minim mollit",
+      "issuing_authority": "mollit"
+    },
+    "title": "eu sed elit deserunt in",
+    "tracking": {
+      "current_release_date": "1987-12-04T07:07:32.452Z",
+      "id": "ipsum tempor officia mollit",
+      "initial_release_date": "2008-09-29T17:16:40.878Z",
+      "revision_history": [
+        {
+          "date": "1959-12-15T05:43:47.152Z",
+          "number": "354.318.0",
+          "summary": "magna enim eiusmod fugiat"
+        }
+      ],
+      "status": "final",
+      "version": "5925758089",
+      "aliases": [
+        "sed",
+        "mollit"
+      ],
+      "generator": {
+        "engine": "non sed tempor cupidatat",
+        "date": "1984-11-02T01:44:42.919Z"
+      }
+    },
+    "type": "Lorem consequat",
+    "lang": "qk-K",
+    "source_lang": "Fr",
+    "distribution": {
+      "text": "non Lorem minim et magna",
+      "aliquip_a": false,
+      "Excepteurf1_": -7975843.5091275275
+    },
+    "acknowledgments": [
+      {
+        "urls": [
+          "http://HsUDyVLl.iwjhSxvNDaGrfmr4C5POOJqgAebnES,ZpIt,LeG0",
+          "http://La.htgaVkNbb80W7Yy5u2QdmNpP+HPq-dLS09mn4Z91.RNTYgVWmemyp.NNcP-Lef3Yz9SecVv4nw4p",
+          "https://kUppfvSpfSE.exwrev+IVhsJqINpI.2",
+          "http://n.nwskgdh37-g,IDafI3rVFVm,zzAt88DJ.TZLDAC7NHzEORqeocBkVdmO",
+          "https://zJ.rdltJgXGZ.yhgzZJf+ge.TIhj-ZOAiso8.vctBJtLi.a9QHQrH+"
+        ],
+        "organizations": [
+          "officia consequat adipisicing ipsum occaecat",
+          "Lorem fugiat Excepteur id anim",
+          "laboris commodo"
+        ],
+        "names": [
+          "nisi dolor eu",
+          "eiusmod cupidatat magna",
+          "do et velit ea nostrud"
+        ]
+      }
+    ],
+    "aggregate_severity": {
+      "text": "quis irure ad",
+      "namespace": "http://WwpoTvVfNlzTQqzuSBTdQnB.wqukbGVx+TQavvuRLIGQktuOQ7,WgSZOOeKBLuMprYKFBCIz"
+    },
+    "references": [
+      {
+        "summary": "Lorem enim et",
+        "url": "http://ULIqFAAOgXBuAozOzhrhvFPpjg.sejnA"
+      },
+      {
+        "summary": "esse fugiat officia sint",
+        "url": "http://i.xikj3Vz-BNzrEoNeZXE8G8s2obez4J7NXUoDpU66bbQeSsXgL2A",
+        "type": "self"
+      }
+    ],
+    "notes": [
+      {
+        "text": "sit",
+        "type": "details",
+        "title": "velit Lorem ea",
+        "audience": "laborum veniam"
+      },
+      {
+        "text": "commodo nostrud quis pariatur aliquip",
+        "type": "other",
+        "audience": "nisi deserunt labore",
+        "title": "ut veniam"
+      }
+    ]
+  }
+}

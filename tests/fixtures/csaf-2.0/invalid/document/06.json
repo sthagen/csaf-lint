@@ -1,0 +1,48 @@
+{
+  "document": {
+    "csaf_version": "2.0",
+    "publisher": {
+      "type": "user",
+      "vendor_id": "in culpa pariatur dolore",
+      "contact_details": "commodo mollit in",
+      "issuing_authority": "ullamco proident irure minim"
+    },
+    "tracking": {
+      "current_release_date": "2019-02-08T09:14:36.721Z",
+      "id": "enim",
+      "initial_release_date": "1956-04-18T03:00:57.096Z",
+      "revision_history": [
+        {
+          "date": "1992-02-11T07:41:26.875Z",
+          "number": "0.516032110",
+          "summary": "sit"
+        },
+        {
+          "date": "2020-07-06T05:22:47.496Z",
+          "number": "6342.8502415826.824808490.41630386",
+          "summary": "consequat exercitation anim"
+        },
+        {
+          "date": "1985-10-16T11:10:21.398Z",
+          "number": "67099418752.0.0.4",
+          "summary": "occaecat proident eu ut"
+        },
+        {
+          "date": "1962-04-23T17:49:11.116Z",
+          "number": "94554210755.0",
+          "summary": "dolor"
+        }
+      ],
+      "status": "draft",
+      "version": "951094067.0.0.0",
+      "generator": {
+        "engine": "deserunt occaecat in sint",
+        "date": "1990-04-05T04:35:49.372Z"
+      },
+      "aliases": [
+        "nostrud consectetur occaecat"
+      ]
+    },
+    "type": "consequat sed eiusmod dolor cupidatat"
+  }
+}

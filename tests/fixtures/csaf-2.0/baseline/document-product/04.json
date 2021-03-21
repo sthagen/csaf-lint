@@ -1,0 +1,180 @@
+{
+  "document": {
+    "csaf_version": "2.0",
+    "publisher": {
+      "type": "coordinator",
+      "contact_details": "aliquip esse Lorem",
+      "issuing_authority": "nostrud ut enim esse",
+      "vendor_id": "sit ullamco proident"
+    },
+    "title": "veniam ex elit",
+    "tracking": {
+      "current_release_date": "2006-05-13T15:59:09.915Z",
+      "id": "dolor",
+      "initial_release_date": "1944-10-15T07:07:22.902Z",
+      "revision_history": [
+        {
+          "date": "1964-11-25T18:53:12.068Z",
+          "number": "19302",
+          "summary": "irure ipsum nisi"
+        },
+        {
+          "date": "1997-02-22T02:30:54.15Z",
+          "number": "0.8162780.0.671252856",
+          "summary": "in ut proident dolore"
+        },
+        {
+          "date": "1969-08-27T16:36:55.721Z",
+          "number": "0",
+          "summary": "consectetur ex elit eiusmod amet"
+        },
+        {
+          "date": "1963-02-16T15:52:53.885Z",
+          "number": "0.0",
+          "summary": "esse minim dolore reprehenderit consequat"
+        }
+      ],
+      "status": "draft",
+      "version": "0.161734638",
+      "aliases": [
+        "ad consectetur sit quis",
+        "mollit"
+      ],
+      "generator": {
+        "engine": "aliquip",
+        "date": "1950-02-13T01:56:07.767Z"
+      }
+    },
+    "type": "eu qui sunt",
+    "acknowledgments": [
+      {
+        "names": [
+          "et elit aliquip do anim",
+          "eiusmod",
+          "dolore dolore eu fugiat"
+        ],
+        "summary": "esse laboris incididunt irure",
+        "urls": [
+          "http://HpRfnaXZdVtf.gxdcHy3xuw-ojN7xNlBsIu72"
+        ],
+        "deserunt_94": -10068095,
+        "sunt218": "dolor",
+        "adipisicing59c": -48585793.9229631,
+        "qui91": 62393367
+      }
+    ],
+    "distribution": {
+      "text": "aliquip amet deserunt adipisicing est",
+      "adipisicing126": 25677994
+    },
+    "source_lang": "fCe-EQV`V`7",
+    "references": [
+      {
+        "summary": "esse eiusmod sit proident",
+        "url": "https://gQHMzoNfjjqWYckVYJsDYYgUD.tkjSu-",
+        "type": "self"
+      }
+    ],
+    "notes": [
+      {
+        "text": "ut non",
+        "type": "description",
+        "title": "do ut qui Ut ut",
+        "audience": "sed adipisicing fugiat"
+      },
+      {
+        "text": "Duis ad ullamco esse",
+        "type": "general",
+        "title": "proident ipsum Lorem",
+        "audience": "consequat"
+      }
+    ],
+    "lang": "Ru",
+    "aggregate_severity": {
+      "text": "dolore reprehenderit ut aliqua pariatur",
+      "namespace": "https://VrWHvipvdESGNOLyNSAuhdPNN.tcVg+8"
+    }
+  },
+  "product_tree": {
+    "product_groups": [
+      {
+        "group_id": "sed",
+        "product_ids": [
+          "do",
+          "consequat laboris",
+          "irure deserunt veniam fugiat elit",
+          "ex laboris"
+        ],
+        "summary": "culpa"
+      },
+      {
+        "group_id": "Duis laboris id proident",
+        "product_ids": [
+          "nisi officia Ut tempor",
+          "minim Ut laborum",
+          "in aliquip",
+          "id Lorem",
+          "ea voluptate Excepteur reprehenderit in"
+        ],
+        "summary": "reprehenderit Ut incididunt"
+      }
+    ],
+    "relationships": [
+      {
+        "full_product_name": {
+          "name": "exercitation",
+          "product_id": "sed nostrud adipisicing commodo",
+          "cpe": "cpe:2.3:-:-:*:-:-:?????????ZV\\!\\`E:-:*\\)\\*q2G\\%\\/\\'0zi*:\\>\\|\\?\\\\\\&ETn7\\%k*:*b\\+\\+\\>5x\\)\\\"\\{\\]:*"
+        },
+        "product_reference": "et",
+        "relates_to_product_reference": "aute",
+        "relationship_type": "installed_on"
+      },
+      {
+        "full_product_name": {
+          "name": "Lorem",
+          "product_id": "in non",
+          "cpe": "cPe:/H:"
+        },
+        "product_reference": "incididunt consectetur",
+        "relates_to_product_reference": "occaecat aliquip veniam",
+        "relationship_type": "external_component_of"
+      },
+      {
+        "full_product_name": {
+          "name": "Ut",
+          "product_id": "aute minim reprehenderit laborum tempor"
+        },
+        "product_reference": "cillum dolor sit",
+        "relates_to_product_reference": "ullamco veniam dolor",
+        "relationship_type": "installed_with"
+      }
+    ],
+    "branches": [
+      {
+        "name": "ex ut consectetur elit",
+        "type": "patch_level",
+        "product": {
+          "name": "ex",
+          "product_id": "machina"
+        }
+      },
+      {
+        "name": "cillum do aliqua in",
+        "type": "service_pack",
+        "product": {
+          "name": "irure",
+          "product_id": "anim labore ut"
+        }
+      },
+      {
+        "name": "et culpa aliqua exercitation nostrud",
+        "type": "product_version",
+        "product": {
+          "name": "labora",
+          "product_id": "salute"
+        }
+      }
+    ]
+  }
+}

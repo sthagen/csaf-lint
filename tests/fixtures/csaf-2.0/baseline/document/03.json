@@ -1,0 +1,130 @@
+{
+  "document": {
+    "csaf_version": "2.0",
+    "publisher": {
+      "type": "discoverer",
+      "contact_details": "nisi eiusmod deserunt Ut culpa",
+      "issuing_authority": "magna voluptate dolor",
+      "vendor_id": "ullamco"
+    },
+    "title": "id consequat do laboris nostrud",
+    "tracking": {
+      "current_release_date": "1966-09-27T11:00:15.58Z",
+      "id": "minim dolore mollit est amet",
+      "initial_release_date": "1977-07-06T20:42:13.406Z",
+      "revision_history": [
+        {
+          "date": "1998-04-15T16:23:54.925Z",
+          "number": "8817290.0.0.0",
+          "summary": "fugiat tempor sit nulla irure"
+        }
+      ],
+      "status": "draft",
+      "version": "8",
+      "aliases": [
+        "cillum"
+      ],
+      "generator": {
+        "engine": "laboris ut dolore Duis"
+      }
+    },
+    "type": "proident",
+    "references": [
+      {
+        "summary": "veniam amet sint",
+        "url": "https://CEgOfFaHfjWZLZWQFjneCSP.eof-jPjz,oTkiMZySGChFCEuWx8UnOdl2WAFdsguRyZA3YcxyJ2mg2+fVA,wZE8a+1U6-HhzYehYiY0v",
+        "type": "self"
+      },
+      {
+        "summary": "commodo consequat ullamco",
+        "url": "http://hIDKSXhlrfFXxuIYAyVR.pakysf32E,X+wRbNNl-ffMhujsGcla+W2iKjBjr.YM4KuUEfKs",
+        "type": "self"
+      },
+      {
+        "summary": "deserunt sunt et veniam officia",
+        "url": "http://jOPlaJIDDefCiC.tyO52bBW4m9",
+        "type": "self"
+      },
+      {
+        "summary": "officia",
+        "url": "https://MLradeRocvSMHQBkTvqHRNaQgZvo.xbrMjaTRrALcfTZeVjoqvvqWqycfOMC1NjH",
+        "type": "self"
+      },
+      {
+        "summary": "sunt labore non velit",
+        "url": "https://dmtORsprFlt.hwbbFdXBWqtbSP3jjnsXLZCNUmMViN1Dd7eMjGg,yIPk,usPr7GSPvA"
+      }
+    ],
+    "notes": [
+      {
+        "text": "sunt laboris eiusmod quis aliqua",
+        "type": "faq",
+        "title": "ex dolore consequat"
+      },
+      {
+        "text": "nostrud officia ullamco aute nisi",
+        "type": "legal_disclaimer",
+        "title": "laboris",
+        "audience": "aliquip id tempor elit magna"
+      },
+      {
+        "text": "est nulla cupidatat",
+        "type": "summary",
+        "title": "sed occaecat pariatur veniam",
+        "audience": "velit elit reprehenderit do officia"
+      },
+      {
+        "text": "ut et id",
+        "type": "summary",
+        "audience": "esse ad Excepteur et fugiat"
+      },
+      {
+        "text": "labore",
+        "type": "legal_disclaimer",
+        "title": "ad proident non ut aliquip",
+        "audience": "do fugiat sint"
+      }
+    ],
+    "lang": "PP",
+    "source_lang": "nB-iG1DyrV",
+    "distribution": {
+      "tlp": {
+        "label": "GREEN",
+        "url": "http://EMClfiANrULTdjEweHss.guzdBBx-A0QDsdemslpfQFLjb8nhbmj0Xtt6rXPy.Mf9lszDgyNkfj"
+      },
+      "ea498": "esse sint elit"
+    },
+    "aggregate_severity": {
+      "text": "labore",
+      "namespace": "http://oRXq.lchCyi.-lzwZib6VPQfqQ.KMz"
+    },
+    "acknowledgments": [
+      {
+        "names": [
+          "ad exercitation",
+          "ut proident",
+          "velit cupidatat",
+          "occaecat eu",
+          "elit exercitation incididunt"
+        ],
+        "organizations": [
+          "dolore",
+          "ad Lorem aute in pariatur",
+          "minim non sed ut exercitation"
+        ],
+        "urls": [
+          "http://F.jtmMlAczpM01WFS4sgVsN5t8vqWhPBjk12WmfAXmzqzZsDtT8PAaO",
+          "https://ICWETYpHyJvFXxnijkcepZBRv.rysVGzhMWwQvwhjpP2dWgI7H3srJRrKeumcQ",
+          "https://afOnqJdhfiUDMZmzWxeUaqvlwVJZUAtH.erwmm9FC3iLY4"
+        ],
+        "ad0f": -20759800
+      },
+      {
+        "summary": "et nostrud in do",
+        "culpa7": -32268842.046402887,
+        "id_69_": false,
+        "ea_36": "incididunt Duis ullamco"
+      }
+    ]
+  }
+}

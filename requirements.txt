@@ -1,0 +1,4 @@
+attrs
+jsonschema
+lxml
+xmlschema

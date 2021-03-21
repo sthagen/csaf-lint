@@ -1,0 +1,190 @@
+{
+  "document": {
+    "csaf_version": "2.0",
+    "publisher": {
+      "type": "coordinator",
+      "issuing_authority": "mollit",
+      "vendor_id": "aute dolor nisi",
+      "contact_details": "velit"
+    },
+    "title": "sunt consectetur sint do",
+    "tracking": {
+      "current_release_date": "1946-11-13T06:31:22.695Z",
+      "id": "dolor do mollit cupidatat",
+      "initial_release_date": "1955-06-14T20:53:07.236Z",
+      "revision_history": [
+        {
+          "date": "1966-03-01T21:35:57.151Z",
+          "number": "0",
+          "summary": "consequat ut"
+        },
+        {
+          "date": "1958-11-11T19:57:13.734Z",
+          "number": "25054252878.0.87035275592.977732",
+          "summary": "ex laborum dolore magna incididunt"
+        },
+        {
+          "date": "1980-02-25T03:45:25.423Z",
+          "number": "0.611951.5",
+          "summary": "nisi"
+        }
+      ],
+      "status": "interim",
+      "version": "51.0",
+      "generator": {
+        "engine": "fugiat",
+        "date": "2007-09-30T22:19:36.105Z"
+      },
+      "aliases": [
+        "pariatur esse deserunt",
+        "ad incididunt tempor pariatur nostrud",
+        "Ut Excepteur esse irure",
+        "Ut consequat Duis",
+        "dolor anim velit dolor ex"
+      ]
+    },
+    "type": "sed ex et minim adipisicing",
+    "lang": "nmy",
+    "aggregate_severity": {
+      "text": "exercitation mollit culpa voluptate deserunt"
+    },
+    "distribution": {
+      "tlp": {
+        "label": "GREEN",
+        "url": "http://iNSfCGDJAdzkxY.kiHYG0hqYF"
+      },
+      "exercitation_c0": -39036693,
+      "irure_2_": false
+    },
+    "notes": [
+      {
+        "text": "amet quis veniam",
+        "type": "faq",
+        "audience": "cupidatat deserunt ipsum occaecat dolore",
+        "title": "elit quis ut"
+      },
+      {
+        "text": "id do sed dolor in",
+        "type": "faq",
+        "title": "aliquip",
+        "audience": "ut fugiat deserunt minim aute"
+      },
+      {
+        "text": "ullamco deserunt id",
+        "type": "faq",
+        "audience": "Duis",
+        "title": "aliqua"
+      }
+    ],
+    "acknowledgments": [
+      {
+        "organizations": [
+          "nostrud"
+        ],
+        "summary": "in",
+        "names": [
+          "consequat commodo",
+          "ut"
+        ]
+      }
+    ],
+    "references": [
+      {
+        "summary": "proident labore",
+        "url": "http://gPvZNVdYmvTkOkAORMMCuGNFJJBCH.uxnnfrPHdLnYWTA-qVgrZi9A6lrqCsMZo7yFyZcomKR4OWGPMdHH",
+        "type": "external"
+      },
+      {
+        "summary": "anim amet",
+        "url": "http://yLauMiyRWEtVlwdCpEAYk.ihkCrqaCM4oaTkeAP4vP-iOKvH",
+        "type": "self"
+      },
+      {
+        "summary": "laborum aliquip laboris",
+        "url": "http://MQqeQwLXQaJPAkmbxTFhEyWmDeWX.mcrexFy6OVtw+",
+        "type": "self"
+      }
+    ],
+    "source_lang": "Mg"
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "name": "anim labore sunt incididunt",
+        "type": "service_pack",
+        "dolore_e4": 98319544.46137264
+      },
+      {
+        "name": "ullamco Lorem veniam aute",
+        "type": "product_version",
+        "product": {
+          "name": "in",
+          "product_id": "ea",
+          "cpe": "cpe:/a:fHoE7~4I"
+        }
+      }
+    ],
+    "product_groups": [
+      {
+        "group_id": "nisi minim cillum",
+        "product_ids": [
+          "et magna eu fugiat",
+          "enim pariatur occaecat",
+          "exercitation",
+          "sit ea tempor"
+        ],
+        "summary": "Ut pariatur"
+      },
+      {
+        "group_id": "eiusmod laboris et ipsum",
+        "product_ids": [
+          "ea ut nostrud tempor",
+          "nulla eu",
+          "Ut esse",
+          "minim esse dolor eu",
+          "ullamco tempor"
+        ],
+        "summary": "eiusmod est Duis ut"
+      },
+      {
+        "group_id": "esse",
+        "product_ids": [
+          "dolor",
+          "cupidatat nulla anim sint aliquip"
+        ],
+        "summary": "fugiat deserunt"
+      },
+      {
+        "group_id": "ad irure dolor in consequat",
+        "product_ids": [
+          "Ut proident Lorem quis",
+          "voluptate velit Duis reprehenderit eu",
+          "et sunt fugiat",
+          "incididunt aliqua magna",
+          "incididunt esse sunt"
+        ],
+        "summary": "tempor nulla Excepteur"
+      },
+      {
+        "group_id": "nostrud dolore ut mollit sunt",
+        "product_ids": [
+          "mollit nostrud commodo dolor",
+          "in",
+          "esse",
+          "sed eu"
+        ],
+        "summary": "incididunt non anim esse"
+      }
+    ],
+    "full_product_names": [
+      {
+        "name": "eiusmod",
+        "product_id": "non ut do sit",
+        "cpe": "cpe:2.3:o:*:-:\\%???:*\\?aGO\\;Uvu:nO\\^\\[\\,\\,jWh\\;:*:*:???????\\!\\}I*:??????yCy:*"
+      }
+    ],
+    "ex_ab": "consectetur",
+    "nisibc3": "commodo",
+    "ad4fa": -2724311
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "document": {
+    "csaf_version": "2.0",
+    "publisher": {
+      "type": "other"
+    },
+    "title": "occaecat tempor reprehenderit proident ut",
+    "tracking": {
+      "current_release_date": "1946-01-09T00:37:09.81Z",
+      "id": "sint nostrud",
+      "initial_release_date": "1973-05-27T19:59:56.142Z",
+      "revision_history": [
+        {
+          "date": "1950-10-27T20:37:13.322Z",
+          "number": "73.0",
+          "summary": "et id non adipisicing"
+        },
+        {
+          "date": "1965-02-11T23:48:55.175Z",
+          "number": "5.77528.0",
+          "summary": "magna"
+        },
+        {
+          "date": "1975-12-21T16:36:51.262Z",
+          "number": "9915.7531386.328",
+          "summary": "minim ex sint"
+        }
+      ],
+      "status": "draft",
+      "version": "279891.0.0.6469",
+      "generator": {
+        "engine": "incididunt in sit aliqua",
+        "date": "1975-02-20T06:48:36.86Z"
+      },
+      "aliases": [
+        "ad dolor aliqua incididunt",
+        "ut non eu ut minim",
+        "magna Ut Duis",
+        "cillum",
+        "voluptate nisi"
+      ]
+    },
+    "type": "Duis",
+    "source_lang": "nJe-u",
+    "notes": [
+      {
+        "text": "amet ut in sit",
+        "type": "legal_disclaimer",
+        "audience": "laboris dolore incididunt"
+      }
+    ],
+    "acknowledgments": [
+      {
+        "names": [
+          "minim id Excepteur ullamco exercitation",
+          "qui incididunt magna esse",
+          "labore pariatur qui"
+        ],
+        "summary": "aute nulla minim"
+      },
+      {
+        "urls": [
+          "https://wQesqgwRfFzSEZYIYtezKoIhmDEfhQ.bbkkM+72oUWtLUbru3PfSkl1pXFH3,",
+          "http://Tbsm.uhZCIVjswi7B3JCP8nSlDAbAE.mJL9wbySnK1fqrawg0O.nqMIkIZ",
+          "http://PLvWrME.orBhH9Rsaa5G9.iEUZaZlJXy.ZOVXKnKqF"
+        ],
+        "summary": "ea",
+        "names": [
+          "et magna Excepteur velit aliquip",
+          "laboris nisi Excepteur",
+          "tempor"
+        ]
+      },
+      {
+        "names": [
+          "veniam dolor",
+          "sunt ea veniam"
+        ],
+        "urls": [
+          "https://chCiLBUkROfjfoqsnCHxBnIfXuObev.iiSap2XX0Si"
+        ],
+        "organizations": [
+          "Duis",
+          "Excepteur velit",
+          "quis",
+          "proident mollit amet",
+          "velit fugiat"
+        ],
+        "ullamcod_d": false,
+        "minim_0c5": "veniam adipisicing",
+        "cillume58": "Duis tempor consequat in",
+        "non_79": "Lorem proident"
+      },
+      {
+        "names": [
+          "consectetur",
+          "dolor qui pariatur aliqua",
+          "ad minim"
+        ],
+        "urls": [
+          "http://P.hhjlaWYy2YwSWnNf6uM+omkLtFdez7JOAvO7LEFiP.NxMNe88ScJl3aNbP9-eTa6weO5kuiJJCocd+",
+          "https://YpQVRTYJhlElxIsq.csjbinG50RXlscFB,Pq8v",
+          "https://jRyWGAFBeDwbtinTSeUqu.tgdme9ip.MAkhLHY"
+        ],
+        "organizations": [
+          "eu"
+        ],
+        "culpacf_": "labore deserunt ut",
+        "Duis0": -20964413,
+        "aliquip_b8": 69109110,
+        "velit_978": -98357336
+      },
+      {
+        "organizations": [
+          "incididunt cillum est ea cupidatat",
+          "elit",
+          "qui"
+        ],
+        "officia96": -20683988
+      }
+    ],
+    "references": [
+      {
+        "summary": "ad id elit",
+        "url": "http://sMJBpRNxbVzxnMCCmsUITsTccTREMre.icVeoeMpmLBBfNB3nU6mQYPgVXR,moqF",
+        "type": "external"
+      },
+      {
+        "summary": "officia anim cillum Ut",
+        "url": "https://nEVTuUFhAFCuBMPJuLuvXTSVLxyDvvk.wrAfFhzQFR+r8HLO0NjXfRYdqZ51k.gMoRsYfsfRtYiEpDkN4",
+        "type": "self"
+      }
+    ],
+    "distribution": {
+      "text": "consequat nulla"
+    },
+    "lang": "Sb",
+    "aggregate_severity": {
+      "text": "amet sint",
+      "namespace": "http://RPfLiMXQfKxbaurpdkuwiRvHhi.jvgnYGwjs4dRvSrtDq9g-I-rOH8QenmYCH"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "name": "cillum",
+        "type": "vendor",
+        "product": {
+          "name": "culpa laborum",
+          "product_id": "culpa",
+          "cpe": "cPE:/"
+        }
+      },
+      {
+        "name": "cupidatat sed id sit non",
+        "type": "host_name",
+        "product": {
+          "name": "qui deserunt ex in",
+          "product_id": "cillum",
+          "cpe": "cpe:2.3:h:????????L?????:*:I:-:\\,:Nvg-kE:*D\\%\\:\\?\\%e:-:-:*rJ\\\\\\<\\;hZ\\]?????????"
+        }
+      },
+      {
+        "name": "ut voluptate sint sed",
+        "type": "host_name",
+        "product": {
+          "name": "ex in",
+          "product_id": "panem"
+        }
+      },
+      {
+        "name": "consectetur eu Lorem",
+        "type": "vendor",
+        "product": {
+          "name": "circes",
+          "product_id": "dolorum"
+        }
+      }
+    ],
+    "product_groups": [
+      {
+        "group_id": "dolore ut laborum incididunt aliquip",
+        "product_ids": [
+          "sunt ut Ut mollit",
+          "exercitation",
+          "consequat incididunt ut",
+          "tempor Excepteur sunt",
+          "ad pariatur in anim"
+        ],
+        "summary": "reprehenderit sit eu laborum"
+      }
+    ],
+    "nisi_e0": -25183667.02848436,
+    "dolore8e": "ex do occaecat quis dolore",
+    "dolor_4a": false
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "document": {
+    "csaf_version": "2.0",
+    "publisher": {
+      "type": "discoverer",
+      "issuing_authority": "do",
+      "vendor_id": "enim dolor cillum",
+      "contact_details": "anim minim amet"
+    },
+    "title": "incididunt consectetur sunt dolore adipisicing",
+    "tracking": {
+      "current_release_date": "1955-12-27T02:59:33.177Z",
+      "id": "aliquip dolore deserunt",
+      "initial_release_date": "2012-11-20T05:37:05.316Z",
+      "revision_history": [
+        {
+          "date": "1951-07-23T04:12:37.424Z",
+          "number": "945686",
+          "summary": "Duis nostrud sunt exercitation"
+        },
+        {
+          "date": "2014-01-13T13:03:41.726Z",
+          "number": "0",
+          "summary": "ullamco pariatur nisi"
+        },
+        {
+          "date": "2003-04-19T08:38:41.995Z",
+          "number": "0.0.973246892",
+          "summary": "aliqua mollit minim"
+        },
+        {
+          "date": "2002-12-15T02:30:40.666Z",
+          "number": "45790500.77681408192.8944.0",
+          "summary": "Lorem ut sit occaecat velit"
+        }
+      ],
+      "status": "final",
+      "version": "0",
+      "aliases": [
+        "eu fugiat consequat ad consectetur",
+        "magna"
+      ],
+      "generator": {
+        "engine": "anim irure proident",
+        "date": "1991-08-22T03:03:32.928Z"
+      }
+    },
+    "type": "dolore",
+    "acknowledgments": [
+      {
+        "organizations": [
+          "ut ea esse pariatur enim",
+          "aliquip ad do laborum"
+        ],
+        "summary": "id fugiat nulla nostrud anim",
+        "occaecat_7a": -50354453.25268706
+      },
+      {
+        "urls": [
+          "http://Ohtxona.hhosuQxOL2pLUFtxQ2csPrlQKaBOvGhyL-A7TYKna22DHIiwzzEHMi",
+          "http://oA.vlmplk8+I1Cbt9hL6T2OGlVNtXASDqUaU9OZE",
+          "http://noKPMpwOqDS.fsG9nHENuWGytVN43zsp6",
+          "https://caZOTLCoRUWRdopUsNYE.nkKF5sLVRSe2rfLUl18I7dDEZ612-ZLCOmZckne661YHgnquxqMULzNGIPxrzHr+dh8OrfML2KvW"
+        ],
+        "summary": "in Ut",
+        "names": [
+          "commodo consectetur"
+        ],
+        "ut_3": 22946016.86509055
+      },
+      {
+        "organizations": [
+          "eiusmod ut nostrud id deserunt",
+          "sit ullamco eiusmod",
+          "dolore ex ut",
+          "eu id aliqua"
+        ],
+        "Lorem_d3": true,
+        "deserunt_99": true,
+        "culpa9": "ut"
+      },
+      {
+        "organizations": [
+          "in",
+          "voluptate ut",
+          "ad commodo ut in",
+          "dolore fugiat labore"
+        ],
+        "summary": "non sed esse tempor",
+        "names": [
+          "est amet laborum ut veniam",
+          "mollit magna reprehenderit proident",
+          "ullamco dolor laborum"
+        ],
+        "laboris_d": "id",
+        "ullamcob": "ut occaecat tempor"
+      },
+      {
+        "organizations": [
+          "sed eiusmod"
+        ],
+        "names": [
+          "laborum ex laboris",
+          "reprehenderit nisi consequat commodo",
+          "adipisicing commodo esse"
+        ],
+        "sint_cc8": -49219529
+      }
+    ],
+    "source_lang": "jH",
+    "lang": "SCy",
+    "distribution": {
+      "tlp": {
+        "label": "WHITE",
+        "url": "http://l.hlvcNyNlfUbqBAxUHf7Oyjwg+vbjs6UhrVCVLe6EVDlLB"
+      },
+      "amet70": -26021594,
+      "Ut_": true,
+      "in_717": true
+    },
+    "references": [
+      {
+        "summary": "consequat officia cupidatat laborum sint",
+        "url": "http://zCcJDGQa.xvHYl,KIUBjPS3-A7h72yfR7HAqfXcha2+CMn0kaCdjixx4vS+JK3G9Z0CSCNxoza",
+        "type": "self"
+      },
+      {
+        "summary": "quis ut ex sint",
+        "url": "https://orKMtJUqIiaxHHKBQBy.shirVM.E7vsCGKk4r",
+        "type": "self"
+      },
+      {
+        "summary": "veniam incididunt enim consequat",
+        "url": "http://WjGZHXeYFgEUmQQADULMXDVdS.rwweGmjU6naT2-wih+70S",
+        "type": "external"
+      }
+    ],
+    "notes": [
+      {
+        "text": "sunt",
+        "type": "legal_disclaimer",
+        "title": "adipisicing deserunt sed aliqua",
+        "audience": "dolor incididunt irure qui"
+      }
+    ]
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "type": "legacy",
+        "laborum280": 62706073
+      }
+    ]
+  }
+}

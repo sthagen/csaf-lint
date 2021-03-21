@@ -1,0 +1,178 @@
+{
+  "document": {
+    "csaf_version": "2.0",
+    "publisher": {
+      "type": "other",
+      "issuing_authority": "sed incididunt sunt ut et",
+      "vendor_id": "consequat id cillum laborum",
+      "contact_details": "non in"
+    },
+    "title": "aute consequat Ut",
+    "tracking": {
+      "current_release_date": "1969-03-02T20:26:02.872Z",
+      "id": "incididunt ex",
+      "initial_release_date": "1976-07-26T23:44:02.568Z",
+      "revision_history": [
+        {
+          "date": "2006-02-26T14:12:33.679Z",
+          "number": "23992.9",
+          "summary": "minim sit"
+        },
+        {
+          "date": "1989-03-25T21:30:20.043Z",
+          "number": "0.0",
+          "summary": "nisi consequat Excepteur culpa eu"
+        },
+        {
+          "date": "1941-10-01T17:55:10.735Z",
+          "number": "62593611.0",
+          "summary": "ipsum minim nisi Ut laborum"
+        },
+        {
+          "date": "2001-08-13T08:08:24.239Z",
+          "number": "0.28.445928639",
+          "summary": "deserunt"
+        }
+      ],
+      "status": "draft",
+      "version": "99761876.0.73435823.5401887",
+      "generator": {
+        "engine": "anim aliquip deserunt",
+        "date": "1963-09-23T23:19:51.681Z"
+      },
+      "aliases": [
+        "mollit",
+        "officia magna",
+        "nulla commodo Lorem anim",
+        "non laborum Excepteur voluptate",
+        "incididunt"
+      ]
+    },
+    "type": "sed cillum esse",
+    "distribution": {
+      "tlp": {
+        "label": "RED",
+        "url": "https://OpZsSwCPodGh.qjex9cklwQwPuClUps3Jb"
+      }
+    },
+    "source_lang": "xH",
+    "aggregate_severity": {
+      "text": "ea ipsum occaecat in ad"
+    },
+    "acknowledgments": [
+      {
+        "summary": "eu minim dolor",
+        "urls": [
+          "https://sThhqYAZkqEKbAUQKUcarNKLiphLyqu.lkrlwTz60B0-wsGX5bd+lbwUb3QYK5NsE39UwSKllHVejLuO90lJCphYA6b2hK5aSCa91",
+          "https://eSdKhvjwEASPol.onsPaJGH5a4XxfpWYDgOr6vGsO-",
+          "https://UkFaXzpPwslqHvMmVYMO.myrNftM-PBQj8AGvHcpCtE8BiyWnKQI2Nv.IN1S2NnRAEd",
+          "https://xQFqzSgTUXIdy.xqgKLHW,FzRg1UxoWQDXE"
+        ],
+        "names": [
+          "proident voluptate est veniam",
+          "est proident esse in aliqua",
+          "non anim",
+          "do sunt",
+          "irure"
+        ]
+      },
+      {
+        "urls": [
+          "https://NpkIlQZCZFswQqxV.qmcpAOFiSJ30-1bsl-ud5.6NuR4cEFOCncXBRkIVAf3DR.GsgViUyOJiVfTW"
+        ],
+        "names": [
+          "sint esse id",
+          "ea laboris pariatur Ut",
+          "tempor fugiat eu sunt laboris"
+        ],
+        "organizations": [
+          "dolore ullamco aute",
+          "occaecat nulla mollit",
+          "ea mollit in proident do",
+          "commodo tempor aliquip magna"
+        ]
+      },
+      {
+        "organizations": [
+          "mollit nostrud",
+          "ut",
+          "aliqua",
+          "voluptate ipsum laboris magna",
+          "exercitation"
+        ],
+        "summary": "dolore aliquip sed exercitation tempor",
+        "urls": [
+          "https://OLFHToorXekxzbkyMGt.zcRMtWpO",
+          "http://HypiLHUvXBhz.ayqHYSp1uCJmiyJ9Sihp8SuucpZWNxtxQpRT",
+          "http://sUJmZDqIXuGkcmhW.sgiwkn8zwnlZB3I8ZTfWPNAo+Br1kwxfjwZ4wI-mHYNPcfMW6.,NYfeggh"
+        ]
+      },
+      {
+        "summary": "Ut eiusmod dolor",
+        "names": [
+          "Excepteur",
+          "labore"
+        ],
+        "ex0cd": true
+      }
+    ],
+    "notes": [
+      {
+        "text": "sunt sed dolore",
+        "type": "summary",
+        "title": "ex",
+        "audience": "pariatur do commodo non"
+      },
+      {
+        "text": "voluptate anim cupidatat velit",
+        "type": "legal_disclaimer",
+        "title": "eu in",
+        "audience": "quis"
+      },
+      {
+        "text": "aliqua anim pariatur in",
+        "type": "general",
+        "audience": "dolor in dolore fugiat sed",
+        "title": "aute nulla"
+      },
+      {
+        "text": "consectetur deserunt anim culpa enim",
+        "type": "details",
+        "title": "sint nisi reprehenderit deserunt veniam",
+        "audience": "esse aute culpa Lorem"
+      }
+    ],
+    "references": [
+      {
+        "summary": "enim consectetur",
+        "url": "http://ULOFAGAAWNeG.iroPoSFx6LS9"
+      }
+    ],
+    "lang": "wR-+3-"
+  },
+  "product_tree": {
+    "relationships": [
+      {
+        "full_product_name": {
+          "product_id": "aliquip",
+          "cpe": "cPE:/h:I4W.EX:tJrf:Rh6:nK7m6eY%Ts:"
+        },
+        "product_reference": "et",
+        "relates_to_product_reference": "culpa adipisicing",
+        "relationship_type": "default_component_of"
+      },
+      {
+        "full_product_name": {
+          "name": "mollit",
+          "cpe": "cpe:/A:7ii:gdTPra:kpFzJ:3C37WM"
+        },
+        "product_reference": "tempor qui sint ipsum",
+        "relates_to_product_reference": "Lorem dolore incididunt officia",
+        "relationship_type": "default_component_of"
+      }
+    ],
+    "irure70": "elit exercitation sed ex",
+    "commodo4": "pariatur laboris",
+    "voluptate__": "sint ullamco adipisicing"
+  }
+}

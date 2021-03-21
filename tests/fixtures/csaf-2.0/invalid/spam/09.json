@@ -1,0 +1,33 @@
+{
+  "document": {
+    "csaf_version": "2.0",
+    "publisher": {
+      "type": "other",
+      "vendor_id": "sint",
+      "contact_details": "eiusmod et laboris",
+      "issuing_authority": "eu exercitation labore occaecat in"
+    },
+    "title": "veniam consectetur Excepteur ipsum in",
+    "tracking": {
+      "current_release_date": "1963-02-06T11:45:14.158Z",
+      "id": "eu elit Lorem",
+      "initial_release_date": "1962-01-11T21:22:40.821Z",
+      "revision_history": [
+        {
+          "date": "2010-07-27T22:56:28.784Z",
+          "number": "3719256402.0",
+          "summary": "proident in amet nostrud nisi"
+        }
+      ],
+      "status": "final",
+      "generator": {
+        "engine": "exercitation",
+        "date": "2012-09-02T16:31:08.341Z"
+      },
+      "aliases": [
+        "sed veniam dolore"
+      ]
+    },
+    "type": "dolor commodo amet nulla aliquip"
+  }
+}

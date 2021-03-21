@@ -1,0 +1,37 @@
+{
+  "document": {
+    "csaf_version": "2.0",
+    "publisher": {
+      "type": "discoverer",
+      "issuing_authority": "Duis consectetur sint incididunt deserunt",
+      "contact_details": "ut ea do",
+      "vendor_id": "incididunt nostrud ullamco do quis"
+    },
+    "title": "Lorem dolor in",
+    "tracking": {
+      "current_release_date": "2006-10-18T12:27:59.309Z",
+      "id": "ex eu enim",
+      "initial_release_date": "1944-07-03T02:10:48.594Z",
+      "revision_history": [
+        {
+          "date": "1999-07-12T23:08:08.729Z",
+          "number": "44195",
+          "summary": "dolor"
+        },
+        {
+          "date": "1985-03-22T16:39:02.478Z",
+          "number": "0.0",
+          "summary": "dolore amet non Lorem"
+        },
+        {
+          "date": "2017-08-17T07:02:16.533Z",
+          "number": "0",
+          "summary": "laborum"
+        }
+      ],
+      "status": "final",
+      "version": "53012214841.1170754268.7921.0"
+    },
+    "type": "nisi"
+  }
+}

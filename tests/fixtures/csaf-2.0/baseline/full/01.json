@@ -1,0 +1,216 @@
+{
+  "document": {
+    "csaf_version": "2.0",
+    "publisher": {
+      "type": "discoverer",
+      "vendor_id": "in irure labore",
+      "contact_details": "in Duis minim nostrud",
+      "issuing_authority": "non proident esse"
+    },
+    "title": "ad non officia",
+    "tracking": {
+      "current_release_date": "1984-11-03T18:31:29.643Z",
+      "id": "aliqua",
+      "initial_release_date": "1984-01-16T06:39:00.025Z",
+      "revision_history": [
+        {
+          "date": "1979-08-10T09:55:51.09Z",
+          "number": "0.0.0.697906805",
+          "summary": "sit Duis"
+        }
+      ],
+      "status": "final",
+      "version": "0",
+      "generator": {
+        "engine": "nulla ipsum ea",
+        "date": "1993-11-25T22:29:30.496Z"
+      },
+      "aliases": [
+        "aliqua tempor in incididunt quis"
+      ]
+    },
+    "type": "incididunt cillum officia Excepteur exercitation"
+  },
+  "vulnerabilities": [
+    {
+      "title": "in ad incididunt sunt",
+      "acknowledgments": [
+        {
+          "summary": "proident voluptate adipisicing",
+          "names": [
+            "et"
+          ]
+        },
+        {
+          "names": [
+            "et sint dolor fugiat deserunt",
+            "elit",
+            "laboris exercitation adipisicing nisi",
+            "esse Duis anim in incididunt",
+            "eiusmod"
+          ],
+          "urls": [
+            "http://KnGxwBv.bsPvMulknlSOVqr4+HfS5kCoe2Zfx17JwyjCZvowgPhlZG-lP"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "details": "consequat",
+          "type": "exploit_status",
+          "group_ids": [
+            "velit do ex aliquip",
+            "adipisicing nisi",
+            "aliqua nisi dolore tempor in",
+            "officia sunt cillum cupidatat"
+          ],
+          "product_ids": [
+            "officia ipsum eiusmod in",
+            "ut amet in in",
+            "ipsum adipisicing",
+            "ad officia mollit ut enim",
+            "sint nulla id"
+          ],
+          "date": "1984-05-17T02:55:18.645Z"
+        },
+        {
+          "details": "ea dolor sed aliqua",
+          "type": "exploit_status",
+          "date": "1989-01-30T13:43:10.111Z",
+          "group_ids": [
+            "dolore aliquip",
+            "reprehenderit ullamco proident ut minim",
+            "adipisicing",
+            "ut",
+            "Excepteur consequat in"
+          ],
+          "product_ids": [
+            "commodo id amet Excepteur enim"
+          ]
+        },
+        {
+          "details": "irure laborum mollit",
+          "type": "impact",
+          "group_ids": [
+            "laborum"
+          ],
+          "product_ids": [
+            "elit Duis veniam",
+            "irure sed Duis",
+            "esse"
+          ],
+          "date": "2007-11-05T22:08:51.916Z"
+        },
+        {
+          "details": "incididunt",
+          "type": "impact",
+          "group_ids": [
+            "tempor mollit",
+            "labore nostrud",
+            "laboris nostrud sit reprehenderit",
+            "dolor deserunt voluptate"
+          ],
+          "product_ids": [
+            "elit eiusmod ex",
+            "in consequat"
+          ],
+          "date": "1947-10-30T02:45:01.779Z"
+        }
+      ],
+      "involvements": [
+        {
+          "party": "discoverer",
+          "status": "disputed"
+        },
+        {
+          "party": "coordinator",
+          "status": "in_progress",
+          "summary": "ipsum esse proident"
+        }
+      ],
+      "release_date": "1979-05-12T20:46:17.683Z",
+      "references": [
+        {
+          "summary": "eu mollit ex minim",
+          "url": "http://RyhbmrYFZOd.sxbpu",
+          "type": "self"
+        },
+        {
+          "summary": "aliqua anim in",
+          "url": "https://epWePVVlVyndtkzsCrPJPfgeeEfXlfRHj.zxddPEl6U",
+          "type": "self"
+        },
+        {
+          "summary": "esse",
+          "url": "https://QhSdDMtaaZvsSKqhzBdv.huT6w1sQwAbSamM-Xn7xLmJ-zpGWdCp9FwM7EN+ukFyc1dTvTuYHE+"
+        },
+        {
+          "summary": "laboris nisi",
+          "url": "http://lvvtcnDzKrQhiYqpKZR.qosDPZvu2t,Ktfz5O,KHYW"
+        },
+        {
+          "summary": "est",
+          "url": "http://UBQqVBVwnr.yzhlyKqUYjZFoJnIpdwEN0ttU6mXqAnuJUvhyahLKoV",
+          "type": "external"
+        }
+      ],
+      "cve": "CVE-4642-185657418508",
+      "product_status": {
+        "under_investigation": [
+          "voluptate est",
+          "id sed",
+          "sunt quis labore",
+          "ea aliqua laborum adipisicing sint",
+          "officia quis aliquip esse"
+        ],
+        "ex_9": "commodo",
+        "labore_b": "dolore pariatur sunt",
+        "quis3": -86431221,
+        "incididunt09": true
+      }
+    }
+  ],
+  "product_tree": {
+    "branches": [
+      {
+        "name": "velit sint consequat",
+        "type": "specification",
+        "product": {
+          "name": "ex in",
+          "product_id": "panem"
+        }
+      }
+    ],
+    "relationships": [
+      {
+        "full_product_name": {
+          "name": "proident elit",
+          "product_id": "id labore in"
+        },
+        "product_reference": "dolore aliqua",
+        "relates_to_product_reference": "esse",
+        "relationship_type": "optional_component_of"
+      }
+    ],
+    "product_groups": [
+      {
+        "group_id": "in do",
+        "product_ids": [
+          "commodo",
+          "do consequat id",
+          "ut ad"
+        ]
+      },
+      {
+        "group_id": "labore cillum fugiat in incididunt",
+        "product_ids": [
+          "adipisicing occaecat commodo pariatur",
+          "minim",
+          "amet dolore non",
+          "ea dolor"
+        ],
+        "summary": "veniam eiusmod ipsum"
+      }
+    ]
+  }
+}

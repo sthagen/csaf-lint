@@ -1,0 +1,791 @@
+{
+  "document": {
+    "csaf_version": "2.0",
+    "publisher": {
+      "type": "user",
+      "contact_details": "dolore consequat sit",
+      "issuing_authority": "Excepteur ad incididunt Duis adipisicing"
+    },
+    "title": "ut cillum dolore dolor aute",
+    "tracking": {
+      "current_release_date": "2011-08-21T06:22:16.795Z",
+      "id": "cillum sit fugiat ea laborum",
+      "revision_history": [
+        {
+          "date": "1969-11-15T08:11:12.022Z",
+          "number": "0.0",
+          "summary": "mollit"
+        },
+        {
+          "date": "1992-08-16T10:51:37.888Z",
+          "number": "0.0.0.0",
+          "summary": "dolore nostrud veniam nisi"
+        },
+        {
+          "date": "2015-08-18T06:24:29.618Z",
+          "number": "67.6",
+          "summary": "ex"
+        }
+      ],
+      "status": "final",
+      "version": "1608259609.0",
+      "generator": {
+        "engine": "cillum labore",
+        "date": "1990-10-07T07:59:33.355Z"
+      },
+      "aliases": [
+        "consectetur labore",
+        "ea consequat Lorem",
+        "in cillum dolore dolor incididunt",
+        "Duis in Excepteur"
+      ]
+    },
+    "type": "non veniam",
+    "source_lang": "uK-Dd",
+    "acknowledgments": [
+      {
+        "urls": [
+          "http://YjkSrlNX.osyCoHXcPL0zC6DkQDDG2dH.raQFUcbxpvVMjvtnywxqQpGGrmXev",
+          "https://CEaky.slVvvgmeKHi0ZXFS,dX",
+          "https://CjwyafDwhemPLsXATWXRC.gwde",
+          "https://pTZU.ifzaeHCpfiIfMjbkSqf9YG7HAR-3bdS,ZbsH0kfXGSoDBg"
+        ],
+        "names": [
+          "dolore consequat veniam Excepteur",
+          "reprehenderit in consectetur in dolore"
+        ],
+        "summary": "ut culpa et est cupidatat",
+        "eu56d": -69823196,
+        "aute_7d5": "non",
+        "consectetur5b7": true,
+        "Excepteur_32": "irure"
+      },
+      {
+        "urls": [
+          "https://EjFlpottqQiCioDdTUpvYsNBnZyU.xdFcBygRqACAJ8ZDmJtsN.Y,mlp0",
+          "http://lkvwKFeAwPZTOTjCnDg.btiPykjTSXiAQnnNAtEAmf",
+          "http://sgfXfBFnDsxwGcDXynaHZJgTusO.gdxvUq0EwmaIcxcoNnMtTdFassgsTs4T,rYFZi1Rksiim52",
+          "http://Ehy.ibqdvio5LLhdZhgNfTTSwBGSYIWby5-+vhMewt9HbgQdZQk.t0YWFRwmL0n"
+        ],
+        "names": [
+          "dolore veniam incididunt",
+          "laboris mollit in",
+          "proident"
+        ],
+        "summary": "amet",
+        "adipisicing_22": -55897535.29419213,
+        "in2": -21240524
+      }
+    ],
+    "aggregate_severity": {
+      "text": "nostrud sint in",
+      "namespace": "https://IYiGAHERfjcGTwjQe.ejdJ-mOWXrbzlWcRSCh3.b,zbxWR6tAKXV-Sp4mI"
+    },
+    "distribution": {
+      "text": "voluptate nostrud ullamco dolore cupidatat"
+    },
+    "references": [
+      {
+        "summary": "elit",
+        "url": "https://NDCRIIugHCrFzUhk.xehn24C+ctHQKpE3gCSuvA",
+        "type": "external"
+      },
+      {
+        "summary": "est dolore",
+        "url": "https://dVElXFTPNnWEfMgCOExQDhq.vmitgW3jAWPEZYgofo.YbhSUE0v+UveIte9Z8tS,hkC",
+        "type": "self"
+      },
+      {
+        "summary": "cillum amet",
+        "url": "http://Y.zgkzg2z9eWu+kGsR8H8pyPDrJQ18TF0gtThxc4BBoAoE8xpDDaYq",
+        "type": "external"
+      },
+      {
+        "summary": "dolor in ea officia",
+        "url": "https://nCWNrCjrySAxGIGTQhHwPfeQB.nrtlUGgg.9qPHg0y.0OwoOq5dwDKpPzb7vQG,9YSd",
+        "type": "external"
+      }
+    ],
+    "lang": "Nl",
+    "notes": [
+      {
+        "text": "Excepteur elit dolore",
+        "type": "other"
+      },
+      {
+        "text": "exercitation proident officia sit",
+        "type": "general",
+        "audience": "exercitation",
+        "title": "dolore labore tempor deserunt"
+      },
+      {
+        "text": "dolor",
+        "type": "description",
+        "title": "do in eiusmod nisi commodo",
+        "audience": "commodo dolore"
+      }
+    ]
+  },
+  "product_tree": {
+    "full_product_names": [
+      {
+        "name": "irure id eu qui ea",
+        "product_id": "cupidatat id ipsum commodo voluptate",
+        "cpe": "cPe:/A"
+      },
+      {
+        "name": "aute voluptate dolor",
+        "product_id": "qui dolor in irure id",
+        "cpe": "cpe:2.3:-:-:*:OzG???????:????B\\\"*:*:*:P\\=02xr\\\"\\\"bV*:-:\\#\\^\\#\\{:??????c\\=\\&\\(\\+C\\<\\$t\\]\\{?"
+      }
+    ],
+    "relationships": [
+      {
+        "full_product_name": {
+          "name": "do exercitation voluptate ullamco",
+          "product_id": "ullamco aute nulla",
+          "cpe": "cpe:2.3:-:???????.\\/Lbm*:-:*:????????\\#J0sL\\^\\~A???????:-:AJN:*:*:*:*Jj\\~\\}\\%"
+        },
+        "product_reference": "aliquip elit",
+        "relates_to_product_reference": "ad nisi",
+        "relationship_type": "installed_with"
+      },
+      {
+        "full_product_name": {
+          "name": "dolore velit ipsum labore deserunt",
+          "product_id": "in ea consectetur"
+        },
+        "product_reference": "ut ut ea",
+        "relates_to_product_reference": "labore dolore ea",
+        "relationship_type": "installed_on"
+      }
+    ],
+    "product_groups": [
+      {
+        "group_id": "in id commodo",
+        "product_ids": [
+          "aute anim elit ipsum",
+          "laborum deserunt minim",
+          "Lorem elit id deserunt in",
+          "dolore"
+        ],
+        "summary": "irure laboris laborum eu ea"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-9319-250412230",
+      "id": {
+        "system_name": "aute est",
+        "text": "tempor quis"
+      },
+      "references": [
+        {
+          "summary": "do nostrud dolore nisi quis",
+          "url": "https://lqBAmUCaPqcmtVzH.twZXsKHxmaUydxmBEN3z6ISISaYE6Oy23i1V.imZ"
+        },
+        {
+          "summary": "sit anim adipisicing magna",
+          "url": "http://SvpBezfQkcPCfVvdPJ.dvggFgm.UK9cr+tY3N,XU-UcNiqlNg0Y,ugIxlm1i1YnLJMN6ZI9Lkliw2NvCtAfRyyUiY,hFbNysr7I.3M",
+          "type": "external"
+        },
+        {
+          "summary": "qui",
+          "url": "https://cCBWxBySYYPZGHfHxOPVNfiPAQavxC.astmSJV1N9-CE9NG6yijoetothNNZa2kbGb+aA",
+          "type": "self"
+        }
+      ],
+      "discovery_date": "1945-06-19T15:53:26.385Z",
+      "title": "proident nulla ut nostrud pariatur",
+      "notes": [
+        {
+          "text": "pariatur cillum minim deserunt",
+          "type": "faq",
+          "audience": "pariatur cillum id dolore esse",
+          "title": "dolore Duis"
+        },
+        {
+          "text": "dolor Ut dolore",
+          "type": "other",
+          "audience": "occaecat cupidatat consequat irure officia",
+          "title": "est voluptate laboris reprehenderit sed"
+        }
+      ],
+      "release_date": "1966-12-18T12:11:04.033Z",
+      "involvements": [
+        {
+          "party": "discoverer",
+          "status": "disputed"
+        },
+        {
+          "party": "other",
+          "status": "completed",
+          "summary": "consequat sit ipsum aliqua elit"
+        },
+        {
+          "party": "other",
+          "status": "in_progress"
+        }
+      ],
+      "product_status": {
+        "fixed": [
+          "aute magna exercitation dolore culpa"
+        ],
+        "recommended": [
+          "non aliquip consectetur ut",
+          "in est"
+        ],
+        "known_affected": [
+          "velit"
+        ],
+        "first_fixed": [
+          "occaecat do dolore voluptate magna",
+          "elit",
+          "Excepteur ullamco velit",
+          "incididunt ad anim velit",
+          "eiusmod cupidatat laboris aliquip ad"
+        ],
+        "laborum_": true,
+        "voluptate6": 76077773.95638779,
+        "magna_63": false,
+        "ullamco_c0": -6267250.082624525,
+        "aliquip_a": true,
+        "eiusmod_6fa": "culpa nulla labore"
+      },
+      "cwe": {
+        "id": "CWE-99481",
+        "name": "fugiat ut"
+      },
+      "remediations": [
+        {
+          "details": "cillum",
+          "type": "no_fix_planned",
+          "url": "https://LqSIDRzVwVwjtxHipKeKyyGqyDVqO.quhjhQAecOIR.JM1wieO00AKvI+tmMVTqsRfCEag8a",
+          "group_ids": [
+            "laboris ut aliqua magna",
+            "cupidatat dolore deserunt aliquip et",
+            "exercitation esse"
+          ],
+          "product_ids": [
+            "fugiat eu",
+            "laborum consequat anim dolore cillum",
+            "laboris est dolore enim aliqua",
+            "cupidatat Ut"
+          ],
+          "entitlements": [
+            "dolor Ut velit Lorem"
+          ],
+          "date": "1993-11-15T11:53:48.05Z"
+        },
+        {
+          "details": "aliqua Duis amet sed",
+          "type": "none_available",
+          "url": "http://OCVfkfi.yvIOTKpRVgA2ZeJvmCRVgc5,QyJxxRFz+-.MBx6S,q,tiW,dzupSRaOyILk1ym",
+          "product_ids": [
+            "cillum labore",
+            "amet adipisicing ullamco qui",
+            "enim dolore velit",
+            "laborum sed nisi Duis"
+          ],
+          "restart_required": {
+            "type": "service"
+          },
+          "date": "1996-09-28T02:07:16.114Z"
+        },
+        {
+          "details": "non dolore",
+          "type": "mitigation",
+          "date": "2011-01-17T16:56:52.182Z",
+          "restart_required": {
+            "type": "vulnerable_component"
+          }
+        },
+        {
+          "details": "commodo occaecat tempor",
+          "type": "workaround",
+          "group_ids": [
+            "et est"
+          ],
+          "date": "2009-12-07T21:13:06.001Z",
+          "entitlements": [
+            "non",
+            "elit officia",
+            "enim sit dolore",
+            "exercitation nulla commodo est",
+            "qui ea"
+          ],
+          "restart_required": {
+            "type": "zone"
+          },
+          "product_ids": [
+            "pariatur magna eiusmod ex",
+            "mollit dolor tempor esse minim",
+            "reprehenderit consectetur consequat Excepteur Lorem",
+            "sed pariatur ea"
+          ],
+          "url": "https://DajmXebRdfmHhnLRSbHhJrbydbwuVKXU.sdxqnUnSoYDPvj7lrASQk40vAbTbl8jN1FBgH2Ra1-HKTopOev7MjrLFj4e1o2"
+        },
+        {
+          "details": "eiusmod nulla labore sed",
+          "type": "none_available",
+          "date": "1995-07-07T10:34:30.248Z",
+          "group_ids": [
+            "culpa exercitation",
+            "consequat nulla consectetur aliquip"
+          ],
+          "entitlements": [
+            "mollit aute et exercitation",
+            "Lorem Ut aliquip ad"
+          ],
+          "product_ids": [
+            "pariatur Excepteur est et",
+            "eu et esse proident",
+            "nulla aliqua ipsum consectetur sed",
+            "sunt"
+          ],
+          "restart_required": {
+            "type": "vulnerable_component",
+            "details": "laborum do magna"
+          },
+          "url": "https://VpnJshD.cnoS3QNho13WFln6ic4spVGaFkegauDb,g3hVOtAaA6G-863eWwdEGR1iIMwHZBlkF-dvx+7KMqoPg6OEFotXWZ3"
+        }
+      ]
+    },
+    {
+      "discovery_date": "2009-11-01T22:58:02.827Z",
+      "threats": [
+        {
+          "details": "ullamco",
+          "type": "exploit_status",
+          "date": "1992-02-16T16:35:33.931Z",
+          "product_ids": [
+            "fugiat irure aliquip quis esse",
+            "non",
+            "voluptate consequat",
+            "eiusmod sit tempor ut",
+            "ipsum reprehenderit et amet cupidatat"
+          ]
+        },
+        {
+          "details": "tempor sunt reprehenderit cupidatat",
+          "type": "exploit_status"
+        }
+      ],
+      "id": {
+        "system_name": "aliquip esse dolor cillum",
+        "text": "dolor in"
+      },
+      "involvements": [
+        {
+          "party": "user",
+          "status": "open"
+        },
+        {
+          "party": "vendor",
+          "status": "disputed",
+          "summary": "aliqua consequat"
+        },
+        {
+          "party": "coordinator",
+          "status": "disputed",
+          "summary": "pariatur est"
+        },
+        {
+          "party": "vendor",
+          "status": "disputed",
+          "summary": "eu cillum officia"
+        },
+        {
+          "party": "coordinator",
+          "status": "in_progress",
+          "summary": "minim voluptate reprehenderit laboris cupidatat"
+        }
+      ],
+      "references": [
+        {
+          "summary": "quis",
+          "url": "http://ozRwsjtPgtohfpslWvG.jzywot0IgTQCSeLlfeSvRuYkpjvV0NzC7Tt+YyS,MugRen1u2BsQpj7w,9ytgDU++AaFW1RMFZhtU",
+          "type": "self"
+        },
+        {
+          "summary": "incididunt ullamco",
+          "url": "https://UQMSyYBJGO.rbtxP9XGuBefQmWJHZWtS+QB5KzazpSLiIl",
+          "type": "self"
+        }
+      ],
+      "remediations": [
+        {
+          "details": "laboris",
+          "type": "workaround",
+          "entitlements": [
+            "dolor ex deserunt elit",
+            "laboris ut anim reprehenderit dolor"
+          ],
+          "product_ids": [
+            "ut ipsum fugiat adipisicing",
+            "ipsum dolor sit nostrud voluptate",
+            "dolor et Lorem Excepteur culpa",
+            "ad",
+            "ad id"
+          ],
+          "group_ids": [
+            "laborum in ut enim"
+          ],
+          "url": "http://WRnktkZmIeohmfsckyKvIm.vfhRuOmxHB4ihZ1mChyGYfu4pz9ELzslHkUYnU",
+          "restart_required": {
+            "type": "machine",
+            "details": "Duis"
+          },
+          "date": "1990-12-26T04:12:10.734Z"
+        }
+      ],
+      "title": "do laborum tempor",
+      "product_status": {
+        "first_fixed": [
+          "aute occaecat dolore",
+          "sunt"
+        ],
+        "first_affected": [
+          "deserunt",
+          "do cillum"
+        ],
+        "last_affected": [
+          "in",
+          "voluptate Ut",
+          "Lorem",
+          "est laborum nisi"
+        ],
+        "recommended": [
+          "ea",
+          "anim"
+        ],
+        "under_investigation": [
+          "labore culpa"
+        ],
+        "known_not_affected": [
+          "consequat cupidatat dolor tempor",
+          "dolore",
+          "cillum consectetur exercitation",
+          "nostrud",
+          "in culpa consectetur non"
+        ],
+        "fixed": [
+          "incididunt commodo",
+          "sit ut occaecat",
+          "dolor"
+        ],
+        "incididunt_5": "sed sunt eu consectetur culpa",
+        "officia2b5": -15143364.828707457
+      },
+      "scores": [
+        {
+          "products": [
+            "consectetur sit"
+          ],
+          "cvss_v3": {
+            "version": "3.0",
+            "vectorString": "CVSS:3@0/MAV:N/A:N/MAC:H/MAV:A/CR:M/AV:L/AC:H/C:H/PR:N",
+            "baseScore": 0.37010988931970856,
+            "baseSeverity": "LOW",
+            "remediationLevel": "TEMPORARY_FIX",
+            "availabilityRequirement": "MEDIUM",
+            "integrityRequirement": "LOW",
+            "modifiedAvailabilityImpact": "HIGH",
+            "confidentialityImpact": "LOW",
+            "privilegesRequired": "HIGH",
+            "availabilityImpact": "HIGH",
+            "reportConfidence": "UNKNOWN",
+            "modifiedScope": "CHANGED",
+            "integrityImpact": "LOW",
+            "modifiedIntegrityImpact": "NONE",
+            "environmentalSeverity": "NONE",
+            "temporalScore": 6.906122332961212,
+            "scope": "UNCHANGED",
+            "userInteraction": "REQUIRED",
+            "modifiedAttackVector": "NOT_DEFINED",
+            "attackVector": "NETWORK",
+            "exploitCodeMaturity": "PROOF_OF_CONCEPT",
+            "temporalSeverity": "NONE",
+            "modifiedConfidentialityImpact": "NOT_DEFINED",
+            "modifiedPrivilegesRequired": "NOT_DEFINED",
+            "modifiedAttackComplexity": "NOT_DEFINED",
+            "confidentialityRequirement": "NOT_DEFINED",
+            "attackComplexity": "HIGH",
+            "modifiedUserInteraction": "NOT_DEFINED"
+          },
+          "cvss_v2": {
+            "version": "2.0",
+            "vectorString": "AV:A/TD:ND/A:N/CDP:N/CDP:L/Au:M",
+            "baseScore": 3.4615468071449995,
+            "accessComplexity": "HIGH",
+            "accessVector": "LOCAL",
+            "targetDistribution": "HIGH",
+            "authentication": "NONE",
+            "temporalScore": 3.9687205153385072,
+            "availabilityRequirement": "MEDIUM"
+          }
+        },
+        {
+          "products": [
+            "pariatur anim est"
+          ],
+          "cvss_v3": {
+            "version": "3.1",
+            "vectorString": "CVSS:3d1/AV:A/MAV:N/CR:L/MAV:N/AC:L/AC:H",
+            "baseScore": 2.751554777774751,
+            "baseSeverity": "CRITICAL",
+            "confidentialityRequirement": "LOW",
+            "remediationLevel": "TEMPORARY_FIX",
+            "temporalScore": 9.80719794756032,
+            "availabilityImpact": "HIGH",
+            "attackVector": "ADJACENT_NETWORK",
+            "reportConfidence": "REASONABLE",
+            "modifiedAttackVector": "PHYSICAL",
+            "temporalSeverity": "HIGH",
+            "environmentalSeverity": "HIGH",
+            "availabilityRequirement": "LOW",
+            "scope": "UNCHANGED",
+            "modifiedConfidentialityImpact": "HIGH"
+          },
+          "cvss_v2": {
+            "version": "2.0",
+            "vectorString": "AV:L/RL:TF/AR:H/AV:N/AV:L/Au:M/CDP:MH/AV:N",
+            "baseScore": 2.257439386856216,
+            "exploitability": "UNPROVEN",
+            "accessComplexity": "HIGH",
+            "environmentalScore": 9.564444804412386,
+            "availabilityImpact": "COMPLETE",
+            "temporalScore": 6.8685670592899015,
+            "integrityRequirement": "HIGH",
+            "authentication": "SINGLE",
+            "reportConfidence": "CONFIRMED",
+            "availabilityRequirement": "MEDIUM",
+            "confidentialityRequirement": "NOT_DEFINED",
+            "accessVector": "NETWORK",
+            "confidentialityImpact": "COMPLETE",
+            "remediationLevel": "UNAVAILABLE",
+            "collateralDamagePotential": "MEDIUM_HIGH",
+            "integrityImpact": "PARTIAL",
+            "targetDistribution": "MEDIUM"
+          }
+        },
+        {
+          "products": [
+            "eiusmod laboris ex et",
+            "dolor esse Excepteur sed",
+            "minim"
+          ]
+        }
+      ],
+      "release_date": "1986-01-05T10:14:05.384Z",
+      "cve": "CVE-8270-1702",
+      "acknowledgments": [
+        {
+          "urls": [
+            "http://znPeQkfPNkbTVTYXbKrycSRuRtgXsyoSc.mgRqVywRBstEODmw3TYKC3O+bp9OlPJcVd,XsnHA0mtBWDTU5xqGVISQq9w6.OeWBnhPJqNMa4AcCGS+FPZY",
+            "https://ceYKyGARtDKSLKbIqarhiDCobUNtpWiG.uqeLOOwDIVFECPK-FTlds6GwsiAVTORE6QCGtsK2uaenEo",
+            "https://vfwdJQZwLcaEmVxQQZERnciEaFhOrwrIo.ftfygkfgWUfT-ex7HekLezPBFdQwWtyAFwHfycKDn5mwbO,JRFRj.YPh",
+            "https://CYmPBXAFVwgFgdrExTXzoXrGNqrI.cudntjG51",
+            "https://VbOKNRditxaprAoJYfA.kfujULdJt3eN,vwhlkyZWDQk7MR,MuVAeUFsWMZ9SV.SciKFf28wF1nOkiqUmh1s8h37u"
+          ],
+          "organizations": [
+            "consectetur pariatur",
+            "consectetur ut Excepteur",
+            "nisi qui ea"
+          ],
+          "names": [
+            "irure enim dolore",
+            "fugiat eiusmod velit ad",
+            "enim aliqua nostrud exercitation id"
+          ]
+        },
+        {
+          "summary": "minim sed pariatur in et",
+          "ut7d": 44514338.52967164,
+          "labore_3e": -11082220,
+          "dolorea": "aliqua magna Excepteur incididunt laboris",
+          "id_d": -24322234.244496778,
+          "ipsum97": "amet adipisicing culpa officia cillum"
+        },
+        {
+          "names": [
+            "pariatur Lorem"
+          ],
+          "urls": [
+            "https://UuBnEk.clbeUfEM3-gAxQuZK5kU8X-F",
+            "https://RMSRrlkcEpnsfrEOKaSCsuoOydIok.elxutMxLZsAhHGO5zUCA-ApLL5k+3NJsF.h7H3lJQMfL",
+            "http://jjqOxzuGHypnqyF.ztftUPP1sJ5kKuurdXtofyjhHdDDXvrpEkIREtgO",
+            "https://ytVi.piFzjSO5DRfunPyX5JhBOAsl4xBfrsBedxfcfdMbiV5drU",
+            "http://HPzIpjJjBEpjDtQxQfSngouGmC.qadFnzNmsbtQUREqQQ0Krxd4nrml"
+          ]
+        },
+        {
+          "urls": [
+            "https://OMBZWEoufcUubiercIiL.azexoIjT.ulYXVIYgasGAX,Cnt-bk0C5U+cHSo4xJx4wQMOOnYzLI3rILPbo+",
+            "https://mSJllunteNDphJVLsRRNwXZghYSH.cxgWIdyTFeHU2SCVyIuPA9D7,nxQEOoNfHSnyJoD53LbVR0ld0DmtSQ9qV1nXg",
+            "https://BunIoqwjGE.qiDDECTZpOm4BZyal2M.aDNBTRPwKweZG+.nXpXjDY,vkAqf8HMjzy",
+            "https://vpwlX.ecjr4r1FlKlxDC8oddnoZEj8J5X2gI1XrKI7U0G8jupzRr4SWH"
+          ],
+          "summary": "dolore labore magna",
+          "names": [
+            "labore nisi",
+            "consectetur ut sit sint et"
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "text": "dolore labore",
+          "type": "legal_disclaimer",
+          "title": "eu fugiat ad",
+          "audience": "consequat mollit irure"
+        },
+        {
+          "text": "mollit enim anim voluptate nisi",
+          "type": "other",
+          "title": "veniam magna",
+          "audience": "ex minim"
+        },
+        {
+          "text": "nisi",
+          "type": "other",
+          "audience": "fugiat et ut aute",
+          "title": "sit laborum dolore ea eu"
+        },
+        {
+          "text": "sunt",
+          "type": "general",
+          "title": "officia est",
+          "audience": "ipsum tempor dolore ut reprehenderit"
+        }
+      ]
+    },
+    {
+      "id": {
+        "system_name": "Lorem aliqua aliquip",
+        "text": "officia deserunt"
+      },
+      "cwe": {
+        "id": "CWE-20755",
+        "name": "qui cillum aute pariatur"
+      },
+      "title": "Ut est dolor dolore reprehenderit",
+      "cve": "CVE-2186-2550288642518",
+      "notes": [
+        {
+          "text": "sit irure ad",
+          "type": "faq"
+        },
+        {
+          "text": "nulla est Duis aliquip quis",
+          "type": "legal_disclaimer",
+          "audience": "ut non in nisi",
+          "title": "dolor elit mollit magna"
+        },
+        {
+          "text": "ipsum aliqua anim sit",
+          "type": "other",
+          "audience": "veniam",
+          "title": "ut"
+        }
+      ],
+      "involvements": [
+        {
+          "party": "vendor",
+          "status": "in_progress"
+        },
+        {
+          "party": "other",
+          "status": "open"
+        },
+        {
+          "party": "coordinator",
+          "status": "not_contacted",
+          "summary": "esse quis laboris"
+        },
+        {
+          "party": "discoverer",
+          "status": "disputed",
+          "summary": "in pariatur reprehenderit fugiat eiusmod"
+        },
+        {
+          "party": "coordinator",
+          "status": "completed",
+          "summary": "ullamco dolore ipsum nisi proident"
+        }
+      ],
+      "ad_864": false,
+      "ut519": 70923341.57994825,
+      "deseruntc": 85242444,
+      "magna_c": 98026674.51960468,
+      "occaecat_395": "culpa veniam do",
+      "adipisicing_f_0": 94707236
+    },
+    {
+      "scores": [
+        {
+          "products": [
+            "consectetur aliquip enim",
+            "sed non"
+          ],
+          "cvss_v3": {
+            "version": "3.1",
+            "vectorString": "CVSS:3m1/CR:L/MAV:P/AV:A/MS:C/RC:R/MAV:A/AC:H/MAC:X/MAV:X/UI:N",
+            "baseScore": 5.491335129036815,
+            "baseSeverity": "LOW",
+            "temporalSeverity": "MEDIUM",
+            "reportConfidence": "CONFIRMED",
+            "confidentialityImpact": "HIGH",
+            "environmentalScore": 0.9434316692742362,
+            "modifiedScope": "CHANGED",
+            "modifiedAttackVector": "NOT_DEFINED",
+            "availabilityRequirement": "LOW",
+            "environmentalSeverity": "NONE",
+            "modifiedUserInteraction": "REQUIRED",
+            "modifiedAvailabilityImpact": "LOW",
+            "scope": "CHANGED",
+            "integrityImpact": "LOW",
+            "modifiedPrivilegesRequired": "HIGH",
+            "privilegesRequired": "LOW",
+            "modifiedIntegrityImpact": "HIGH",
+            "confidentialityRequirement": "HIGH",
+            "attackVector": "PHYSICAL",
+            "temporalScore": 7.933186915327171,
+            "userInteraction": "REQUIRED",
+            "attackComplexity": "HIGH",
+            "modifiedAttackComplexity": "HIGH",
+            "modifiedConfidentialityImpact": "HIGH",
+            "remediationLevel": "OFFICIAL_FIX",
+            "exploitCodeMaturity": "NOT_DEFINED",
+            "integrityRequirement": "LOW"
+          }
+        }
+      ],
+      "cve": "CVE-2053-332583",
+      "references": [
+        {
+          "summary": "sint fugiat",
+          "url": "https://HxHOpL.uuqvvfVq0tKGy+fSPO-tqbZqeeWURKg0BkUqTe9L0aIjCa7qpx0Tk",
+          "type": "self"
+        },
+        {
+          "summary": "et",
+          "url": "https://ayyOb.opcDasMYInIx+DgY5JracesxepDNHmTLwMn85rIMjHnl-9kphGa4KiBibaW48FROoco+5V7sWAqcDNJLCt",
+          "type": "self"
+        },
+        {
+          "summary": "et",
+          "url": "https://AeIEUTstKAEnMnNjLzD.rzwlny9XOC",
+          "type": "external"
+        },
+        {
+          "summary": "non in",
+          "url": "https://kQLcKlNFZTVnXtjkmdlDybGGb.sntqpAEsgBrrTF6A+MvZe3B2,t4mgoj8kX-tRXYlqgBvVsb8IxfQJofuC0sTcwwYDdpF",
+          "type": "self"
+        }
+      ],
+      "aliqua_db": 21000849
+    }
+  ]
+}

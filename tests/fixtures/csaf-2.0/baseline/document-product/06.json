@@ -1,0 +1,119 @@
+{
+  "document": {
+    "csaf_version": "2.0",
+    "publisher": {
+      "type": "user",
+      "issuing_authority": "sed velit sit proident",
+      "vendor_id": "eiusmod pariatur ut",
+      "contact_details": "pariatur in"
+    },
+    "title": "Ut non",
+    "tracking": {
+      "current_release_date": "1959-10-09T23:36:00.857Z",
+      "id": "nisi",
+      "initial_release_date": "1978-03-14T21:13:19.594Z",
+      "revision_history": [
+        {
+          "date": "1980-08-14T13:50:57.09Z",
+          "number": "186.0",
+          "summary": "aliqua"
+        },
+        {
+          "date": "2006-08-31T15:33:21.331Z",
+          "number": "0.0.53703842061",
+          "summary": "ullamco eiusmod in veniam magna"
+        },
+        {
+          "date": "1992-04-16T13:16:41.088Z",
+          "number": "7229955.0.6.0",
+          "summary": "dolore occaecat cillum deserunt"
+        }
+      ],
+      "status": "draft",
+      "version": "0.32132874770.5",
+      "aliases": [
+        "ea dolor",
+        "ad aute"
+      ],
+      "generator": {
+        "engine": "eu Ut minim culpa ut",
+        "date": "1992-12-21T09:58:56.386Z"
+      }
+    },
+    "type": "qui",
+    "notes": [
+      {
+        "text": "aute qui exercitation ea",
+        "type": "other",
+        "title": "Duis",
+        "audience": "pariatur nostrud laborum sit ad"
+      },
+      {
+        "text": "dolore Excepteur in voluptate",
+        "type": "general",
+        "title": "dolore commodo"
+      },
+      {
+        "text": "nisi sint voluptate officia",
+        "type": "legal_disclaimer"
+      },
+      {
+        "text": "proident",
+        "type": "details",
+        "title": "occaecat Ut",
+        "audience": "sunt in sint sit occaecat"
+      }
+    ],
+    "references": [
+      {
+        "summary": "occaecat voluptate dolor",
+        "url": "http://LG.izcTjsmlKNIlJPE3",
+        "type": "self"
+      }
+    ],
+    "distribution": {
+      "text": "voluptate"
+    },
+    "acknowledgments": [
+      {
+        "summary": "quis tempor sunt commodo",
+        "names": [
+          "aliquip nulla Excepteur"
+        ],
+        "urls": [
+          "https://kyKeOqFRAOTTuALyIP.dbO+WYU9",
+          "https://BirzELlQPnCO.jlkYg.U.nnDXTlDBKhM6",
+          "http://rtbOAmpDWTE.hauXidMkSzZRSncm9EgbIpPlFi0Uov8wW55etknXg2oDUBaQP"
+        ],
+        "nulla_5d": "aliquip",
+        "esse7": -89466444
+      },
+      {
+        "organizations": [
+          "elit ipsum",
+          "cupidatat cillum ea",
+          "Duis esse cillum ex velit",
+          "ullamco",
+          "Lorem eiusmod velit dolor voluptate"
+        ],
+        "summary": "in",
+        "names": [
+          "aliquip adipisicing officia proident non"
+        ],
+        "nulla_9": -59551439
+      },
+      {
+        "ex_94": 98951587,
+        "in__b": -13235473,
+        "enimf": "nisi esse ex exercitation",
+        "voluptate805": true
+      }
+    ],
+    "aggregate_severity": {
+      "text": "aute Ut esse cillum nisi",
+      "namespace": "https://GyjgMAWWKqUmbTdse.vnswiXyHvVyJuPmZ7hNYyQaTsGIwA0GPUEEilho"
+    },
+    "lang": "iU-)H9U<",
+    "source_lang": "WvQ"
+  }
+}

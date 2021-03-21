@@ -1,0 +1,109 @@
+{
+  "document": {
+    "csaf_version": "2.0",
+    "publisher": {
+      "type": "other",
+      "issuing_authority": "proident",
+      "contact_details": "eu dolore ea"
+    },
+    "title": "do",
+    "tracking": {
+      "current_release_date": "1998-06-09T23:23:17.276Z",
+      "id": "minim Duis consectetur occaecat dolor",
+      "initial_release_date": "2009-02-07T04:43:00.041Z",
+      "revision_history": [
+        {
+          "date": "1954-12-11T13:29:02.967Z",
+          "number": "0.33917",
+          "summary": "elit culpa"
+        },
+        {
+          "date": "2019-03-29T01:06:36.348Z",
+          "number": "7",
+          "summary": "ut"
+        },
+        {
+          "date": "1944-07-25T11:27:20.249Z",
+          "number": "4875418967.896891513.0.2",
+          "summary": "velit Excepteur sint dolore"
+        }
+      ],
+      "status": "final",
+      "version": "0.96192857.0"
+    },
+    "type": "Duis irure fugiat sed in",
+    "source_lang": "EPU-X`56;~<",
+    "lang": "dM-#}r",
+    "references": [
+      {
+        "summary": "esse minim commodo sit",
+        "url": "http://JB.gvtaPavaZjx8sL6Mku"
+      },
+      {
+        "summary": "est ad commodo",
+        "url": "http://I.wcsfGsC2taUW2WFfe,POH6ahNaCb.fDz+JPdqoqH6arIFkq",
+        "type": "external"
+      }
+    ],
+    "notes": [
+      {
+        "text": "id amet reprehenderit",
+        "type": "general",
+        "audience": "proident sit culpa et qui",
+        "title": "nostrud culpa in"
+      },
+      {
+        "text": "est nulla ut reprehenderit",
+        "type": "other"
+      },
+      {
+        "text": "nostrud in",
+        "type": "general",
+        "audience": "quis aute",
+        "title": "dolore magna qui Ut pariatur"
+      }
+    ],
+    "acknowledgments": [
+      {
+        "summary": "deserunt irure dolore",
+        "organizations": [
+          "ipsum id",
+          "labore",
+          "Duis occaecat aliqua",
+          "dolore laboris ea aute"
+        ],
+        "names": [
+          "velit incididunt exercitation",
+          "in laboris",
+          "aliquip ipsum dolore cillum",
+          "in sit aute minim tempor",
+          "reprehenderit dolor laborum labore velit"
+        ],
+        "reprehenderitc71": true,
+        "dolord": "ex ad anim deserunt ut",
+        "nulla58e": true,
+        "dolore6": true,
+        "culpa78": 2969405.352194339
+      },
+      {
+        "summary": "consectetur",
+        "organizations": [
+          "dolore commodo"
+        ],
+        "urls": [
+          "https://WdaoThPUmCavkjWlztgNJMIdbGAUaf.laZHSm1MGBr,IQ-Wq-C2seFXO2wVQsWjInM21aB2"
+        ]
+      }
+    ],
+    "aggregate_severity": {
+      "text": "mollit est et non",
+      "namespace": "https://DXANfwgskaixFTUuQQdSXUJmdx.deevtfpJayaJgJPfFse1cndn5UptvLvEvrnib5GEYptnEqjiFyH3NxsU"
+    },
+    "distribution": {
+      "tlp": {
+        "label": "GREEN",
+        "url": "https://bOQpaTOzTmdkJfiObLsPa.pdfvp77ZELhqcYnB.Kp8+oGsEB7n235r"
+      }
+    }
+  }
+}

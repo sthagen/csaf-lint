@@ -1,0 +1,109 @@
+{
+  "document": {
+    "csaf_version": "2.0",
+    "publisher": {
+      "type": "other",
+      "vendor_id": "ipsum aute adipisicing",
+      "issuing_authority": "non tempor irure cillum"
+    },
+    "title": "pariatur Lorem",
+    "tracking": {
+      "current_release_date": "1999-08-02T03:52:52.732Z",
+      "id": "consectetur fugiat",
+      "initial_release_date": "1983-02-21T03:29:40.662Z",
+      "revision_history": [
+        {
+          "date": "1980-04-11T14:44:51.022Z",
+          "number": "116432553.0.4021955987.869",
+          "summary": "laboris ut quis adipisicing"
+        },
+        {
+          "date": "1956-11-01T07:41:15.679Z",
+          "number": "0.91",
+          "summary": "laborum"
+        },
+        {
+          "date": "1950-07-19T00:16:33.224Z",
+          "number": "3147533736",
+          "summary": "laborum"
+        },
+        {
+          "date": "1983-11-29T05:40:58.012Z",
+          "number": "0.180",
+          "summary": "quis"
+        },
+        {
+          "date": "1978-11-23T10:12:32.982Z",
+          "number": "0.28991020337.0",
+          "summary": "occaecat"
+        }
+      ],
+      "status": "interim",
+      "version": "0.62",
+      "generator": {
+        "engine": "nulla quis",
+        "date": "1981-10-06T22:51:22.721Z"
+      },
+      "aliases": [
+        "in minim occaecat dolor Excepteur",
+        "dolore exercitation",
+        "nostrud cupidatat"
+      ]
+    },
+    "type": "pariatur qui velit eu",
+    "distribution": {
+      "tlp": {
+        "label": "AMBER",
+        "url": "https://JSUhqSx.prsbeaLEWMpwDwKAdsRxjWRbDScp3XhN-BxoRe,NL5MHcP1LiRt"
+      }
+    },
+    "notes": [
+      {
+        "text": "reprehenderit officia",
+        "type": "other"
+      }
+    ],
+    "lang": "WK-XjEm~",
+    "source_lang": "rG",
+    "references": [
+      {
+        "summary": "ipsum sit",
+        "url": "http://PqItqQvwlOzyJxuVvdMlnELMmlicwNue.diJGTMg4ebI5aghGgxHa",
+        "type": "self"
+      },
+      {
+        "summary": "dolore irure laboris",
+        "url": "http://IAQ.szycNfaOPWOyTGx6qwggMNRUBdezm"
+      },
+      {
+        "summary": "non velit culpa Duis",
+        "url": "http://JNhYlWNYkn.yaxvyUzteeF3",
+        "type": "self"
+      },
+      {
+        "summary": "ut amet velit",
+        "url": "https://pDUYJS.mkjyXy2HRfyfuu",
+        "type": "self"
+      }
+    ],
+    "aggregate_severity": {
+      "text": "Excepteur enim irure ullamco"
+    },
+    "acknowledgments": [
+      {
+        "organizations": [
+          "reprehenderit enim"
+        ],
+        "summary": "ipsum laboris aute voluptate",
+        "urls": [
+          "http://pnz.hagRpmxCYLBI6NrqnPtpZEBewVG.pWpZS7w",
+          "http://ueidcjiFigHXwlLURkvwwz.jyVc,uzdMHJ.ZhCpWtZJvhXwTY3NVXf,+x1NY",
+          "http://SYDScnflnWd.vylukGcD0lIp7IP,hO5Q.MHHQeRCHvXCSqReHpQKidAztykOzb9OshMX0QKBYFjKZqln,aUG"
+        ],
+        "do__51": false,
+        "dolore__": -69588357.21089374,
+        "anim76c": true
+      }
+    ]
+  }
+}

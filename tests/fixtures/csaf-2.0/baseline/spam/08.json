@@ -1,0 +1,42 @@
+{
+  "document": {
+    "csaf_version": "2.0",
+    "publisher": {
+      "type": "coordinator",
+      "vendor_id": "sunt anim ipsum",
+      "issuing_authority": "est quis fugiat"
+    },
+    "title": "quis tempor in magna anim",
+    "tracking": {
+      "current_release_date": "1991-03-22T17:14:24.88Z",
+      "id": "voluptate cupidatat aliquip laboris sunt",
+      "initial_release_date": "1989-06-28T05:40:05.834Z",
+      "revision_history": [
+        {
+          "date": "1991-11-04T08:07:35.369Z",
+          "number": "24228567",
+          "summary": "proident"
+        },
+        {
+          "date": "1989-12-19T07:56:00.421Z",
+          "number": "0.0",
+          "summary": "dolore veniam sint sunt enim"
+        },
+        {
+          "date": "2014-05-01T09:16:30.171Z",
+          "number": "0",
+          "summary": "pariatur dolore sit amet incididunt"
+        }
+      ],
+      "status": "interim",
+      "version": "910011658",
+      "aliases": [
+        "sit aliquip eiusmod consequat nulla",
+        "culpa do laborum",
+        "nulla mollit aliqua id deserunt",
+        "ut sint est Excepteur id"
+      ]
+    },
+    "type": "deserunt adipisicing"
+  }
+}

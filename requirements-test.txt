@@ -1,0 +1,7 @@
+coverage
+flake8
+hypothesis
+pyperf
+pytest
+pytest-coverage
+pytest-flake8

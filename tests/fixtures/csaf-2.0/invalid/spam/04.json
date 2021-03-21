@@ -1,0 +1,31 @@
+{
+  "document": {
+    "csaf_version": "2.0",
+    "publisher": {
+      "type": "discoverer",
+      "vendor_id": "non Lorem nostrud"
+    },
+    "title": "sunt veniam voluptate adipisicing",
+    "tracking": {
+      "id": "officia pariatur deserunt ullamco",
+      "initial_release_date": "1956-08-26T23:36:04.741Z",
+      "revision_history": [
+        {
+          "date": "1963-06-14T21:12:51.537Z",
+          "number": "0.262905086.53.14951992176",
+          "summary": "in aliquip"
+        }
+      ],
+      "status": "interim",
+      "version": "28063827.0.0.0",
+      "aliases": [
+        "exercitation cupidatat voluptate eu"
+      ],
+      "generator": {
+        "engine": "sed magna occaecat do",
+        "date": "1961-02-13T06:14:04.976Z"
+      }
+    },
+    "type": "do ex"
+  }
+}

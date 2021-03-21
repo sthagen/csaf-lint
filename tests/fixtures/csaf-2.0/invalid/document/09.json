@@ -1,0 +1,32 @@
+{
+  "document": {
+    "csaf_version": "2.0",
+    "publisher": {
+      "type": "coordinator",
+      "issuing_authority": "laborum",
+      "contact_details": "deserunt",
+      "vendor_id": "sint tempor sit exercitation"
+    },
+    "title": "anim consequat esse",
+    "tracking": {
+      "current_release_date": "1991-07-14T06:02:15.529Z",
+      "id": "tempor anim",
+      "initial_release_date": "1969-12-05T20:25:20.916Z",
+      "revision_history": [
+        {
+          "date": "1977-08-27T08:44:49.544Z",
+          "number": "2303.377.747094807.0",
+          "summary": "consectetur amet"
+        }
+      ],
+      "status": "final",
+      "version": "22.232029184",
+      "aliases": [
+        "esse nisi"
+      ],
+      "generator": {
+        "engine": "aliqua adipisicing velit nulla fugiat"
+      }
+    }
+  }
+}

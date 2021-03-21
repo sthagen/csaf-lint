@@ -1,0 +1,139 @@
+{
+  "document": {
+    "csaf_version": "2.0",
+    "publisher": {
+      "type": "coordinator",
+      "vendor_id": "adipisicing",
+      "issuing_authority": "occaecat sit",
+      "contact_details": "occaecat consectetur nulla veniam nostrud"
+    },
+    "title": "velit enim",
+    "tracking": {
+      "current_release_date": "1942-07-06T09:41:39.896Z",
+      "id": "laborum pariatur",
+      "initial_release_date": "2006-10-24T17:34:51.936Z",
+      "revision_history": [
+        {
+          "date": "1985-10-14T21:00:19.972Z",
+          "number": "5",
+          "summary": "sunt pariatur dolore"
+        },
+        {
+          "date": "1968-10-12T00:04:39.008Z",
+          "number": "0.2",
+          "summary": "laborum reprehenderit ut Lorem"
+        }
+      ],
+      "status": "final",
+      "version": "0.0.0",
+      "aliases": [
+        "ut ea in minim"
+      ],
+      "generator": {
+        "engine": "culpa laboris dolore",
+        "date": "1992-08-07T10:41:32.546Z"
+      }
+    },
+    "type": "tempor ea laboris",
+    "references": [
+      {
+        "summary": "do veniam",
+        "url": "https://lfJryxaMynp.dcbiz-fIOwF-G",
+        "type": "external"
+      },
+      {
+        "summary": "id",
+        "url": "http://rfXqGCTFLzWPbOYjFl.tbbZdWo-QWdGtami",
+        "type": "self"
+      },
+      {
+        "summary": "magna",
+        "url": "http://nvDYH.srscV1EsjtisnIzEI7YKUOiu",
+        "type": "self"
+      }
+    ],
+    "aggregate_severity": {
+      "text": "pariatur consectetur occaecat",
+      "namespace": "http://vBgWdwBqzTb.xtkHeGcujn2J6L2ZMe1h"
+    },
+    "distribution": {
+      "tlp": {
+        "label": "GREEN",
+        "url": "http://dwGiGzYJ.vedfirV-FQTsUrod6BF8zapcD1J,DnkkWF6V0wd7uM4FPo6CpvGk+1Hwy1mtk9bvNAc7nbfNcHMc"
+      },
+      "exercitation_4": -41445777,
+      "dolor0": true
+    },
+    "source_lang": "gcc-R|^",
+    "notes": [
+      {
+        "text": "amet pariatur",
+        "type": "general",
+        "title": "aliqua officia magna consequat",
+        "audience": "Excepteur amet do nisi laboris"
+      },
+      {
+        "text": "aliqua",
+        "type": "summary",
+        "audience": "ullamco ipsum",
+        "title": "voluptate veniam Ut ut cillum"
+      },
+      {
+        "text": "enim reprehenderit",
+        "type": "description"
+      },
+      {
+        "text": "ipsum pariatur aliquip",
+        "type": "description",
+        "audience": "tempor",
+        "title": "ullamco consectetur culpa"
+      },
+      {
+        "text": "enim sit veniam in ea",
+        "type": "summary",
+        "title": "dolore occaecat",
+        "audience": "nulla dolor nisi"
+      }
+    ],
+    "acknowledgments": [
+      {
+        "organizations": [
+          "id cillum",
+          "cillum in voluptate",
+          "laborum Excepteur in"
+        ],
+        "urls": [
+          "https://dasvOcoQNA.zdWcK-oKILTvyAixz2JWOo+rUyG9OoRHhDU-DA,NjIgjnM8b2Fnp3pNpV,R.AfRhTuWl"
+        ],
+        "summary": "nisi pariatur"
+      },
+      {
+        "organizations": [
+          "laboris velit in cillum ut",
+          "sit ad laborum",
+          "adipisicing eiusmod",
+          "sit sint ipsum"
+        ],
+        "summary": "sed"
+      },
+      {
+        "urls": [
+          "http://IInBMlmlC.wlyvQVEAAG5CthAV7xXo6UOeNxPFlkBlS-Ijn1ocO45dyMnUUsWRpod7FoG9AxlsM-YSq",
+          "http://gSubemnNLLTCuScwrggNsKig.sgqOOKOI9tE7ABsP7QFdKHbrkaRFaIK",
+          "http://MySkRBlPsbniPXKyulskVnHDdjBRThBle.kqpcLDni0hXdmjrUv6JhSya1P,QTWho",
+          "https://n.tdnbd9KL0UBSJSjQfsTyNeUb4sZQ41DbCF7qQYrCUdY48OmanZ9J10bthmt1YIpPtc",
+          "http://wE.phla0ZkjLHR7eMmqkbHFR+"
+        ],
+        "summary": "irure dolor ipsum",
+        "organizations": [
+          "reprehenderit",
+          "Duis minim tempor nisi",
+          "dolor deserunt",
+          "cillum exercitation",
+          "commodo"
+        ]
+      }
+    ],
+    "lang": "NX"
+  }
+}

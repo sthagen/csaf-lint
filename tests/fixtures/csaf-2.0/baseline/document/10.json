@@ -1,0 +1,155 @@
+{
+  "document": {
+    "csaf_version": "2.0",
+    "publisher": {
+      "type": "user",
+      "contact_details": "non elit adipisicing ipsum",
+      "issuing_authority": "officia mollit commodo",
+      "vendor_id": "deserunt"
+    },
+    "title": "quis mollit Ut elit veniam",
+    "tracking": {
+      "current_release_date": "1975-05-13T22:55:37.693Z",
+      "id": "enim anim",
+      "initial_release_date": "1954-10-01T09:44:25.067Z",
+      "revision_history": [
+        {
+          "date": "1975-11-24T00:32:25.496Z",
+          "number": "407835936.79.8984355",
+          "summary": "ipsum reprehenderit nostrud"
+        },
+        {
+          "date": "1956-11-18T07:58:41.453Z",
+          "number": "8519636",
+          "summary": "eu ullamco"
+        }
+      ],
+      "status": "draft",
+      "version": "2403822.6990545042.0",
+      "aliases": [
+        "occaecat ut laboris",
+        "ad fugiat in proident",
+        "Duis aliquip qui",
+        "commodo deserunt nulla fugiat"
+      ],
+      "generator": {
+        "engine": "ad sed",
+        "date": "2009-10-29T13:47:27.984Z"
+      }
+    },
+    "type": "ex Ut nisi",
+    "source_lang": "vtw-dT",
+    "distribution": {
+      "ut_f9": "ex elit ut cillum",
+      "sed_3_": 84724244,
+      "culpa_6_": "esse Duis Excepteur in do",
+      "veniam_6f": 58059008.68673417
+    },
+    "lang": "Hn",
+    "acknowledgments": [
+      {
+        "names": [
+          "ad Ut dolore in"
+        ],
+        "organizations": [
+          "sint do",
+          "dolor deserunt laborum",
+          "incididunt irure"
+        ],
+        "urls": [
+          "https://jQswjNxw.xpknZ7vzEuIQ-AfMmsdVj",
+          "https://AuReehOVUAqfCSVLMjYTHXPsGrkTPPdfg.ryoaowenlHxUbPzNk8",
+          "http://lRPmQtTwLGm.jnuqBQs3Iy7UsYyRqKpTPTeYfkPNKVgHGY3K2RQecR"
+        ],
+        "occaecat6f6": 43668847.00010654,
+        "sed_7": true
+      },
+      {
+        "organizations": [
+          "qui in nulla commodo",
+          "velit",
+          "dolor laboris aute quis non"
+        ],
+        "summary": "cupidatat commodo proident ad",
+        "names": [
+          "in"
+        ],
+        "minim36": "laborum veniam"
+      },
+      {
+        "summary": "in et",
+        "names": [
+          "ad quis elit aute",
+          "dolore et enim tempor ut",
+          "aliquip Ut ea culpa eu"
+        ],
+        "organizations": [
+          "esse sint dolore deserunt",
+          "anim ipsum",
+          "dolor Duis exercitation",
+          "eiusmod in"
+        ]
+      },
+      {
+        "names": [
+          "ullamco",
+          "deserunt est aute"
+        ],
+        "sed69f": "pariatur"
+      },
+      {
+        "names": [
+          "sed dolore laborum"
+        ],
+        "organizations": [
+          "incididunt",
+          "proident consequat in incididunt",
+          "consequat aliquip sit aute"
+        ],
+        "summary": "id sit sunt",
+        "id99d": 65292765,
+        "in_aa5": false,
+        "reprehenderit7_c": true
+      }
+    ],
+    "notes": [
+      {
+        "text": "elit anim",
+        "type": "description",
+        "title": "labore",
+        "audience": "Excepteur mollit aliquip"
+      },
+      {
+        "text": "minim dolor labore quis consequat",
+        "type": "legal_disclaimer",
+        "audience": "sint dolore eu sunt adipisicing",
+        "title": "pariatur ea"
+      },
+      {
+        "text": "anim adipisicing ad",
+        "type": "other"
+      },
+      {
+        "text": "eu",
+        "type": "legal_disclaimer",
+        "audience": "id exercitation consectetur",
+        "title": "elit amet aliqua voluptate"
+      }
+    ],
+    "aggregate_severity": {
+      "text": "eu cupidatat consequat"
+    },
+    "references": [
+      {
+        "summary": "deserunt consequat officia",
+        "url": "http://QFNortWLlBKuTmK.pfldSnaQ,YueMJymsbFW4vlIM+-VaQVnfTl1to-03xoHCMzpjJpCh9J,nMfKkabR+v",
+        "type": "external"
+      },
+      {
+        "summary": "sint labore aliqua anim",
+        "url": "https://sYLaqhyHVMkDLLGueIbBGy.urlfZb8Vv9C,OGQ",
+        "type": "self"
+      }
+    ]
+  }
+}

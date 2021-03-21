@@ -1,0 +1,52 @@
+{
+  "document": {
+    "csaf_version": "2.0",
+    "publisher": {
+      "type": "user",
+      "vendor_id": "commodo do dolor"
+    },
+    "title": "consectetur reprehenderit",
+    "tracking": {
+      "current_release_date": "1957-02-22T12:18:50.916Z",
+      "id": "nulla et cillum",
+      "initial_release_date": "1961-03-12T00:29:10.769Z",
+      "revision_history": [
+        {
+          "date": "1949-09-16T18:40:38.155Z",
+          "number": "0.651429",
+          "summary": "commodo proident"
+        },
+        {
+          "date": "1945-12-14T15:25:51.332Z",
+          "number": "0.75595.0.58",
+          "summary": "sed veniam laboris irure dolore"
+        },
+        {
+          "date": "1977-08-07T12:54:10.002Z",
+          "number": "10873844.5205654",
+          "summary": "minim cupidatat"
+        },
+        {
+          "date": "1957-02-11T07:29:39.854Z",
+          "number": "921658.14399157890.0.0",
+          "summary": "ea et"
+        },
+        {
+          "date": "1986-04-30T13:57:46.824Z",
+          "number": "913.0",
+          "summary": "Excepteur"
+        }
+      ],
+      "status": "draft",
+      "version": "0.0",
+      "aliases": [
+        "Ut Excepteur ullamco",
+        "deserunt enim",
+        "aliqua consequat ex",
+        "qui nostrud magna cupidatat",
+        "proident exercitation nostrud"
+      ]
+    },
+    "type": "ut amet sit voluptate"
+  }
+}

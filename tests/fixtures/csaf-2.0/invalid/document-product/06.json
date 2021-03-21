@@ -1,0 +1,114 @@
+{
+  "document": {
+    "csaf_version": "2.0",
+    "publisher": {
+      "type": "vendor",
+      "contact_details": "occaecat",
+      "vendor_id": "labore sed nulla aute sunt",
+      "issuing_authority": "minim et culpa quis"
+    },
+    "title": "fugiat enim reprehenderit Excepteur consequat",
+    "tracking": {
+      "current_release_date": "1971-04-10T22:17:18.483Z",
+      "id": "dolore et reprehenderit",
+      "initial_release_date": "1960-12-26T02:46:10.945Z",
+      "revision_history": [
+        {
+          "date": "1996-05-04T12:17:17.362Z",
+          "number": "0.0.0.0",
+          "summary": "in elit ipsum eu"
+        },
+        {
+          "date": "1966-02-27T06:55:39.298Z",
+          "number": "0.0.36459",
+          "summary": "minim ipsum ex"
+        },
+        {
+          "date": "1992-05-27T23:53:03.127Z",
+          "number": "823.0",
+          "summary": "ipsum"
+        },
+        {
+          "date": "2015-11-03T11:14:34.599Z",
+          "number": "12050",
+          "summary": "pariatur fugiat"
+        },
+        {
+          "date": "2012-05-27T01:43:11.383Z",
+          "number": "5292.0.674.8045328340",
+          "summary": "Excepteur aliquip ex veniam ut"
+        }
+      ],
+      "status": "interim",
+      "version": "86509535925",
+      "aliases": [
+        "ipsum in",
+        "reprehenderit amet deserunt ut",
+        "aliquip eu elit irure",
+        "eiusmod id pariatur eu ipsum"
+      ],
+      "generator": {
+        "engine": "velit"
+      }
+    },
+    "type": "ut cillum officia deserunt",
+    "notes": [
+      {
+        "text": "esse sunt sit cupidatat",
+        "type": "other",
+        "title": "occaecat labore consequat",
+        "audience": "ea amet nisi adipisicing"
+      },
+      {
+        "text": "sed",
+        "type": "faq",
+        "title": "incididunt aliquip",
+        "audience": "velit labore exercitation"
+      },
+      {
+        "text": "non cillum sint",
+        "type": "general",
+        "audience": "in nulla dolor ut aute",
+        "title": "fugiat sunt quis veniam"
+      }
+    ]
+  },
+  "product_tree": {
+    "relationships": [
+      {
+        "product_reference": "dolore adipisicing in Ut",
+        "relates_to_product_reference": "nulla enim dolor aliqua",
+        "relationship_type": "default_component_of"
+      },
+      {
+        "full_product_name": {
+          "name": "ut labore cupidatat aliqua sit",
+          "product_id": "tempor ea ipsum ullamco",
+          "cpe": "cpE:/o:MWZNx2X5tD:ZDaFNE:XAN7.:V"
+        },
+        "relates_to_product_reference": "incididunt ipsum pariatur",
+        "relationship_type": "default_component_of"
+      },
+      {
+        "full_product_name": {
+          "name": "dolore ea do",
+          "product_id": "dolor non nisi magna sunt",
+          "cpe": "cPe:/:eU7pKp1g::SeN"
+        },
+        "product_reference": "elit",
+        "relationship_type": "optional_component_of"
+      },
+      {
+        "full_product_name": {
+          "name": "elit dolor commodo",
+          "product_id": "in quis veniam voluptate adipisicing",
+          "cpe": "cpe:/A:rZkp:FHjCkv9hE7:hpd:%"
+        },
+        "product_reference": "irure esse elit",
+        "relates_to_product_reference": "dolore sunt nulla"
+      }
+    ],
+    "deserunt_e": 37544179.34433335,
+    "dolore5a6": -9091468.938727006
+  }
+}
