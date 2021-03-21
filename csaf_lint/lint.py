@@ -81,7 +81,7 @@ def version_peek(document_path):
     <?xml version="1.0" encoding="UTF-8"?>
     <cvrfdoc xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1" xmlns:cvrf="http://www.icasi.org/CVRF/schema/cvrf/1.1">
 
-    or:
+    or (in addition should work with <cvrf:cvrfdoc style xml documents):
 
     <?xml version="1.0" encoding="UTF-8"?>
     <cvrfdoc
@@ -235,39 +235,45 @@ def cvrf_validate(f, xml_tree):
         return False, xmlschema.error_log
 
 
-def xml_validate(schema, catalog, xml_tree, request_version):
-    """Validate xml tree against given xml schema of request version assisted by catalog."""
-    DEBUG and print(f"DEBUG>>> xml validate parameters: {schema=}, {catalog=}, {xml_tree=}, {request_version=}")
+def push_catalog(catalog, request_version):
+    """Isolate side effect interface to os env -> libxml2 <- lxml."""
     fallback_catalog = CVRF_DEFAULT_CATALOG
     if request_version != CRVF_DEFAULT_SEMANTIC_VERSION:
         fallback_catalog = CVRF_PRE_OASIS_CATALOG
     catalog = catalog if catalog else fallback_catalog
+
+    # If the supplied file is not a valid catalog.xml or doesn't exist lxml will fall back to using remote validation
+    os.environ["XML_CATALOG_FILES"] = str(catalog)
+
+    return catalog, fallback_catalog
+
+
+def derive_schema_path(catalog, request_version, schema):
+    """Handle the implicit schema case by falling back on locally provided schema (matching the catalog)."""
+    if schema:
+        DEBUG and print(f"DEBUG>>> xml validate try reading schema {catalog=}, {schema=}, catalog env=({os.getenv('XML_CATALOG_FILES')})")
+    else:
+        DEBUG and print(f"DEBUG>>> xml validate try reading local implicit schema {catalog=}, {schema=}, catalog env=({os.getenv('XML_CATALOG_FILES')})")
+        # try to use local schema file
+        fallback_schema = CVRF_DEFAULT_SCHEMA_FILE
+        if request_version != CRVF_DEFAULT_SEMANTIC_VERSION:
+            fallback_schema = CVRF_PRE_OASIS_SCHEMA_FILE
+        schema = fallback_schema
+    return schema
+
+
+def xml_validate(schema, catalog, xml_tree, request_version):
+    """Validate xml tree against given xml schema of request version assisted by catalog."""
+    DEBUG and print(f"DEBUG>>> xml validate parameters: {schema=}, {catalog=}, {xml_tree=}, {request_version=}")
+    catalog, fallback_catalog = push_catalog(catalog, request_version)
+    schema = derive_schema_path(catalog, request_version, schema)
+
     try:
-        if schema:
-            DEBUG and print(f"DEBUG>>> xml validate try reading schema {catalog=}, {schema=}, catalog env=({os.getenv('XML_CATALOG_FILES')})")
-            # Try to use local schema files
-            f = open(schema, 'r')
-
-            # If the supplied file is not a valid catalog.xml or doesn't exist lxml will fall back to using remote validation
-            os.environ["XML_CATALOG_FILES"] = str(catalog)
-        else:
-            DEBUG and print(f"DEBUG>>> xml validate try reading local implicit schema {catalog=}, {schema=}, catalog env=({os.getenv('XML_CATALOG_FILES')})")
-            # try to use local schema file
-            fallback_schema = CVRF_DEFAULT_SCHEMA_FILE
-            if request_version != CRVF_DEFAULT_SEMANTIC_VERSION:
-                fallback_schema = CVRF_PRE_OASIS_SCHEMA_FILE
-            schema = fallback_schema
-            f = open(schema, 'r')
-
-            catalog = catalog if catalog else fallback_catalog
-            os.environ["XML_CATALOG_FILES"] = str(catalog)
-
+        with open(schema, 'r') as handle:
+            DEBUG and print(f"DEBUG>>> xml validate success reading schema {catalog=}, {schema=}, catalog env=({os.getenv('XML_CATALOG_FILES')})")
+            code, result = cvrf_validate(handle, xml_tree)
     except IOError as err:
-        return False, f"validation of {xml_tree} against {schema} failed with IO error: {err}"
-    DEBUG and print(f"DEBUG>>> xml validate success reading schema {catalog=}, {schema=}, catalog env=({os.getenv('XML_CATALOG_FILES')})")
-
-    code, result = cvrf_validate(f, xml_tree)
-    f.close()
+        return False, f"validation of {xml_tree} against {schema} not performed due to IO error: {err}"
 
     if code is False:
         return False, f"validation of {xml_tree} against {schema} failed with error: {result}"
