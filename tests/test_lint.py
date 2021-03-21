@@ -91,12 +91,11 @@ def test_main_nok_non_existing_folder_(capsys):
     assert not err
 
 
-@pytest.mark.skip(reason='normal use succeeds, test fails, ...')
 def test_main_validate_xml_cvrf_1_2_default_ok(capsys):
     a_schema_path = pathlib.Path('csaf_lint', 'schema', 'cvrf', '1.2', 'cvrf.xsd')
     a_document_path = pathlib.Path('tests', 'fixtures', 'cvrf-1.2', 'baseline', '01.xml')  # cvrf_1.2_example_a.xml
     argv = [str(a_schema_path), str(a_document_path)]
-    assert lint.main(argv=argv, embedded=False, debug=True) == 0
+    assert lint.main(argv=argv, embedded=False, debug=False) == 0
     out, err = capsys.readouterr()
     assert not out
     assert not err

@@ -80,9 +80,10 @@ def validate(document, schema, conformance=None):
     """Validate the document against the schema."""
     if isinstance(document, dict):  # HACK A DID ACK
         conformance = conformance if conformance else jsonschema.draft7_format_checker
+        DEBUG and print(f"DEBUG>>> caller site json validation {document=}, {schema=}, format_checker={conformance}")
         return jsonschema.validate(document, schema, format_checker=conformance)
 
-    DEBUG and print(f"DEBUG>>> caller site loading {document=}, {schema=}, {conformance=}")
+    DEBUG and print(f"DEBUG>>> caller site xml loading {document=}, {schema=}, {conformance=}")
     xml_tree, message = load_xml(document)
     if not xml_tree:
         print(message)
@@ -235,11 +236,16 @@ def main(argv=None, embedded=False, debug=False):
                 document = load(pos_args[0])
             else:
                 document = read_stdin()
-    elif num_args and not is_xml:
+
+        return 0 if validate(document, schema) is None else 1
+
+    if num_args and not is_xml:
         if embedded:
             print("Usage: csaf-lint [schema.xsd] document.xml")
             print(" note: no embedding supported for xsd/xml")
             return 2
+
+    if num_args and is_xml:
         if num_args == 2:  # Schema file path is first
             schema = pos_args[0]
             document = pos_args[1]
