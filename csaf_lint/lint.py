@@ -275,6 +275,27 @@ def xml_validate(schema, catalog, xml_tree, request_version):
     return True, f"validation of {xml_tree} against {schema} succeeded with result: {result}"
 
 
+def dispatch_embedding(DEBUG, argv, embedded, num_args, pos_args):
+    if embedded:
+        DEBUG and print(f"DEBUG>>> embedded dispatch {embedded=}, {argv=}, {num_args=}, {pos_args=}")
+        json_token, xml_token = '{', '<'
+        is_json = any(arg and str(arg).startswith(json_token) for arg in pos_args)
+        is_xml = not is_json and any(arg and str(arg).startswith(xml_token) for arg in pos_args)
+    else:
+        DEBUG and print(f"DEBUG>>> non-embedded dispatch {embedded=}, {argv=}, {num_args=}, {pos_args=}")
+        json_token, xml_token = '.json', '.xml'
+        is_json = any(arg and str(arg).endswith(json_token) for arg in pos_args)
+        is_xml = not is_json and any(arg and str(arg).endswith(xml_token) for arg in pos_args)
+    document_data, document, schema = '', '', ''
+    if not (embedded or is_json or is_xml):
+        DEBUG and print(f"DEBUG>>> streaming dispatch {embedded=}, {argv=}, {num_args=}, {pos_args=}, {is_json=}, {is_xml=}")
+        document_data = read_stdin()
+        json_token, xml_token = '{', '<'
+        is_json = document_data.startswith(json_token)
+        is_xml = not is_json and document_data.startswith(xml_token)
+    return document, document_data, is_json, is_xml, schema
+
+
 def main(argv=None, embedded=False, debug=False):
     """Drive the validator.
     This function acts as the command line interface backend.
@@ -293,24 +314,7 @@ def main(argv=None, embedded=False, debug=False):
         return 2
     pos_args = tuple(argv[n] if n < num_args and argv[n] else None for n in range(3))
 
-    if embedded:
-        DEBUG and print(f"DEBUG>>> embedded dispatch {embedded=}, {argv=}, {num_args=}, {pos_args=}")
-        json_token, xml_token = '{', '<'
-        is_json = any(arg and str(arg).startswith(json_token) for arg in pos_args)
-        is_xml = not is_json and any(arg and str(arg).startswith(xml_token) for arg in pos_args)
-    else:
-        DEBUG and print(f"DEBUG>>> non-embedded dispatch {embedded=}, {argv=}, {num_args=}, {pos_args=}")
-        json_token, xml_token = '.json', '.xml'
-        is_json = any(arg and str(arg).endswith(json_token) for arg in pos_args)
-        is_xml = not is_json and any(arg and str(arg).endswith(xml_token) for arg in pos_args)
-
-    document_data, document, schema = '', '', ''
-    if not (embedded or is_json or is_xml):
-        DEBUG and print(f"DEBUG>>> streaming dispatch {embedded=}, {argv=}, {num_args=}, {pos_args=}, {is_json=}, {is_xml=}")
-        document_data = read_stdin()
-        json_token, xml_token = '{', '<'
-        is_json = document_data.startswith(json_token)
-        is_xml = not is_json and document_data.startswith(xml_token)
+    document, document_data, is_json, is_xml, schema = dispatch_embedding(DEBUG, argv, embedded, num_args, pos_args)
 
     DEBUG and print(f"DEBUG>>> post dispatch {embedded=}, {argv=}, {num_args=}, {pos_args=}, {is_json=}, {is_xml=}")
 
