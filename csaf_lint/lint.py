@@ -213,34 +213,38 @@ def main(argv=None, embedded=False, debug=False):
         print("Usage: csaf-lint [schema.json] document.json")
         print("   or: csaf-lint < document.json")
         return 2
-
+    args = len(argv)
+    pos_args = tuple(argv[n] if n < args and argv[n] else None for n in range(3))
+    json_token, xml_token = '.json', '.xml'
+    is_json = any(arg and str(arg).endswith(json_token) for arg in pos_args)
+    is_xml = not is_json and any(arg and str(arg).endswith(xml_token) for arg in pos_args)
     # HACK A DID ACK
     document, schema = '', ''
-    if len(argv) and str(argv[-1]).endswith('json'):
+    if is_json:
         if len(argv) == 2:  # Schema file path is first
             if embedded:
-                schema = json.loads(argv[0])
+                schema = json.loads(pos_args[0])
             else:
-                schema = load(argv[0])
-            document = json.loads(argv[1]) if embedded else load(argv[1])
+                schema = load(pos_args[0])
+            document = json.loads(pos_args[1]) if embedded else load(pos_args[1])
         else:
             schema = load(CSAF_2_0_SCHEMA_PATH)
             if len(argv) == 1:  # Assume schema implicit, argument given is document file path
-                document = load(argv[0])
+                document = load(pos_args[0])
             else:
                 document = read_stdin()
-    elif len(argv) and str(argv[-1]).endswith('xml'):
+    elif len(argv) and not is_xml:
         if embedded:
             print("Usage: csaf-lint [schema.xsd] document.xml")
             print(" note: no embedding supported for xsd/xml")
             return 2
         if len(argv) == 2:  # Schema file path is first
-            schema = argv[0]
-            document = argv[1]
+            schema = pos_args[0]
+            document = pos_args[1]
         else:
             schema = CVRF_DEFAULT_SCHEMA_FILE
             if len(argv) == 1:  # Assume schema implicit, argument given is document file path
-                document = argv[0]
+                document = pos_args[0]
             else:
                 print("Usage: csaf-lint [schema.xsd] document.xml")
                 print(" note: no embedding supported for xsd/xml")
