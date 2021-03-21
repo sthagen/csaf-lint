@@ -43,13 +43,18 @@ CVRF_PRE_OASIS_SCHEMA_FILE = pathlib.Path('csaf_lint', 'schema', 'cvrf', f'{CRVF
 
 CVRF_OASIS_NS_ROOT = 'http://docs.oasis-open.org/csaf/ns/csaf-cvrf/'
 CVRF_VERSION_NS_MAP = {
-    '1.2': f'{CVRF_OASIS_NS_ROOT}v1.2/cvrf',
-    '1.1': f'{CVRF_OASIS_NS_ROOT}v1.1/cvrf',
+    CRVF_DEFAULT_SEMANTIC_VERSION: f'{CVRF_OASIS_NS_ROOT}v1.2/cvrf',
+    CRVF_PRE_OASIS_SEMANTIC_VERSION: f'{CVRF_OASIS_NS_ROOT}v1.1/cvrf',
+}
+
+CVRF_VERSION_SCHEMA_MAP = {
+    CRVF_DEFAULT_SEMANTIC_VERSION: CVRF_DEFAULT_SCHEMA_FILE,
+    CRVF_PRE_OASIS_SEMANTIC_VERSION: CVRF_PRE_OASIS_SCHEMA_FILE,
 }
 
 CVRF_VERSION_CATALOG_MAP = {
-    '1.2': CVRF_DEFAULT_CATALOG,
-    '1.1': CVRF_PRE_OASIS_CATALOG,
+    CRVF_DEFAULT_SEMANTIC_VERSION: CVRF_DEFAULT_CATALOG,
+    CRVF_PRE_OASIS_SEMANTIC_VERSION: CVRF_PRE_OASIS_CATALOG,
 }
 
 DEBUG_VAR = "CSL_DEBUG"
@@ -69,11 +74,59 @@ def load(file_path):
         return json.load(handle)
 
 
+def version_peek(schema_path):
+    """HACK A DID ACK derives schema version from reading the first lines from path.
+    Something like:
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <cvrfdoc xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1" xmlns:cvrf="http://www.icasi.org/CVRF/schema/cvrf/1.1">
+
+    or:
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <cvrfdoc
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+      xmlns:cpe="http://cpe.mitre.org/language/2.0"
+      xmlns:cvrf="http://docs.oasis-open.org/csaf/ns/csaf-cvrf/v1.2/cvrf"
+      xmlns:cvrf-common="http://docs.oasis-open.org/csaf/ns/csaf-cvrf/v1.2/common"
+      xmlns:cvssv2="http://scap.nist.gov/schema/cvss-v2/1.0"
+      xmlns:cvssv3="https://www.first.org/cvss/cvss-v3.0.xsd"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:ns0="http://purl.org/dc/elements/1.1/"
+      xmlns:prod="http://docs.oasis-open.org/csaf/ns/csaf-cvrf/v1.2/prod"
+      xmlns:scap-core="http://scap.nist.gov/schema/scap-core/1.0"
+      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+      xmlns:vuln="http://docs.oasis-open.org/csaf/ns/csaf-cvrf/v1.2/vuln"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns="http://docs.oasis-open.org/csaf/ns/csaf-cvrf/v1.2/cvrf"
+      >
+    """
+    cvrf_element_token = '<cvrfdoc'
+    naive = []
+    with open(schema_path) as handle:
+        for line in handle.readline():
+            if cvrf_element_token in line or naive:
+                naive.append(line)
+            if all(">" in chunk for chunk in naive):
+                break
+
+    oasis_token = f'"http://docs.oasis-open.org/csaf/ns/csaf-cvrf/v{CRVF_DEFAULT_SEMANTIC_VERSION}/cvrf"'
+    if any(oasis_token in chunk for chunk in naive):
+        return CRVF_DEFAULT_SEMANTIC_VERSION
+    pre_oasis_token = f'"http://www.icasi.org/CVRF/schema/cvrf/{CRVF_PRE_OASIS_SEMANTIC_VERSION}"'
+    if any(pre_oasis_token in chunk for chunk in naive):
+        return CRVF_PRE_OASIS_SEMANTIC_VERSION
+
+    return None
+
+
 def version_from(schema_path):
     """HACK A DID ACK derives non-default 1.1 version from path."""
     if CRVF_PRE_OASIS_SEMANTIC_VERSION in str(schema_path):
         return CRVF_PRE_OASIS_SEMANTIC_VERSION
-    return CRVF_DEFAULT_SEMANTIC_VERSION
+    if CRVF_DEFAULT_SEMANTIC_VERSION in str(schema_path):
+        return CRVF_DEFAULT_SEMANTIC_VERSION
+    return version_peek(schema_path)
 
 
 def validate(document, schema, conformance=None):
@@ -250,12 +303,12 @@ def main(argv=None, embedded=False, debug=False):
             schema = pos_args[0]
             document = pos_args[1]
         else:
-            schema = CVRF_DEFAULT_SCHEMA_FILE
             if num_args == 1:  # Assume schema implicit, argument given is document file path
                 document = pos_args[0]
             else:
                 print("Usage: csaf-lint [schema.xsd] document.xml")
                 print(" note: no embedding supported for xsd/xml")
                 return 2
+            schema = CVRF_VERSION_SCHEMA_MAP[version_from(document)]
 
     return 0 if validate(document, schema) is None else 1
