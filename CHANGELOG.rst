@@ -1,6 +1,14 @@
 Changelog
 =========
 
+0.0.3 (2021-03-21)
+-------------------
+
+* Validation implemented for CSAF (CVRF) versions 1.1 and 1.2
+* Implemented further CLI and linter tests
+* Created user documentation for install and usage
+* Third release on PyPI.
+
 0.0.2 (2021-03-19)
 -------------------
 
