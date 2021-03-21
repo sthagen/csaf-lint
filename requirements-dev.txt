@@ -1,5 +1,7 @@
 black
+mkautodoc
 mkdocs
+mkdocs-material-extensions
 mypy
 pylint
 -r requirements-test.txt
