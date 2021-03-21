@@ -27,7 +27,7 @@ Later upgrades can be installed per `pip install --upgrade csaf-lint`
 ### Install per `docker`
 
 For now cf. [hub.docker.com as shagen/csaf-lint](https://hub.docker.com/r/shagen/csaf-lint)
-to obtain insatll and initial usage instructions for the docker image.
+to obtain install and initial usage instructions for the docker image.
 
 ### Inside Repository Clone
 
