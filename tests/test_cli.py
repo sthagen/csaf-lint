@@ -19,6 +19,7 @@ def test_main_nok_more_than_two_int_args(capsys):
         cli.main([1, 2, 3])
 
 
+@pytest.mark.serial
 def test_main_nok_read_empty_json_object_from_stdin(monkeypatch):
     monkeypatch.setattr('sys.stdin', io.StringIO('{}'))
     message = r"'document' is a required property"
