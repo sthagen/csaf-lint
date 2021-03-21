@@ -214,7 +214,10 @@ def main(argv=None, embedded=False, debug=False):
     document, schema = '', ''
     if len(argv) and str(argv[-1]).endswith('json'):
         if len(argv) == 2:  # Schema file path is first
-            schema = json.loads(argv[0]) if embedded else load(argv[0])
+            if embedded:
+                schema = json.loads(argv[0])
+            else:
+                schema = load(argv[0])
             document = json.loads(argv[1]) if embedded else load(argv[1])
         else:
             schema = load(CSAF_2_0_SCHEMA_PATH)
