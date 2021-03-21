@@ -3,5 +3,6 @@ mkautodoc
 mkdocs
 mkdocs-material-extensions
 mypy
+prospector
 pylint
 -r requirements-test.txt
