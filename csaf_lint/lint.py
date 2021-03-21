@@ -101,19 +101,26 @@ def version_peek(document_path):
       xmlns="http://docs.oasis-open.org/csaf/ns/csaf-cvrf/v1.2/cvrf"
       >
     """
+    DEBUG and print(f"DEBUG>>> version peek cheap detect on path string {document_path=}")
+    if CRVF_PRE_OASIS_SEMANTIC_VERSION in str(document_path):
+        return CRVF_PRE_OASIS_SEMANTIC_VERSION
+    if CRVF_DEFAULT_SEMANTIC_VERSION in str(document_path):
+        return CRVF_DEFAULT_SEMANTIC_VERSION
+
+    DEBUG and print(f"DEBUG>>> version peek naive but deep detect on path content {document_path=}")
     cvrf_element_start = '<cvrf'
     cvrf_element_end = '>'
     naive = []
     with open(document_path) as handle:
         for line in handle.readlines():
-            DEBUG and print(f"DEBUG>>> scanner line {line=}")
+            DEBUG and print(f"DEBUG>>> version peek scanner line {line=}")
             if cvrf_element_start in line or naive:
                 naive.append(line.strip())
-                DEBUG and print(f"DEBUG>>> parser triggered {cvrf_element_start=}, {naive=}")
+                DEBUG and print(f"DEBUG>>> version peek parser triggered {cvrf_element_start=}, {naive=}")
             if naive and any(cvrf_element_end in chunk for chunk in naive):
-                DEBUG and print(f"DEBUG>>> harvest done triggered {cvrf_element_end=}, {naive=}")
+                DEBUG and print(f"DEBUG>>> version peek harvest done triggered {cvrf_element_end=}, {naive=}")
                 break
-            DEBUG and print(f"DEBUG>>> normal harvest {naive=}")
+            DEBUG and print(f"DEBUG>>> version peek normal harvest {naive=}")
 
     oasis_token = f'"http://docs.oasis-open.org/csaf/ns/csaf-cvrf/v{CRVF_DEFAULT_SEMANTIC_VERSION}/cvrf"'
     if any(oasis_token in chunk for chunk in naive):
