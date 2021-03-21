@@ -1,4 +1,0 @@
-attrs
-jsonschema
-lxml
-xmlschema
