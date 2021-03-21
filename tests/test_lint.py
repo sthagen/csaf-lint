@@ -108,3 +108,22 @@ def test_main_validate_xml_cvrf_1_2_document_only_version_in_path_ok(capsys):
     out, err = capsys.readouterr()
     assert not out
     assert not err
+
+
+def test_main_validate_xml_cvrf_1_2_document_only_version_not_in_path_ok(capsys):
+    a_document_path = pathlib.Path('tests', 'fixtures', 'cvrf-no-version-given', 'is_wun_two.xml')  # cvrf_1.2_example_a.xml
+    argv = [str(a_document_path)]
+    assert lint.main(argv=argv, embedded=False, debug=False) == 0
+    out, err = capsys.readouterr()
+    assert not out
+    assert not err
+
+
+@pytest.mark.skip(reason='file not found ... maybe catalog still confused')
+def test_main_validate_xml_cvrf_1_1_document_only_version_in_path_ok(capsys):
+    a_document_path = pathlib.Path('tests', 'fixtures', 'cvrf-1.1', 'baseline', '01.xml')  # CVRF-1.1-cisco-sa-20110525-rvs4000.xml
+    argv = [str(a_document_path)]
+    assert lint.main(argv=argv, embedded=False, debug=False) == 0
+    out, err = capsys.readouterr()
+    assert not out
+    assert not err
