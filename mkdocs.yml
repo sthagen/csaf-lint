@@ -10,7 +10,7 @@ edit_uri: ""
 
 nav:
   - Introduction: 'index.md'
-  - Usage: 'install.md'
+  - Install: 'install.md'
   - Usage: 'usage.md'
 
 markdown_extensions:
