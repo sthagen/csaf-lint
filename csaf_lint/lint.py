@@ -285,7 +285,7 @@ def main(argv=None, embedded=False, debug=False):
         return 2
     pos_args = tuple(argv[n] if n < num_args and argv[n] else None for n in range(3))
     json_token, xml_token = '.json', '.xml'
-    is_json = any(arg and str(arg).endswith(json_token) for arg in pos_args) if num_args else True
+    is_json = any(arg and str(arg).endswith(json_token) for arg in pos_args) if num_args else True  # TODO(sthagen) We can easily peek for type in stdin
     is_xml = not is_json and any(arg and str(arg).endswith(xml_token) for arg in pos_args)
     DEBUG and print(f"DEBUG>>> dispatch {argv=}, {num_args=}, {pos_args=}, {is_json=}, {is_xml=}")
     # HACK A DID ACK
