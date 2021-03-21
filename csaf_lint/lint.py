@@ -101,7 +101,7 @@ def version_peek(document_path):
       xmlns="http://docs.oasis-open.org/csaf/ns/csaf-cvrf/v1.2/cvrf"
       >
     """
-    cvrf_element_start = '<cvrfdoc'
+    cvrf_element_start = '<cvrf'
     cvrf_element_end = '>'
     naive = []
     with open(document_path) as handle:
@@ -149,15 +149,15 @@ def validate(document, schema, conformance=None):
         print(message)
         return 1
     request_version = version_from(schema, document)
-    DEBUG and print(f"DEBUG>>> {schema=}, {request_version=}")
+    DEBUG and print(f"DEBUG>>> version detected {schema=}, {document=}, {request_version=}")
     found, version, ns = versions_xml(xml_tree, request_version)
-    DEBUG and print(f"DEBUG>>> {found=}, {version=}, {ns=}")
+    DEBUG and print(f"DEBUG>>> versions consistency {found=}, {version=}, {ns=}")
     catalog = CVRF_VERSION_CATALOG_MAP[request_version]
     DEBUG and print(f"DEBUG>>> caller site validation: {schema=}, {catalog=}, {xml_tree=}, {request_version=}")
     status, message = xml_validate(schema, catalog, xml_tree, request_version)
     if not DEBUG and not status:
         print(message)
-    DEBUG and print(f"DEBUG>>> {status=}, {message=}")
+    DEBUG and print(f"DEBUG>>> validation xml results {status=}, {message=}")
     return None if status else 1
 
 
@@ -178,15 +178,19 @@ def load_xml(document_path):
 
 def derive_version_from_namespace(root):
     """Version detection of XML document per element tree object root."""
+    DEBUG and print(f"DEBUG>>> versions from namespace callee site {root=}")
     not_found = '', None
     if root is None:
         return not_found
 
-    mandatory_element = 'DocumentType'
+    str_rep_root = str(root)
+    DEBUG and print(f"DEBUG>>> versions from namespace callee site naive match {str_rep_root=} start")
     for version, ns in CVRF_VERSION_NS_MAP.items():
-        token = '{%s}%s' % (ns, mandatory_element)
-        if root.find(token) is not None:
+        DEBUG and print(f"DEBUG>>> versions from namespace callee site naive trial {str_rep_root=}, {version=}, {ns=}")
+        if version in str_rep_root:
+            DEBUG and print(f"DEBUG>>> versions from namespace callee site naive match {root=}, {version=}, {ns=}")
             return version, ns
+        DEBUG and print(f"DEBUG>>> versions from namespace callee site naive miss {root=}, {version=}, {ns=}")
 
     return not_found
 
@@ -196,6 +200,7 @@ def versions_xml(xml_tree, request_version):
     sem_ver, doc_cvrf_version = derive_version_from_namespace(xml_tree.getroot())
     req_cvrf_version = f"http://docs.oasis-open.org/csaf/ns/csaf-cvrf/v{request_version}/cvrf"
 
+    DEBUG and print(f"DEBUG>>> versions xml callee site {sem_ver=}, {doc_cvrf_version=}, {xml_tree=}")
     if doc_cvrf_version:
         return (True if doc_cvrf_version == req_cvrf_version else False), doc_cvrf_version, req_cvrf_version
 
@@ -207,7 +212,7 @@ def cvrf_validate(f, xml_tree):
     Validates a CVRF document
 
     f: file object containing the schema
-    cvrf_doc: the serialized CVRF ElementTree object
+    xml_tree: the serialized CVRF ElementTree object
     returns: a code (True for valid / False for invalid) and a reason for the code
     """
     try:
@@ -225,19 +230,21 @@ def cvrf_validate(f, xml_tree):
 
 def xml_validate(schema, catalog, xml_tree, request_version):
     """Validate xml tree against given xml schema of request version assisted by catalog."""
-    DEBUG and print(f"DEBUG>>> parameters: {schema=}, {catalog=}, {xml_tree=}, {request_version=}")
+    DEBUG and print(f"DEBUG>>> xml validate parameters: {schema=}, {catalog=}, {xml_tree=}, {request_version=}")
     fallback_catalog = CVRF_DEFAULT_CATALOG
     if request_version != CRVF_DEFAULT_SEMANTIC_VERSION:
         fallback_catalog = CVRF_PRE_OASIS_CATALOG
     catalog = catalog if catalog else fallback_catalog
     try:
         if schema:
+            DEBUG and print(f"DEBUG>>> xml validate try reading schema {catalog=}, {schema=}, catalog env=({os.getenv('XML_CATALOG_FILES')})")
             # Try to use local schema files
             f = open(schema, 'r')
 
             # If the supplied file is not a valid catalog.xml or doesn't exist lxml will fall back to using remote validation
-            os.environ.update(XML_CATALOG_FILES=str(catalog))
+            os.environ["XML_CATALOG_FILES"] = str(catalog)
         else:
+            DEBUG and print(f"DEBUG>>> xml validate try reading local implicit schema {catalog=}, {schema=}, catalog env=({os.getenv('XML_CATALOG_FILES')})")
             # try to use local schema file
             fallback_schema = CVRF_DEFAULT_SCHEMA_FILE
             if request_version != CRVF_DEFAULT_SEMANTIC_VERSION:
@@ -246,11 +253,11 @@ def xml_validate(schema, catalog, xml_tree, request_version):
             f = open(schema, 'r')
 
             catalog = catalog if catalog else fallback_catalog
-            os.environ.update(XML_CATALOG_FILES=str(catalog))
+            os.environ["XML_CATALOG_FILES"] = str(catalog)
 
     except IOError as err:
         return False, f"validation of {xml_tree} against {schema} failed with IO error: {err}"
-    DEBUG and print(f"DEBUG>>> {catalog=}, {schema=}")
+    DEBUG and print(f"DEBUG>>> xml validate success reading schema {catalog=}, {schema=}, catalog env=({os.getenv('XML_CATALOG_FILES')})")
 
     code, result = cvrf_validate(f, xml_tree)
     f.close()
