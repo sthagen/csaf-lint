@@ -79,7 +79,7 @@ For intermediate local development feedback (exclude the slow tests and
 report in a terse manner:
 ```bash
 $ PYTEST_ADDOPTS="-q -m 'not slow'" pytest
-...................                                                                                                                                                                                                                            [100%]
+...................                                                  [100%]
 19 passed, 2 deselected in 10.02s
 ```
 
