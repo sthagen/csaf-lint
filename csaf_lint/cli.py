@@ -6,7 +6,7 @@ import pathlib
 import os
 import sys
 
-import csaf_lint.lint as csaf_lint
+import csaf_lint.lint as lint
 
 DEBUG_VAR = "CSL_DEBUG"
 DEBUG = os.getenv(DEBUG_VAR)
@@ -14,7 +14,10 @@ DEBUG = os.getenv(DEBUG_VAR)
 
 # pylint: disable=expression-not-assigned
 def main(argv=None):
-    """Process the job."""
+    """Dispatch processing of the job.
+    This is the strings only command line interface.
+    For python API use interact with lint functions directly.
+    """
     argv = sys.argv[1:] if argv is None else argv
     embedded = False
     for arg in argv:
@@ -25,4 +28,4 @@ def main(argv=None):
                 print("ERROR: embedding only works for none or all.")
                 sys.exit(2)
 
-    return csaf_lint.main(argv, embedded=embedded, debug=DEBUG)
+    return lint.main(argv, embedded=embedded, debug=DEBUG)
