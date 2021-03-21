@@ -1,18 +1,6 @@
 # Usage Examples
 
-## Installing
-
-There are multiple ways to install / make available `csaf-lint`.
-
-### Local Environment per pipx
-
-A quite safe option to evaluate python packages is per `pipx`.
-
-```bash
-$ pipx install csaf-lint
-```
-
-Later upgrades can be installed per `pipx upgrade csaf-lint`
+## Using the Service Script `csaf-lint`
 
 Assuming there is a valid CSAF v2.0 file inside in the current directory
 with the name `valid_csaf_v_2_0.json` validation works like this:
@@ -28,18 +16,9 @@ Another way to obtain the same result is to provide the document per standard in
 $ csaf-lint < valid_csaf_v_2_0.json
 ```
 
-### Install per `pip`
+### Using the Python Module `csaf_lint`
 
-Another option to evaluate python packages on environment level is per `pip`.
-It is good practice to trial pacakges at first inside a python virtual environment.
-
-```bash
-$ pip install csaf-lint
-```
-
-Later upgrades can be installed per `pip install --upgrade csaf-lint`
-
-Assuming there is a valid CSAF v2.0 file inside in the current directory
+Again, assuming there is a valid CSAF v2.0 file inside in the current directory
 with the name `valid_csaf_v_2_0.json` validation works like this
 (note the underscore instead of the dash separating the words `csaf` and `lint`):
 
@@ -55,31 +34,14 @@ $ python -m csaf_lint < valid_csaf_v_2_0.json
 ```
 Also in this install mode (as with `pipx`) you can call the application `csaf-lint`.
 
-### Install per `docker`
+## Using the `docker` image `shagen/csaf-lint`
 
 For now cf. [hub.docker.com as shagen/csaf-lint](https://hub.docker.com/r/shagen/csaf-lint)
 to obtain insatll and initial usage instructions for the docker image.
 
-### Inside Repository Clone
+## Inside a Repository Checkout
 
-For contributing to `csaf-lint` development it is a good idea to fork
-the repository and clone that fork to your work environment.
-
-The following one-time install steps set up a working virtual environment
-inside the clone directory (pyenv is used as example assuming the active python
-interpreter is 3.9.2):
-```bash
-$ pyenv virtualenv fluffy-funicular-3-9-2
-$ pyenv local fluffy-funicular-3-9-2
-$ pip install --upgrade pip
-$ pip install -r requirements.txt
-$ pip install -r requirements-dev.txt
-```
-
-In case these steps succeed, inside this directory a complete development and
-test environment should be ready to use.
-
-#### Validating Documents
+### Using the Module
 
 Executing the `csaf_lint` module (first two executions succeed, third fails):
 
