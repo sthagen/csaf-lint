@@ -76,7 +76,7 @@ tests/test_lint.py ................                                  [100%]
 ```
 
 For intermediate local development feedback (exclude the slow tests and  
-report in a terse manner:
+report in a terse manner) excluding the complete corpus tests:
 ```bash
 $ PYTEST_ADDOPTS="-q -m 'not slow'" pytest
 ...................                                                  [100%]
