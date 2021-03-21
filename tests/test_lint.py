@@ -12,9 +12,35 @@ import csaf_lint.lint as lint
 
 CONTENT_FEATURES = ('document', 'document-product', 'document-vulnerability', 'full', 'spam')
 USAGE_ERROR_TOKENS = ('requires', 'two', 'schema', 'document')
+USAGE_ERROR_NO_EMBEDDING_UNKNOWN_TOKENS = ('no', 'embed', 'support', 'non')
+USAGE_ERROR_NO_EMBEDDING_XML_TOKENS = ('no', 'embed', 'support', 'xml')
 
 CVRF_IMPLICIT_1_2_DOCUMENT_PATH = pathlib.Path('tests', 'fixtures', 'cvrf-no-version-given', 'is_wun_two.xml')  # cvrf_1.2_example_a.xml
 CVRF_IMPLICIT_1_1_DOCUMENT_PATH = pathlib.Path('tests', 'fixtures', 'cvrf-no-version-given', 'is_wun_wun.xml')  # CVRF-1.1-cisco-sa-20110525-rvs4000.xml
+
+
+def test_main_embedded_unknown_nok(capsys):
+    assert lint.main(argv=["foo"], embedded=True, debug=False) == 2
+    out, _ = capsys.readouterr()
+    for token in USAGE_ERROR_NO_EMBEDDING_UNKNOWN_TOKENS:
+        assert token in out
+
+    assert lint.main(argv=["foo", "bar"], embedded=True, debug=False) == 2
+    out, _ = capsys.readouterr()
+    for token in USAGE_ERROR_NO_EMBEDDING_UNKNOWN_TOKENS:
+        assert token in out
+
+
+def test_main_embedded_xml_nok(capsys):
+    assert lint.main(argv=["<foo>"], embedded=True, debug=False) == 2
+    out, _ = capsys.readouterr()
+    for token in USAGE_ERROR_NO_EMBEDDING_XML_TOKENS:
+        assert token in out
+
+    assert lint.main(argv=["<foo>", "<bar>"], embedded=True, debug=False) == 2
+    out, _ = capsys.readouterr()
+    for token in USAGE_ERROR_NO_EMBEDDING_XML_TOKENS:
+        assert token in out
 
 
 def test_version_from_explicit_cvrf_1_x_in_schema_path():
@@ -41,12 +67,12 @@ def test_main_validate_spam_default_ok(capsys):
     nn = f'{n:02d}'
     a_document_path = pathlib.Path('tests', 'fixtures', 'csaf-2.0', 'baseline', 'spam', f'{nn}.json')
     argv = [a_document_path]
-    assert lint.main(argv=argv) == 0
-    out, err = capsys.readouterr()
-    assert not out
+    assert lint.main(argv=argv, embedded=False, debug=False) == 0
+    _, err = capsys.readouterr()
     assert not err
 
 
+@pytest.mark.serial
 def test_main_validate_spam_ok(capsys):
     """
     python -m csaf_lint csaf_lint/schema/csaf/2.0/csaf.json tests/fixtures/csaf-2.0/baseline/spam/01.json
@@ -56,12 +82,12 @@ def test_main_validate_spam_ok(capsys):
         nn = f'{n:02d}'
         a_document_path = pathlib.Path('tests', 'fixtures', 'csaf-2.0', 'baseline', 'spam', f'{nn}.json')
         argv = [lint.CSAF_2_0_SCHEMA_PATH, a_document_path]
-        assert lint.main(argv=argv) == 0
-        out, err = capsys.readouterr()
-        assert not out
+        assert lint.main(argv=argv, embedded=False, debug=False) == 0
+        _, err = capsys.readouterr()
         assert not err
 
 
+@pytest.mark.serial
 def test_main_validate_spam_nok():
     """
     python -m csaf_lint csaf_lint/schema/csaf/2.0/csaf.json tests/fixtures/csaf-2.0/invalid/spam/01.json
@@ -71,18 +97,18 @@ def test_main_validate_spam_nok():
     argv = [lint.CSAF_2_0_SCHEMA_PATH, a_document_path]
     message = r"'csaf_version' is a required property"
     with pytest.raises(jsonschema.exceptions.ValidationError, match=message):
-        lint.main(argv=argv)
+        lint.main(argv=argv, embedded=False, debug=False)
 
 
+@pytest.mark.serial
 def test_main_nok_non_existing_folder_(capsys):
     nef = 'folder_does_not_exist'
     a_document_path = pathlib.Path(nef, 'no_doc.json')
     assert pathlib.Path(nef).is_dir() is False, f"Unexpected folder {nef} exists which breaks this test"
     message = r"\[Errno 2\] No such file or directory: '%s'" % (a_document_path,)
     with pytest.raises(FileNotFoundError, match=message):
-        lint.main([lint.CSAF_2_0_SCHEMA_PATH, a_document_path])
-    out, err = capsys.readouterr()
-    assert not out
+        lint.main([lint.CSAF_2_0_SCHEMA_PATH, a_document_path], embedded=False, debug=False)
+    _, err = capsys.readouterr()
     assert not err
 
 
@@ -93,8 +119,7 @@ def test_main_validate_xml_cvrf_1_2_schema_and_document_ok(capsys):
     a_document_path = pathlib.Path('tests', 'fixtures', 'cvrf-1.2', 'baseline', '01.xml')  # cvrf_1.2_example_a.xml
     argv = [str(a_schema_path), str(a_document_path)]
     assert lint.main(argv=argv, embedded=False, debug=False) == 0
-    out, err = capsys.readouterr()
-    assert not out
+    _, err = capsys.readouterr()
     assert not err
 
 
@@ -104,8 +129,7 @@ def test_main_validate_xml_cvrf_1_2_document_only_version_in_path_ok(capsys):
     a_document_path = pathlib.Path('tests', 'fixtures', 'cvrf-1.2', 'baseline', '01.xml')  # cvrf_1.2_example_a.xml
     argv = [str(a_document_path)]
     assert lint.main(argv=argv, embedded=False, debug=False) == 0
-    out, err = capsys.readouterr()
-    assert not out
+    _, err = capsys.readouterr()
     assert not err
 
 
@@ -115,8 +139,7 @@ def test_main_validate_xml_cvrf_1_2_document_only_version_not_in_path_ok(capsys)
     a_document_path = CVRF_IMPLICIT_1_2_DOCUMENT_PATH
     argv = [str(a_document_path)]
     assert lint.main(argv=argv, embedded=False, debug=False) == 0
-    out, err = capsys.readouterr()
-    assert not out
+    _, err = capsys.readouterr()
     assert not err
 
 
@@ -151,11 +174,10 @@ def test_main_validate_rest_ok(capsys):
             a_document_path = pathlib.Path('tests', 'fixtures', 'csaf-2.0', 'baseline', content, f'{nn}.json')
             argv = [lint.CSAF_2_0_SCHEMA_PATH, a_document_path]
             try:
-                assert lint.main(argv=argv) == 0
+                assert lint.main(argv=argv, embedded=False, debug=False) == 0
             except jsonschema.exceptions.ValidationError as err:
                 raise ValueError(f"failed validation for {a_document_path} in {test_main_validate_rest_ok}. Details: {err}")
-            out, err = capsys.readouterr()
-            assert not out
+            _, err = capsys.readouterr()
             assert not err
 
 
@@ -168,7 +190,7 @@ def test_main_validate_rest_nok():
             a_document_path = pathlib.Path('tests', 'fixtures', 'csaf-2.0', 'invalid', content, f'{nn}.json')
             argv = [lint.CSAF_2_0_SCHEMA_PATH, a_document_path]
             try:
-                lint.main(argv=argv)
+                lint.main(argv=argv, embedded=False, debug=False)
                 raise ValueError(f"failed validation for {a_document_path} in {test_main_validate_rest_ok}.")
             except jsonschema.exceptions.ValidationError:
                 pass
