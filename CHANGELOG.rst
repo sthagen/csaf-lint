@@ -1,6 +1,14 @@
 Changelog
 =========
 
+0.0.4 (2021-03-22)
+-------------------
+
+* Updated CSAF Schema draft to 2021.03.19 (default)
+* 2021.03.07 still available per `csaf_lint/schema/csaf/2021.03.07/csaf.json`
+* Updated user documentation
+* Fourth release on PyPI.
+
 0.0.3 (2021-03-21)
 -------------------
 
