@@ -16,6 +16,7 @@ setup(
     description="Experimental CSAF validator for envelope and body profiles.",
     long_description=README,
     long_description_content_type="text/markdown",
+    url="https://github.com/sthagen/fluffy-funicular",
     project_urls={
         "Homepage": "https://github.com/sthagen/fluffy-funicular",
         "Documentation": "https://sthagen.github.io/fluffy-funicular/",
