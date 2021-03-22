@@ -7,7 +7,7 @@ or user custom schema files.
 
 The supported  versions are:
 
-* CSAF 2.0
+* CSAF 2.0 (default is now the 2021.03.19 editor version)
 * CSAF 1.2 (aka CVRF 1.2)
 * CSAF 1.1 (aka CVRF 1.1)
 
@@ -17,7 +17,7 @@ The supported  versions are:
 is undergoing development by the members of the OASIS technical committee.
    This may lead to breaking changes until the standard is published on
 committee specification level.
-   The current supported draft JSON Schema is from 2021-03-07.
+   The current supported draft JSON Schema versions are from 2021-03-19 and 2021-03-07.
 2. The previous versions namely CVRF 1.1 and 1.2 were in XML format.
 3. The current version CSAF 2.0-candidates are in JSON Schema format.
 

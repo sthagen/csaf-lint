@@ -56,6 +56,12 @@ $ python -m csaf_lint examples/empty_object.json 2>&1 | grep -i validat
 jsonschema.exceptions.ValidationError: 'document' is a required property
 Failed validating 'required' in schema:
 ```
+Switching between editor versions is supported by explicitly stating  
+the path for the schema like for the 2021.03.07 editor version:
+```bash
+$ export SCHEMA="csaf_lint/schema/csaf/2021.03.07/csaf.json"
+$ python -m csaf_lint $SCHEMA validate_me_as_csaf.json
+```
 
 #### Executing the Tests
 
