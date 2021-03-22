@@ -1,1 +1,1 @@
-include README.md LICENSE docs/index.md
+include README.md LICENSE docs/index.md docs/isntall.md docs/usage.md CHANGELOG.md

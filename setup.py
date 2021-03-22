@@ -8,11 +8,17 @@ HERE = pathlib.Path(__file__).parent
 README = (HERE / "README.md").read_text()
 README += "\n"
 README += (HERE / "docs" / "index.md").read_text()
+README += "\n"
+README += (HERE / "docs" / "install.md").read_text()
+README += "\n"
+README += (HERE / "docs" / "usage.md").read_text()
+README += "\n"
+README += (HERE / "docs" / "CHANGELOG.md").read_text()
 
 # This call to setup() does all the work
 setup(
     name="csaf-lint",
-    version="0.0.5",
+    version="0.0.6",
     description="Experimental CSAF validator for envelope and body profiles.",
     long_description=README,
     long_description_content_type="text/markdown",
