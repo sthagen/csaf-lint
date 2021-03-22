@@ -1,6 +1,12 @@
 Changelog
 =========
 
+0.0.5 (2021-03-22)
+-------------------
+
+* Enhanced PyPI documentation (prject links)
+* Fifth release on PyPI.
+
 0.0.4 (2021-03-22)
 -------------------
 
