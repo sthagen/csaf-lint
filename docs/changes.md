@@ -2,9 +2,7 @@
 
 ## 0.0.6 (2021-03-22)
 
-* Enhance feedback for failed validations
-* Internal code enhancements (debug logging and changelog migration to markdown)
-* Enhanced user and PyPI documentation
+* Added meta data and harmonized packaging
 * Sixth release on PyPI.
 
 ## 0.0.5 (2021-03-22)

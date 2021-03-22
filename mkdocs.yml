@@ -45,6 +45,7 @@ nav:
   - Introduction: 'index.md'
   - Install: 'install.md'
   - Usage: 'usage.md'
+  - Changes: 'changes.md'
 
 markdown_extensions:
   - mkautodoc

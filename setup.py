@@ -13,7 +13,7 @@ README += (HERE / "docs" / "install.md").read_text()
 README += "\n"
 README += (HERE / "docs" / "usage.md").read_text()
 README += "\n"
-README += (HERE / "docs" / "CHANGELOG.md").read_text()
+README += (HERE / "docs" / "changes.md").read_text()
 
 # This call to setup() does all the work
 setup(
@@ -27,18 +27,28 @@ setup(
         "Homepage": "https://github.com/sthagen/fluffy-funicular",
         "Documentation": "https://sthagen.github.io/fluffy-funicular/",
         "Container": "https://hub.docker.com/r/shagen/csaf-lint",
+        "Bug Tracker": "https://github.com/sthagen/fluffy-funicular/issues",
     },
     author="Stefan Hagen",
     author_email="stefan@hagen.link",
     license="MIT",
     classifiers=[
         "Development Status :: 3 - Alpha",
+        "Environment :: Console",
+        "Environment :: MacOS X",
         "Intended Audience :: Developers",
-        "Topic :: Software Development :: Build Tools",
+        "Intended Audience :: Information Technology",
+        "Intended Audience :: System Administrators",
         "License :: OSI Approved :: MIT License",
+        "Operating System :: POSIX :: Linux",
+        "Operating System :: Unix",
+        "Programming Language :: Python :: 3 :: Only",
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
+        "Topic :: Internet",
+        "Topic :: Software Development :: Build Tools",
+        "Topic :: Software Development :: Libraries :: Python Modules",
     ],
     keywords="csaf cvrf validation baseline extension core profile envelope body development",
     packages=find_packages(exclude=("tests",)),
