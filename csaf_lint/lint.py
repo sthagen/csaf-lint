@@ -275,7 +275,7 @@ def xml_validate(schema, catalog, xml_tree, request_version):
     return True, f"validation of {xml_tree} against {schema} succeeded with result: {result}"
 
 
-def dispatch_embedding(DEBUG, argv, embedded, num_args, pos_args):
+def dispatch_embedding(argv, embedded, num_args, pos_args):
     if embedded:
         DEBUG and print(f"DEBUG>>> embedded dispatch {embedded=}, {argv=}, {num_args=}, {pos_args=}")
         json_token, xml_token = '{', '<'
@@ -314,7 +314,7 @@ def main(argv=None, embedded=False, debug=False):
         return 2
     pos_args = tuple(argv[n] if n < num_args and argv[n] else None for n in range(3))
 
-    document, document_data, is_json, is_xml, schema = dispatch_embedding(DEBUG, argv, embedded, num_args, pos_args)
+    document, document_data, is_json, is_xml, schema = dispatch_embedding(argv, embedded, num_args, pos_args)
 
     DEBUG and print(f"DEBUG>>> post dispatch {embedded=}, {argv=}, {num_args=}, {pos_args=}, {is_json=}, {is_xml=}")
 
