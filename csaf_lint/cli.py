@@ -9,11 +9,11 @@ import sys
 import csaf_lint.lint as lint
 
 DEBUG_VAR = "CSL_DEBUG"
-DEBUG = os.getenv(DEBUG_VAR)
+DEBUG = True if os.getenv(DEBUG_VAR) else False
 
 
 # pylint: disable=expression-not-assigned
-def main(argv=None, debug=False):
+def main(argv=None, debug=None):
     """Dispatch processing of the job.
     This is the strings only command line interface.
     For python API use interact with lint functions directly.
