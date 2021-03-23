@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.0.8 (2021-03-24)
+
+* Better test coverage
+* Enhanced reporting capabilities
+* Enhanced documentation
+* Code spring cleaning
+* Eighth release on PyPI.
+
 ## 0.0.7 (2021-03-23)
 
 * Updated CSAF Schema draft to 2021.03.23 (default)
