@@ -57,9 +57,9 @@ jsonschema.exceptions.ValidationError: 'document' is a required property
 Failed validating 'required' in schema:
 ```
 Switching between editor versions is supported by explicitly stating  
-the path for the schema like for the 2021.03.07 editor version:
+the path for the schema like for the 2021.03.19 editor version:
 ```bash
-$ export SCHEMA="csaf_lint/schema/csaf/2021.03.07/csaf.json"
+$ export SCHEMA="csaf_lint/schema/csaf/2021.03.19/csaf.json"
 $ python -m csaf_lint $SCHEMA validate_me_as_csaf.json
 ```
 
