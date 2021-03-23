@@ -9,7 +9,7 @@ import sys
 import csaf_lint.lint as lint
 
 DEBUG_VAR = "CSL_DEBUG"
-DEBUG = True if os.getenv(DEBUG_VAR) else False
+DEBUG = bool(os.getenv(DEBUG_VAR))
 
 
 # pylint: disable=expression-not-assigned

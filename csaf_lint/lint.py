@@ -61,12 +61,12 @@ CVRF_VERSION_CATALOG_MAP = {
 }
 
 DEBUG_VAR = "CSL_DEBUG"
-DEBUG = True if os.getenv(DEBUG_VAR) else False
+DEBUG = bool(os.getenv(DEBUG_VAR))
 
 
 def read_stdin():
     """Create document from stdin data."""
-    LOG.debug(f"call site loading from stdin")
+    LOG.debug("call site loading from stdin")
     return sys.stdin.read()
 
 
@@ -132,7 +132,7 @@ def version_peek(document_path):
     if any(pre_oasis_token in chunk for chunk in naive):
         return CRVF_PRE_OASIS_SEMANTIC_VERSION
 
-    LOG.debug(f"version peek finally failed")
+    LOG.debug("version peek finally failed")
     return None
 
 
