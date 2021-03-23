@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.0.7 (2021-03-23)
+
+* Updated CSAF Schema draft to 2021.03.23 (default)
+* 2021.03.19 still available per `csaf_lint/schema/csaf/2021.03.19/csaf.json`
+* Changed logging concept (removed print style debug statements)
+* Seventh release on PyPI.
+
 ## 0.0.6 (2021-03-22)
 
 * Added meta data and harmonized packaging
