@@ -162,7 +162,7 @@ def validate_json(document, schema, conformance=None) -> typing.Tuple[int, str]:
         LOG.error(f"{err.message=} [{err.validator=}] {err.relative_path=}")
         code, message = 2, f"{err}"
 
-    LOG.info(f"success in JSON validation: {code=}, {message=}")
+    LOG.debug(f"success in JSON validation: {code=}, {message=}")
     return code, message
 
 
@@ -390,6 +390,7 @@ def main(argv=None, embedded=False, debug=None):
 
         code, message = validate(document, schema)
         LOG.info(f"Validation(JSON): {code=}, {message=}")
+        return code
 
     if embedded and not is_xml and not is_json:
         LOG.error("Usage error (embedded and not is_xml and not is_json)")
