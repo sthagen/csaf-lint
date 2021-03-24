@@ -152,13 +152,22 @@ def validate(document, schema, conformance=None):
     if isinstance(document, dict):  # HACK A DID ACK
         conformance = conformance if conformance else jsonschema.draft7_format_checker
         LOG.debug(f"caller site json validation {document=}, {schema=}, format_checker={conformance}")
-        return jsonschema.validate(document, schema, format_checker=conformance)
+        try:
+            _ = jsonschema.validate(document, schema, format_checker=conformance)
+        except jsonschema.exceptions.ValidationError as err:
+            LOG.error(f"{err.message=} [{err.validator=}] {err.relative_path=}")
+            return 1, f"{err}"
+        except jsonschema.exceptions.SchemaError as err:
+            LOG.error(f"{err.message=} [{err.validator=}] {err.relative_path=}")
+            return 2, f"{err}"
+
+        return None, "OK"
 
     LOG.debug(f"caller site xml loading {document=}, {schema=}, {conformance=}")
     xml_tree, message = load_xml(document)
     if not xml_tree:
         LOG.error(message)
-        return 1
+        return 1, "ERROR"
     request_version = version_from(schema, document)
     LOG.debug(f"version detected {schema=}, {document=}, {request_version=}")
     found, version, ns = versions_xml(xml_tree, request_version)
@@ -169,7 +178,7 @@ def validate(document, schema, conformance=None):
     if not status:
         LOG.warning(message)
     LOG.debug(f"validation xml results {status=}, {message=}")
-    return None if status else 1
+    return None, "OK" if status else 1, "ERROR"
 
 
 def load_xml(document_path):
@@ -381,4 +390,6 @@ def main(argv=None, embedded=False, debug=None):
                 return 2
             schema = CVRF_VERSION_SCHEMA_MAP[version_from(None, document)]
 
-    return 0 if validate(document, schema) is None else 1
+    code, message = validate(document, schema)
+    LOG.info(message)
+    return 0 if code is None else 1
