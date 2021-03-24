@@ -147,21 +147,28 @@ def version_from(schema_path, document_path):
     return version_peek(document_path)
 
 
-def validate(document, schema, conformance=None):
+def validate_json(document, schema, conformance=None) -> (int, str):
+    """Validate the JSON document against the schema."""
+    conformance = conformance if conformance else jsonschema.draft7_format_checker
+    LOG.debug(f"caller site json validation {list(document.keys())=}, {list(schema.keys())=}, format_checker={conformance}")
+    code, message = 0, "OK"
+    try:
+        _ = jsonschema.validate(document, schema, format_checker=conformance)
+    except jsonschema.exceptions.ValidationError as err:
+        LOG.error(f"{err.message=} [{err.validator=}] {err.relative_path=}")
+        code, message = 1, f"{err}"
+    except jsonschema.exceptions.SchemaError as err:
+        LOG.error(f"{err.message=} [{err.validator=}] {err.relative_path=}")
+        code, message = 2, f"{err}"
+
+    LOG.info(f"success in JSON validation: code=%d, message=%s" % (code, message))
+    return code, message
+
+
+def validate(document, schema, conformance=None) -> (int, str):
     """Validate the document against the schema."""
     if isinstance(document, dict):  # HACK A DID ACK
-        conformance = conformance if conformance else jsonschema.draft7_format_checker
-        LOG.debug(f"caller site json validation {document=}, {schema=}, format_checker={conformance}")
-        try:
-            _ = jsonschema.validate(document, schema, format_checker=conformance)
-        except jsonschema.exceptions.ValidationError as err:
-            LOG.error(f"{err.message=} [{err.validator=}] {err.relative_path=}")
-            return 1, f"{err}"
-        except jsonschema.exceptions.SchemaError as err:
-            LOG.error(f"{err.message=} [{err.validator=}] {err.relative_path=}")
-            return 2, f"{err}"
-
-        return None, "OK"
+        return validate_json(document, schema, conformance)
 
     LOG.debug(f"caller site xml loading {document=}, {schema=}, {conformance=}")
     xml_tree, message = load_xml(document)
@@ -178,7 +185,7 @@ def validate(document, schema, conformance=None):
     if not status:
         LOG.warning(message)
     LOG.debug(f"validation xml results {status=}, {message=}")
-    return None, "OK" if status else 1, "ERROR"
+    return 0, "OK" if status else 1, "ERROR"
 
 
 def load_xml(document_path):
@@ -362,7 +369,8 @@ def main(argv=None, embedded=False, debug=None):
             else:
                 document = json.loads(document_data)
 
-        return 0 if validate(document, schema) is None else 1
+        code, message = validate(document, schema)
+        LOG.info("Validation(JSON): code=%d, message=%s" % (code, message))
 
     if embedded and not is_xml and not is_json:
         LOG.error("Usage error (embedded and not is_xml and not is_json)")
@@ -391,5 +399,5 @@ def main(argv=None, embedded=False, debug=None):
             schema = CVRF_VERSION_SCHEMA_MAP[version_from(None, document)]
 
     code, message = validate(document, schema)
-    LOG.info(message)
-    return 0 if code is None else 1
+    LOG.info("Validation(XML): code=%d, message=%s" % (code, message))
+    return code
