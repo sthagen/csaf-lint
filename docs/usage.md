@@ -58,6 +58,7 @@ the path for the schema like for the 2021.03.19 editor version:
 ```bash
 $ export SCHEMA="csaf_lint/schema/csaf/2021.03.19/csaf.json"
 $ python -m csaf_lint $SCHEMA validate_me_as_csaf.json
+2021-03-24 19:51:30 INFO [csaf-lint]: Validation(JSON): code=0, message='OK'
 ```
 
 #### Executing the Tests
