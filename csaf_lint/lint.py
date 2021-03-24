@@ -182,10 +182,11 @@ def validate(document, schema, conformance=None) -> (int, str):
     catalog = CVRF_VERSION_CATALOG_MAP[request_version]
     LOG.debug(f"caller site validation: {schema=}, {catalog=}, {xml_tree=}, {request_version=}")
     status, message = xml_validate(schema, catalog, xml_tree, request_version)
-    if not status:
-        LOG.warning(message)
     LOG.debug(f"validation xml results {status=}, {message=}")
-    return 0, "OK" if status else 1, "ERROR"
+    if status:
+        return 0, "OK"
+    LOG.warning(message)
+    return 1, "ERROR"
 
 
 def load_xml(document_path):
