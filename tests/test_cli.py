@@ -21,18 +21,20 @@ def test_main_nok_more_than_two_int_args(capsys):
 
 
 @pytest.mark.serial
-def test_main_nok_read_embedded_json_object_from_argv():
-    message = r"'document' is a required property"
-    with pytest.raises(jsonschema.exceptions.ValidationError, match=message):
-        cli.main(['{}'], debug=False)
+def test_main_nok_read_embedded_json_object_from_argv(capsys):
+    assert cli.main(['{}'], debug=False) == 1
+    out, err = capsys.readouterr()
+    assert not out
+    assert not err
 
 
 @pytest.mark.serial
-def test_main_nok_read_empty_json_object_from_stdin(monkeypatch):
+def test_main_nok_read_empty_json_object_from_stdin(capsys, monkeypatch):
     monkeypatch.setattr('sys.stdin', io.StringIO('{}'))
-    message = r"'document' is a required property"
-    with pytest.raises(jsonschema.exceptions.ValidationError, match=message):
-        cli.main([], debug=False)
+    assert cli.main([], debug=False) == 1
+    out, err = capsys.readouterr()
+    assert not out
+    assert not err
 
 
 def test_main_nok_int(capsys):
