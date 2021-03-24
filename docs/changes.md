@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.0.9 (2021-03-25)
+
+* Fixed corner cases
+* Better test coverage
+* Eighth release on PyPI
+
 ## 0.0.8 (2021-03-24)
 
 * Enhanced reporting capabilities
