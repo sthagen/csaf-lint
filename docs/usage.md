@@ -47,14 +47,11 @@ Executing the `csaf_lint` module (first two executions succeed, third fails):
 
 ```bash
 $ python -m csaf_lint tests/fixtures/csaf-2.0/baseline/spam/01.json
+2021-03-24 19:20:50 INFO [csaf-lint]: Validation(JSON): code=0, message='OK'
 $ python -m csaf_lint tests/fixtures/cvrf-no-version-given/is_wun_two.xml
-$ python -m csaf_lint examples/empty_object.json 2>&1 | grep -i validat
-    return 0 if validate(document, schema) is None else 1
-  File ".../fluffy-funicular/csaf_lint/lint.py", line 145, in validate
-    return jsonschema.validate(document, schema, format_checker=conformance)
-  File ".../site-packages/jsonschema/validators.py", line 934, in validate
-jsonschema.exceptions.ValidationError: 'document' is a required property
-Failed validating 'required' in schema:
+2021-03-24 19:21:15 INFO [csaf-lint]: Validation(XML): code=0, message='OK'
+$ python -m csaf_lint examples/empty_object.json 2>&1 | grep -i validat| head -1
+2021-03-24 19:22:05 ERROR [csaf-lint]: err.message="'document' is a required property" [err.validator='required'] err.relative_path=deque([])
 ```
 Switching between editor versions is supported by explicitly stating  
 the path for the schema like for the 2021.03.19 editor version:
@@ -107,4 +104,10 @@ Check Information
        Tools Run: dodgy, mccabe, pep8, profile-validator, pyflakes, pylint
   Messages Found: 0
 
+```
+Running `mypy`:
+
+```bash
+$ mypy csaf_lint
+Success: no issues found in 4 source files
 ```
