@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# pylint: disable=expression-not-assigned,line-too-long
+# pylint: disable=expression-not-assigned,line-too-long,missing-module-docstring
 import sys
 
 from csaf_lint.cli import main
