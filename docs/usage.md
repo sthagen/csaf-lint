@@ -7,6 +7,7 @@ with the name `valid_csaf_v_2_0.json` validation works like this:
 
 ```bash
 $ csaf-lint valid_csaf_v_2_0.json
+2021-03-24 20:08:55 INFO [csaf-lint]: Validation(JSON): code=0, message='OK'
 ```
 resulting in no output at all and a return code of `0` for success.
 
@@ -14,6 +15,7 @@ Another way to obtain the same result is to provide the document per standard in
 
 ```bash
 $ csaf-lint < valid_csaf_v_2_0.json
+2021-03-24 20:08:57 INFO [csaf-lint]: Validation(JSON): code=0, message='OK'
 ```
 
 ### Using the Python Module `csaf_lint`
@@ -24,6 +26,7 @@ with the name `valid_csaf_v_2_0.json` validation works like this
 
 ```bash
 $ python -m csaf_lint valid_csaf_v_2_0.json
+2021-03-24 20:08:58 INFO [csaf-lint]: Validation(JSON): code=0, message='OK'
 ```
 resulting in no output at all and a return code of `0` for success.
 
@@ -31,6 +34,7 @@ Another way to obtain the same result is to provide the document per standard in
 
 ```bash
 $ python -m csaf_lint < valid_csaf_v_2_0.json
+2021-03-24 20:08:59 INFO [csaf-lint]: Validation(JSON): code=0, message='OK'
 ```
 Also in this install mode (as with `pipx`) you can call the application `csaf-lint`.
 
