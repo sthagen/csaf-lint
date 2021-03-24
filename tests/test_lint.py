@@ -89,15 +89,9 @@ def test_main_validate_spam_ok(capsys):
 
 @pytest.mark.serial
 def test_main_validate_spam_nok():
-    """
-    python -m csaf_lint csaf_lint/schema/csaf/2.0/csaf.json tests/fixtures/csaf-2.0/invalid/spam/01.json
-    returns 1 and plenty of information
-    """
     a_document_path = pathlib.Path('tests', 'fixtures', 'csaf-2.0', 'invalid', 'spam', '01.json')
     argv = [lint.CSAF_2_0_SCHEMA_PATH, a_document_path]
-    message = r"'csaf_version' is a required property"
-    with pytest.raises(jsonschema.exceptions.ValidationError, match=message):
-        lint.main(argv=argv, embedded=False, debug=False)
+    assert lint.main(argv=argv, embedded=False, debug=False) == 1
 
 
 @pytest.mark.serial
@@ -135,12 +129,10 @@ def test_main_validate_xml_cvrf_1_2_document_only_version_in_path_ok(capsys):
 
 @pytest.mark.serial
 @mock.patch.dict(os.environ, {"XML_CATALOG_FILES": ""}, clear=True)
-def test_main_validate_xml_cvrf_1_2_document_only_version_not_in_path_ok(capsys):
+def test_main_validate_xml_cvrf_1_2_document_only_version_not_in_path_ok():
     a_document_path = CVRF_IMPLICIT_1_2_DOCUMENT_PATH
     argv = [str(a_document_path)]
-    assert lint.main(argv=argv, embedded=False, debug=False) == 0
-    _, err = capsys.readouterr()
-    assert not err
+    assert lint.main(argv=argv, embedded=False, debug=False) == 0, "OK"
 
 
 @pytest.mark.serial
@@ -189,8 +181,4 @@ def test_main_validate_rest_nok():
             nn = f'{n:02d}'
             a_document_path = pathlib.Path('tests', 'fixtures', 'csaf-2.0', 'invalid', content, f'{nn}.json')
             argv = [lint.CSAF_2_0_SCHEMA_PATH, a_document_path]
-            try:
-                lint.main(argv=argv, embedded=False, debug=False)
-                raise ValueError(f"failed validation for {a_document_path} in {test_main_validate_rest_ok}.")
-            except jsonschema.exceptions.ValidationError:
-                pass
+            assert lint.main(argv=argv, embedded=False, debug=False) == 1, "ERROR"
