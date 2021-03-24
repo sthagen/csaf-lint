@@ -341,9 +341,9 @@ def inputs_xml(num_args, pos_args):
     else:
         if num_args == 1:  # Assume schema implicit, argument given is document file path
             document = pos_args[0]
+            schema = CVRF_VERSION_SCHEMA_MAP[version_from(None, document)]
         else:
-            document = None
-        schema = CVRF_VERSION_SCHEMA_MAP[version_from(None, document)]
+            document, schema = None, None
 
     return document, schema
 
