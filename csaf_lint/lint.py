@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
-# pylint: disable=expression-not-assigned,line-too-long
+# pylint: disable=c-extension-no-member,expression-not-assigned,line-too-long,logging-fstring-interpolation
 """Visit CSAF/CVRF files and validate them against envelope (core) and given body profiles."""
 import json
 import logging
 import os
 import pathlib
 import sys
+import typing
 
 import jsonschema  # type: ignore
 from lxml import etree  # type: ignore
@@ -147,13 +148,13 @@ def version_from(schema_path, document_path):
     return version_peek(document_path)
 
 
-def validate_json(document, schema, conformance=None) -> (int, str):
+def validate_json(document, schema, conformance=None) -> typing.Tuple[int, str]:
     """Validate the JSON document against the schema."""
     conformance = conformance if conformance else jsonschema.draft7_format_checker
     LOG.debug(f"caller site json validation {list(document.keys())=}, {list(schema.keys())=}, format_checker={conformance}")
     code, message = 0, "OK"
     try:
-        _ = jsonschema.validate(document, schema, format_checker=conformance)
+        jsonschema.validate(document, schema, format_checker=conformance)
     except jsonschema.exceptions.ValidationError as err:
         LOG.error(f"{err.message=} [{err.validator=}] {err.relative_path=}")
         code, message = 1, f"{err}"
@@ -161,11 +162,11 @@ def validate_json(document, schema, conformance=None) -> (int, str):
         LOG.error(f"{err.message=} [{err.validator=}] {err.relative_path=}")
         code, message = 2, f"{err}"
 
-    LOG.info(f"success in JSON validation: code=%d, message=%s" % (code, message))
+    LOG.info(f"success in JSON validation: {code=}, {message=}")
     return code, message
 
 
-def validate(document, schema, conformance=None) -> (int, str):
+def validate(document, schema, conformance=None) -> typing.Tuple[int, str]:
     """Validate the document against the schema."""
     if isinstance(document, dict):  # HACK A DID ACK
         return validate_json(document, schema, conformance)
@@ -177,8 +178,8 @@ def validate(document, schema, conformance=None) -> (int, str):
         return 1, "ERROR"
     request_version = version_from(schema, document)
     LOG.debug(f"version detected {schema=}, {document=}, {request_version=}")
-    found, version, ns = versions_xml(xml_tree, request_version)
-    LOG.debug(f"versions consistency {found=}, {version=}, {ns=}")
+    found, version, namespace = versions_xml(xml_tree, request_version)
+    LOG.debug(f"versions consistency {found=}, {version=}, {namespace=}")
     catalog = CVRF_VERSION_CATALOG_MAP[request_version]
     LOG.debug(f"caller site validation: {schema=}, {catalog=}, {xml_tree=}, {request_version=}")
     status, message = xml_validate(schema, catalog, xml_tree, request_version)
@@ -213,12 +214,12 @@ def derive_version_from_namespace(root):
 
     str_rep_root = str(root)
     LOG.debug(f"versions from namespace callee site naive match {str_rep_root=} start")
-    for version, ns in CVRF_VERSION_NS_MAP.items():
-        LOG.debug(f"versions from namespace callee site naive trial {str_rep_root=}, {version=}, {ns=}")
+    for version, namespace in CVRF_VERSION_NS_MAP.items():
+        LOG.debug(f"versions from namespace callee site naive trial {str_rep_root=}, {version=}, {namespace=}")
         if version in str_rep_root:
-            LOG.debug(f"versions from namespace callee site naive match {root=}, {version=}, {ns=}")
-            return version, ns
-        LOG.debug(f"versions from namespace callee site naive miss {root=}, {version=}, {ns=}")
+            LOG.debug(f"versions from namespace callee site naive match {root=}, {version=}, {namespace=}")
+            return version, namespace
+        LOG.debug(f"versions from namespace callee site naive miss {root=}, {version=}, {namespace=}")
 
     return not_found
 
@@ -235,18 +236,12 @@ def versions_xml(xml_tree, request_version):
     return False, None, req_cvrf_version
 
 
-def cvrf_validate(f, xml_tree):
-    """
-    Validates a CVRF document
-
-    f: file object containing the schema
-    xml_tree: the serialized CVRF ElementTree object
-    returns: a code (True for valid / False for invalid) and a reason for the code
-    """
+def cvrf_validate(handle: typing.IO, xml_tree: etree.ElementTree) -> typing.Tuple[bool, str]:
+    """Validates a CVRF document."""
     try:
-        xmlschema_doc = etree.parse(f)
+        xmlschema_doc = etree.parse(handle)
     except etree.XMLSyntaxError as err:
-        return False, f'Parsing error, schema document "{f.name}" is not well-formed: {err}'
+        return False, f'Parsing error, schema document "{handle.name}" is not well-formed: {err}'
     xmlschema = etree.XMLSchema(xmlschema_doc)
 
     try:
@@ -303,6 +298,7 @@ def xml_validate(schema, catalog, xml_tree, request_version):
 
 
 def dispatch_embedding(argv, embedded, num_args, pos_args):
+    """Dispatch of embedded inputs (documents as arguments)."""
     if embedded:
         LOG.debug(f"embedded dispatch {embedded=}, {argv=}, {num_args=}, {pos_args=}")
         json_token, xml_token = '{', '<'
@@ -325,7 +321,7 @@ def dispatch_embedding(argv, embedded, num_args, pos_args):
 
 def init_logger(name=None, level=None):
     """Temporary refactoring: Initialize module level logger"""
-    global LOG
+    global LOG  # pylint: disable=global-statement
 
     log_format = {
         'format': '%(asctime)s %(levelname)s [%(name)s]: %(message)s',
@@ -337,13 +333,43 @@ def init_logger(name=None, level=None):
     LOG = logging.getLogger(APP if name is None else name)
 
 
+def inputs_xml(num_args, pos_args):
+    """Derive document and schema inputs for JSON format tasks."""
+    if num_args == 2:  # Schema file path is first
+        schema = pos_args[0]
+        document = pos_args[1]
+    else:
+        if num_args == 1:  # Assume schema implicit, argument given is document file path
+            document = pos_args[0]
+        else:
+            document = None
+        schema = CVRF_VERSION_SCHEMA_MAP[version_from(None, document)]
+
+    return document, schema
+
+
+def inputs_json(document_data, embedded, num_args, pos_args):
+    """Derive document and schema inputs for JSON format tasks."""
+    if num_args == 2:  # Schema file path is first
+        schema = json.loads(pos_args[0]) if embedded else load(pos_args[0])
+        document = json.loads(pos_args[1]) if embedded else load(pos_args[1])
+    else:
+        schema = load(CSAF_2_0_SCHEMA_PATH)
+        if num_args == 1:  # Assume schema implicit, argument given is document file path
+            document = json.loads(pos_args[0]) if embedded else load(pos_args[0])
+        else:
+            document = json.loads(document_data)
+
+    return document, schema
+
+
 def main(argv=None, embedded=False, debug=None):
     """Drive the validator.
     This function acts as the command line interface backend.
     There is some duplication to support testability.
     TODO(sthagen) the dispatch has become Rococo - needs Bauhaus again.
     """
-    debug = debug is None and DEBUG or debug is True
+    debug = DEBUG if debug is None else debug is True  # debug is None and DEBUG or debug is True
     init_logger(level=logging.DEBUG if debug else None)
     argv = argv if argv else sys.argv[1:]
     num_args = len(argv)
@@ -360,18 +386,10 @@ def main(argv=None, embedded=False, debug=None):
     LOG.debug(f"post dispatch {embedded=}, {argv=}, {num_args=}, {pos_args=}, {is_json=}, {is_xml=}")
 
     if is_json:
-        if num_args == 2:  # Schema file path is first
-            schema = json.loads(pos_args[0]) if embedded else load(pos_args[0])
-            document = json.loads(pos_args[1]) if embedded else load(pos_args[1])
-        else:
-            schema = load(CSAF_2_0_SCHEMA_PATH)
-            if num_args == 1:  # Assume schema implicit, argument given is document file path
-                document = json.loads(pos_args[0]) if embedded else load(pos_args[0])
-            else:
-                document = json.loads(document_data)
+        document, schema = inputs_json(document_data, embedded, num_args, pos_args)
 
         code, message = validate(document, schema)
-        LOG.info("Validation(JSON): code=%d, message=%s" % (code, message))
+        LOG.info(f"Validation(JSON): {code=}, {message=}")
 
     if embedded and not is_xml and not is_json:
         LOG.error("Usage error (embedded and not is_xml and not is_json)")
@@ -386,19 +404,13 @@ def main(argv=None, embedded=False, debug=None):
         return 2
 
     if num_args and is_xml:
-        if num_args == 2:  # Schema file path is first
-            schema = pos_args[0]
-            document = pos_args[1]
-        else:
-            if num_args == 1:  # Assume schema implicit, argument given is document file path
-                document = pos_args[0]
-            else:
-                LOG.error("Usage error (no embedding supported for xsd/xml)")
-                print("Usage: csaf-lint [schema.xsd] document.xml")
-                print(" note: no embedding supported for xsd/xml")
-                return 2
-            schema = CVRF_VERSION_SCHEMA_MAP[version_from(None, document)]
+        document, schema = inputs_xml(num_args, pos_args)
+    if document is None:
+        LOG.error("Usage error (no embedding supported for xsd/xml)")
+        print("Usage: csaf-lint [schema.xsd] document.xml")
+        print(" note: no embedding supported for xsd/xml")
+        return 2
 
     code, message = validate(document, schema)
-    LOG.info("Validation(XML): code=%d, message=%s" % (code, message))
+    LOG.info(f"Validation(XML): {code=}, {message=}")
     return code
