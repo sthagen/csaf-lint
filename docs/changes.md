@@ -2,6 +2,7 @@
 
 ## 0.0.9 (2021-04-29)
 
+* Hardened logging and backported to Python 3.7
 * Fixed corner cases
 * Better test coverage
 * Fixed csaf-lint app
