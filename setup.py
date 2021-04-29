@@ -59,7 +59,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "csaf-lint=csaf_lint.cli:main",
+            "csaf-lint = csaf_lint.cli:main",
         ]
     },
 )
