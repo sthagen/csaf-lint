@@ -1,10 +1,11 @@
 # Changelog
 
-## 0.0.9 (2021-03-25)
+## 0.0.9 (2021-04-29)
 
 * Fixed corner cases
 * Better test coverage
-* Eighth release on PyPI
+* Fixed csaf-lint app
+* Ninth release on PyPI
 
 ## 0.0.8 (2021-03-24)
 
