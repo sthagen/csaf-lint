@@ -132,3 +132,4 @@ dmypy.json
 *~
 .idea
 *.log
+local_publi.sh
