@@ -2,10 +2,23 @@ FROM python:3.9.4-slim-buster
 RUN export DEBIAN_FRONTEND=noninteractive && \
 apt-get update && \
 apt-get -y upgrade && \
+apt-get -y install libxml2-dev gcc libxslt-dev python3-dev && \
 apt-get install -y --no-install-recommends \
-  tini && \
+    gcc \
+    curl \
+    wget \
+    python3-pip \
+    zlib1g-dev \
+    libssl-dev \
+    libreadline6-dev \
+    libbz2-dev \
+    libsqlite3-dev \
+    git \
+    make \
+    vim \
+    tini && \
 apt-get -y clean && \
-  rm -rf /var/lib/apt/lists/*
+    rm -rf /var/lib/apt/lists/*
 WORKDIR /app
 COPY requirements.txt /app
 RUN pip install --upgrade --no-cache-dir pip && pip install --no-cache-dir -r requirements.txt
