@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 # pylint: disable=line-too-long
-""""Visit folder tree with CSAF or CVRF documents, validate the latter, and generate reports."""
+"""Visit folder tree with CSAF or CVRF documents, validate the latter, and generate reports."""
 import pathlib
 import os
 import sys
