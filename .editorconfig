@@ -17,9 +17,20 @@ end_of_line = lf
 indent_style = space
 indent_size = 2
 
+# Makefiles require tabs
+[Makefile]
+indent_style = tab
+indent_size = 4
+
 # 4 space indentation
 [*.{py,java,r,R}]
 indent_style = space
+indent_size = 4
+max_line_length = 120
+
+# 4 tab indentation
+[*.go]
+indent_style = tab
 indent_size = 4
 
 # 2 space indentation
@@ -42,3 +53,12 @@ curly_bracket_next_line = false
 indent_brace_style = BSD
 spaces_around_operators = true
 spaces_around_brackets = none
+max_line_length = 150
+
+[*.rs]
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 4
+max_line_length = 120
