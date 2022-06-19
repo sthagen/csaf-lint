@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.0.10 (2021-05-01)
+
+* Completed hardening of logging
+* Enhanced reporting of failed validation
+* Better test coverage
+* Added experimental CSAF v2.0 test support (semantic validation)
+* Tenth release on PyPI
+
 ## 0.0.9 (2021-04-29)
 
 * Hardened logging and backported to Python 3.7
