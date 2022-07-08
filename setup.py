@@ -52,11 +52,13 @@ setup(
         "Topic :: Software Development :: Libraries :: Python Modules",
     ],
     keywords="csaf cvrf validation baseline extension core profile envelope body development",
-    packages=find_packages(exclude=("tests",)),
+    packages=find_packages(exclude=("test",)),
     include_package_data=True,
     install_requires=[
-        "jsonschema",
-        "xmlschema"
+        "attrs>=21.4.0",
+        "jsonschema>=4.6.2",
+        "lxml>=4.9.1",
+        "xmlschema>=1.11.3"
     ],
     entry_points={
         "console_scripts": [
