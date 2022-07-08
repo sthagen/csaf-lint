@@ -1,4 +1,4 @@
 attrs==0.0.1
 jsonschema==0.0.1
-lxml==0.0.1
+lxml==4.9.1
 xmlschema==0.0.1
