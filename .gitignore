@@ -134,3 +134,4 @@ dmypy.json
 *.log
 local_publi.sh
 .vscode/
+local_*
