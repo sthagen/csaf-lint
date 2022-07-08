@@ -1,7 +1,7 @@
-coverage==0.0.1
-flake8==0.0.1
-hypothesis==0.0.1
-pyperf==0.0.1
-pytest==0.0.1
+coverage==6.4.1
+flake8==4.0.1
+hypothesis==6.49.1
+pyperf==2.3.1
+pytest==7.1.2
 pytest-coverage==0.0.1
-pytest-flake8==0.0.1
+pytest-flake8==1.1.1
