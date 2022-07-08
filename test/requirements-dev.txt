@@ -1,0 +1,7 @@
+black==0.0.1
+mkautodoc==0.0.1
+mkdocs==0.0.1
+mkdocs-material-extensions==0.0.1
+mypy==0.0.1
+prospector==0.0.1
+pylint==0.0.1
