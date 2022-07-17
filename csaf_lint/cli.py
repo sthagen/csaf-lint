@@ -25,7 +25,7 @@ def main(argv=None, debug=None):
             if not embedded:
                 embedded = True
             else:
-                print("ERROR: embedding only works for none or all.")
+                print('ERROR: embedding only works for none or all.')
                 sys.exit(2)
 
     return lint.main(argv, embedded=embedded, debug=debug)
