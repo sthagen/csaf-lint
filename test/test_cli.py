@@ -27,9 +27,9 @@ def test_main_nok_read_embedded_json_object_from_argv(capsys):
 @pytest.mark.serial
 def test_main_nok_read_empty_json_object_from_stdin(capsys, monkeypatch):
     monkeypatch.setattr('sys.stdin', io.StringIO('{}'))
-    assert cli.main([], debug=False) == 1
+    assert cli.main([], debug=False) == 2
     out, err = capsys.readouterr()
-    assert not out
+    assert out.startswith('Usage: csaf-lint [schema.json] document.json')
     assert not err
 
 
