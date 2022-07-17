@@ -1,5 +1,14 @@
 # CSAF Lint
+
 Experimental CSAF envelope and body profile validator.
+
+[License: MIT](https://github.com/sthagen/csaf-lint/blob/default/LICENSE)
+
+[![version](https://img.shields.io/pypi/v/csaf-lint.svg?style=flat)](https://pypi.python.org/pypi/csaf-lint/)
+[![downloads](https://img.shields.io/pypi/dm/csaf-lint.svg?style=flat)](https://pypi.python.org/pypi/csaf-lint/)
+[![wheel](https://img.shields.io/pypi/wheel/csaf-lint.svg?style=flat)](https://pypi.python.org/pypi/csaf-lint/)
+[![supported-versions](https://img.shields.io/pypi/pyversions/csaf-lint.svg?style=flat)](https://pypi.python.org/pypi/csaf-lint/)
+[![supported-implementations](https://img.shields.io/pypi/implementation/csaf-lint.svg?style=flat)](https://pypi.python.org/pypi/csaf-lint/)
 
 In short: The current version of the `csaf-lint` validates documents in various
 Common Security Advisory Framework (CSAF) formats against built-in
@@ -21,8 +30,17 @@ committee specification level.
 2. The previous versions namely CVRF 1.1 and 1.2 were in XML format.
 3. The current version CSAF 2.0-candidates are in JSON Schema format.
 
-Available on [PyPI as csaf-lint](https://pypi.org/project/csaf-lint/) and
-[hub.docker.com as shagen/csaf-lint](https://hub.docker.com/r/shagen/csaf-lint)
+Available on [PyPI as csaf-lint](https://pypi.org/project/csaf-lint/)
 
+## Installing
+
+Recommended installation of current experimental package:
+
+```console
+❯ python -m pipx install csaf-lint
+```
 ## Status
+
 Experimental.
+
+**Note**: The default branch is `default`.
