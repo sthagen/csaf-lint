@@ -1,4 +1,4 @@
-site_name: CSAF Lint
+site_name: CSAF-lint
 site_description: Experimental CSAF envelope and body profile validator.
 
 theme:
@@ -26,26 +26,29 @@ extra:
   generator: false
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/sthagen/fluffy-funicular
-    - icon: fontawesome/brands/docker
-      link: https://hub.docker.com/r/shagen/csaf-lint
+      link: https://github.com/sthagen/csaf-lint
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/csaf-lint
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/shage
 
-copyright: Copyright &copy; 2021 Stefan Hagen under the MIT license
+copyright: Copyright &copy; 2022 Stefan Hagen under the MIT license
 
-repo_name: sthagen/fluffy-funicular
-repo_url: https://github.com/sthagen/fluffy-funicular
+repo_name: sthagen/csaf-lint
+repo_url: https://github.com/sthagen/csaf-lint
 edit_uri: ""
 
 plugins:
   - search
+  - mkdocstrings
 
 nav:
   - Introduction: 'index.md'
   - Install: 'install.md'
   - Usage: 'usage.md'
+  - API: 'api.md'
   - Changes: 'changes.md'
+  - Third-Party: 'third-party/README.md'
 
 markdown_extensions:
   - mkautodoc
