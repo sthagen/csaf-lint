@@ -9,7 +9,6 @@ import pytest  # type: ignore
 
 import csaf_lint.cli as cli
 
-
 CONTENT_FEATURES = ('document', 'document-product', 'document-vulnerability', 'full', 'spam')
 USAGE_ERROR_EMBEDDING_TOKENS = ('ERROR:', 'embed', 'only', 'none', 'all')
 USAGE_ERROR_TOKENS = ('Usage:', 'schema', 'document', 'or:')

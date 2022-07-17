@@ -5,8 +5,8 @@ import pathlib
 from unittest import mock
 
 import jsonschema
-from lxml import etree  # type: ignore
 import pytest  # type: ignore
+from lxml import etree  # type: ignore
 
 import csaf_lint.lint as lint
 
@@ -15,8 +15,12 @@ USAGE_ERROR_TOKENS = ('requires', 'two', 'schema', 'document')
 USAGE_ERROR_NO_EMBEDDING_UNKNOWN_TOKENS = ('no', 'embed', 'support', 'non')
 USAGE_ERROR_NO_EMBEDDING_XML_TOKENS = ('no', 'embed', 'support', 'xml')
 
-CVRF_IMPLICIT_1_2_DOCUMENT_PATH = pathlib.Path('tests', 'fixtures', 'cvrf-no-version-given', 'is_wun_two.xml')  # cvrf_1.2_example_a.xml
-CVRF_IMPLICIT_1_1_DOCUMENT_PATH = pathlib.Path('tests', 'fixtures', 'cvrf-no-version-given', 'is_wun_wun.xml')  # CVRF-1.1-cisco-sa-20110525-rvs4000.xml
+CVRF_IMPLICIT_1_2_DOCUMENT_PATH = pathlib.Path(
+    'tests', 'fixtures', 'cvrf-no-version-given', 'is_wun_two.xml'
+)  # cvrf_1.2_example_a.xml
+CVRF_IMPLICIT_1_1_DOCUMENT_PATH = pathlib.Path(
+    'tests', 'fixtures', 'cvrf-no-version-given', 'is_wun_wun.xml'
+)  # CVRF-1.1-cisco-sa-20110525-rvs4000.xml
 
 
 def test_main_embedded_unknown_nok(capsys):
@@ -165,7 +169,9 @@ def test_main_validate_xml_cvrf_1_1_document_only_version_not_in_path_ok(capsys)
 @pytest.mark.serial
 @mock.patch.dict(os.environ, {"XML_CATALOG_FILES": ""}, clear=True)
 def test_main_validate_xml_cvrf_1_1_document_only_version_in_path_ok(capsys):
-    a_document_path = pathlib.Path('tests', 'fixtures', 'cvrf-1.1', 'baseline', '01.xml')  # CVRF-1.1-cisco-sa-20110525-rvs4000.xml
+    a_document_path = pathlib.Path(
+        'tests', 'fixtures', 'cvrf-1.1', 'baseline', '01.xml'
+    )  # CVRF-1.1-cisco-sa-20110525-rvs4000.xml
     argv = [str(a_document_path)]
     try:
         assert lint.main(argv=argv, embedded=False, debug=False) == 0
@@ -184,7 +190,9 @@ def test_main_validate_rest_ok(capsys):
             try:
                 assert lint.main(argv=argv, embedded=False, debug=False) == 0
             except jsonschema.exceptions.ValidationError as err:
-                raise ValueError(f"failed validation for {a_document_path} in {test_main_validate_rest_ok}. Details: {err}")
+                raise ValueError(
+                    f"failed validation for {a_document_path} in {test_main_validate_rest_ok}. Details: {err}"
+                )
             _, err = capsys.readouterr()
             assert not err
 
