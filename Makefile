@@ -1,10 +1,9 @@
 SHELL = /bin/bash
-package = shagen/csaf-lint
 
 .DEFAULT_GOAL := all
 isort = isort csaf_lint test
 black = black -S -l 120 --target-version py39 csaf_lint test
-flake8 = flake8 attribuutit test
+flake8 = flake8 csaf_lint test
 pytest = pytest --asyncio-mode=strict --cov=csaf_lint --cov-report term-missing:skip-covered --cov-branch --log-format="%(levelname)s %(message)s"
 
 .PHONY: install
