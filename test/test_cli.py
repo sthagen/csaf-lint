@@ -1,10 +1,7 @@
 # -*- coding: utf-8 -*-
 # pylint: disable=line-too-long,missing-docstring,reimported,unused-import,unused-variable
 import io
-import os
-import pathlib
 
-import jsonschema
 import pytest  # type: ignore
 
 import csaf_lint.cli as cli
@@ -46,7 +43,7 @@ def test_main_nok_int(capsys):
 
 def test_main_nok_three_args(capsys):
     sequence_of_non_existing_paths = ['/1', '/2', '/3']
-    message = r"2"
+    message = r'2'
     with pytest.raises(SystemExit, match=message):
         cli.main(sequence_of_non_existing_paths)
     out, err = capsys.readouterr()
