@@ -1,15 +1,14 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
-# pylint: disable=line-too-long
 """Visit folder tree with CSAF or CVRF documents, validate the latter, and generate reports."""
-import pathlib
 import os
+import pathlib
 import sys
 
 import csaf_lint.lint as lint
 
-DEBUG_VAR = "CSL_DEBUG"
-DEBUG = bool(os.getenv(DEBUG_VAR))
+DEBUG_VAR = 'CSL_DEBUG'
+DEBUG = bool(os.getenv(DEBUG_VAR, ''))
 
 
 # pylint: disable=expression-not-assigned
