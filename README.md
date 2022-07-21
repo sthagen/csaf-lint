@@ -11,8 +11,7 @@ Experimental CSAF envelope and body profile validator.
 [![supported-implementations](https://img.shields.io/pypi/implementation/csaf-lint.svg?style=flat)](https://pypi.python.org/pypi/csaf-lint/)
 
 In short: The current version of the `csaf-lint` validates documents in various
-Common Security Advisory Framework (CSAF) formats against built-in
-or user custom schema files.
+Common Security Advisory Framework (CSAF) formats against built-in or user custom schema files.
 
 The supported  versions are:
 
@@ -39,6 +38,7 @@ Recommended installation of current experimental package:
 ```console
 ❯ python -m pipx install csaf-lint
 ```
+
 ## Status
 
 Experimental.
