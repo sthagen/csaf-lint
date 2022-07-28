@@ -1,4 +1,4 @@
-attrs==21.4.0
+attrs==22.1.0
 jsonschema==4.7.2
 lxml==4.9.1
 xmlschema==2.0.1
