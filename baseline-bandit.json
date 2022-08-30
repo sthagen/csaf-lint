@@ -1,13 +1,21 @@
 {
-  "errors": [
-    {
-      "filename": "laskea",
-      "reason": "No such file or directory"
-    }
-  ],
-  "generated_at": "2022-08-30T16:15:52Z",
+  "errors": [],
+  "generated_at": "2022-08-30T16:16:58Z",
   "metrics": {
     "_totals": {
+      "CONFIDENCE.HIGH": 3,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 1,
+      "SEVERITY.MEDIUM": 2,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 397,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "csaf_lint/__init__.py": {
       "CONFIDENCE.HIGH": 0,
       "CONFIDENCE.LOW": 0,
       "CONFIDENCE.MEDIUM": 0,
@@ -19,7 +27,105 @@
       "loc": 0,
       "nosec": 0,
       "skipped_tests": 0
+    },
+    "csaf_lint/__main__.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 4,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "csaf_lint/cli.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 23,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "csaf_lint/lint.py": {
+      "CONFIDENCE.HIGH": 3,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 1,
+      "SEVERITY.MEDIUM": 2,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 370,
+      "nosec": 0,
+      "skipped_tests": 0
     }
   },
-  "results": []
+  "results": [
+    {
+      "code": "11 import jsonschema  # type: ignore\n12 from lxml import etree  # type: ignore\n13 \n14 ENCODING = 'utf-8'\n",
+      "col_offset": 0,
+      "filename": "csaf_lint/lint.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 20,
+        "link": "https://cwe.mitre.org/data/definitions/20.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Using etree to parse untrusted XML data is known to be vulnerable to XML attacks. Replace etree with the equivalent defusedxml package.",
+      "line_number": 12,
+      "line_range": [
+        12,
+        13
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.7.4/blacklists/blacklist_imports.html#b410-import-lxml",
+      "test_id": "B410",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "211     try:\n212         cvrf_doc = etree.parse(document_path, etree.XMLParser(encoding=ENCODING))\n213     except IOError as err:\n",
+      "col_offset": 19,
+      "filename": "csaf_lint/lint.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 20,
+        "link": "https://cwe.mitre.org/data/definitions/20.html"
+      },
+      "issue_severity": "MEDIUM",
+      "issue_text": "Using lxml.etree.parse to parse untrusted XML data is known to be vulnerable to XML attacks. Replace lxml.etree.parse with its defusedxml equivalent function.",
+      "line_number": 212,
+      "line_range": [
+        212
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.7.4/blacklists/blacklist_calls.html#b313-b320-xml-bad-etree",
+      "test_id": "B320",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "262     try:\n263         xmlschema_doc = etree.parse(handle)\n264     except etree.XMLSyntaxError as err:\n",
+      "col_offset": 24,
+      "filename": "csaf_lint/lint.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 20,
+        "link": "https://cwe.mitre.org/data/definitions/20.html"
+      },
+      "issue_severity": "MEDIUM",
+      "issue_text": "Using lxml.etree.parse to parse untrusted XML data is known to be vulnerable to XML attacks. Replace lxml.etree.parse with its defusedxml equivalent function.",
+      "line_number": 263,
+      "line_range": [
+        263
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.7.4/blacklists/blacklist_calls.html#b313-b320-xml-bad-etree",
+      "test_id": "B320",
+      "test_name": "blacklist"
+    }
+  ]
 }
