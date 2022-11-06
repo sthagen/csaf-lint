@@ -3,6 +3,9 @@ site_description: Experimental CSAF envelope and body profile validator.
 
 theme:
   name: 'material'
+  features:
+    - navigation.expand
+    - toc.integrate
   palette:
     # Light mode
     - media: "(prefers-color-scheme: light)"
