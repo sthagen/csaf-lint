@@ -3,6 +3,8 @@ site_description: Experimental CSAF envelope and body profile validator.
 
 theme:
   name: 'material'
+  logo: assets/logo.png
+  favicon: images/favicon.ico
   features:
     - navigation.expand
     - toc.integrate
