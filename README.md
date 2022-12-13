@@ -4,6 +4,8 @@ Experimental CSAF envelope and body profile validator.
 
 [License: MIT](https://github.com/sthagen/csaf-lint/blob/default/LICENSE)
 
+Third party dependencies are documented in the folder [third-party](third-party/README.md).
+
 [![version](https://img.shields.io/pypi/v/csaf-lint.svg?style=flat)](https://pypi.python.org/pypi/csaf-lint/)
 [![downloads](https://pepy.tech/badge/csaf-lint/month)](https://pepy.tech/project/csaf-lint)
 [![wheel](https://img.shields.io/pypi/wheel/csaf-lint.svg?style=flat)](https://pypi.python.org/pypi/csaf-lint/)
