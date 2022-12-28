@@ -4,8 +4,8 @@ digraph {
 	elementpath [label="elementpath\n3.0.2"]
 	lxml [label="lxml\n4.9.2"]
 	jsonschema [label="jsonschema\n4.17.3"]
-	jsonschema -> pyrsistent [label=">=0.14.0,!=0.17.2,!=0.17.1,!=0.17.0"]
 	jsonschema -> attrs [label=">=17.4.0"]
-	attrs [label="attrs\n22.2.0"]
+	jsonschema -> pyrsistent [label=">=0.14.0,!=0.17.2,!=0.17.1,!=0.17.0"]
 	pyrsistent [label="pyrsistent\n0.19.2"]
+	attrs [label="attrs\n22.2.0"]
 }
