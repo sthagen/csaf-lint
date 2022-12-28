@@ -1,10 +1,8 @@
-SHELL = /bin/bash
-
 .DEFAULT_GOAL := all
-isort = isort csaf_lint test
 black = black -S -l 120 --target-version py39 csaf_lint test
-flake8 = flake8 csaf_lint test
+isort = isort csaf_lint test
 pytest = pytest --asyncio-mode=strict --cov=csaf_lint --cov-report term-missing:skip-covered --cov-branch --log-format="%(levelname)s %(message)s"
+types = mypy csaf_lint
 
 .PHONY: install
 install:
@@ -18,7 +16,7 @@ install-all: install
 
 .PHONY: format
 format:
-	$(isort)
+	$(lint) --fix
 	$(black)
 
 .PHONY: init
@@ -29,13 +27,12 @@ init:
 .PHONY: lint
 lint:
 	python setup.py check -ms
-	$(flake8)
-	$(isort) --check-only --df
+	$(lint)
 	$(black) --check --diff
 
 .PHONY: types
 types:
-	mypy csaf_lint
+	$(types)
 
 .PHONY: test
 test: clean
