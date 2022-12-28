@@ -1,9 +1,8 @@
-#! /usr/bin/env python
-# -*- coding: utf-8 -*-
 """Visit folder tree with CSAF or CVRF documents, validate the latter, and generate reports."""
 import os
 import pathlib
 import sys
+from typing import no_type_check
 
 import csaf_lint.lint as lint
 
@@ -11,7 +10,7 @@ DEBUG_VAR = 'CSL_DEBUG'
 DEBUG = bool(os.getenv(DEBUG_VAR, ''))
 
 
-# pylint: disable=expression-not-assigned
+@no_type_check
 def main(argv=None, debug=None):
     """Dispatch processing of the job.
     This is the strings only command line interface.

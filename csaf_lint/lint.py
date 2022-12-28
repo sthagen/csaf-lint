@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-# pylint: disable=c-extension-no-member,expression-not-assigned,line-too-long,logging-fstring-interpolation
 """Visit CSAF/CVRF files and validate them against envelope (core) and given body profiles."""
 import json
 import logging
@@ -72,12 +70,14 @@ DEBUG_VAR = 'CSL_DEBUG'
 DEBUG = bool(os.getenv(DEBUG_VAR, ''))
 
 
+@typing.no_type_check
 def read_stdin():
     """Create document from stdin data."""
     LOG.debug('call site loading from stdin')
     return sys.stdin.read()
 
 
+@typing.no_type_check
 def load(file_path):
     """Create JSON object from file."""
     LOG.debug('call site file loading file_path=%s', file_path)
@@ -85,6 +85,7 @@ def load(file_path):
         return json.load(handle)
 
 
+@typing.no_type_check
 def version_peek(document_path):
     """HACK A DID ACK derives schema version from reading the first lines from path.
     Something like:
@@ -144,6 +145,7 @@ def version_peek(document_path):
     return None
 
 
+@typing.no_type_check
 def version_from(schema_path, document_path):
     """HACK A DID ACK derives non-default 1.1 version from path."""
     LOG.debug('xml version derivation flat inspection schema_path=%s', schema_path)
@@ -155,6 +157,7 @@ def version_from(schema_path, document_path):
     return version_peek(document_path)
 
 
+@typing.no_type_check
 def validate_json(document, schema, conformance=None) -> typing.Tuple[int, str]:
     """Validate the JSON document against the schema."""
     conformance = conformance if conformance else jsonschema.draft7_format_checker
@@ -176,6 +179,7 @@ def validate_json(document, schema, conformance=None) -> typing.Tuple[int, str]:
     return code, message
 
 
+@typing.no_type_check
 def validate(document, schema, conformance=None) -> typing.Tuple[int, str]:
     """Validate the document against the schema."""
     if isinstance(document, dict):  # HACK A DID ACK
@@ -203,6 +207,7 @@ def validate(document, schema, conformance=None) -> typing.Tuple[int, str]:
     return 1, 'ERROR'
 
 
+@typing.no_type_check
 def load_xml(document_path):
     """
     First things first: parse the document (to ensure it is well-formed XML) to obtain an ElementTree object
@@ -218,6 +223,7 @@ def load_xml(document_path):
     return cvrf_doc, f'well-formed xml tree from {document_path}'
 
 
+@typing.no_type_check
 def derive_version_from_namespace(root):
     """Version detection of XML document per element tree object root."""
     LOG.debug('versions from namespace callee site root=%s', root)
@@ -245,6 +251,7 @@ def derive_version_from_namespace(root):
     return not_found
 
 
+@typing.no_type_check
 def versions_xml(xml_tree, request_version):
     """Versions from cvrf namespace in xml tree and request version."""
     sem_ver, doc_cvrf_version = derive_version_from_namespace(xml_tree.getroot())
@@ -257,6 +264,7 @@ def versions_xml(xml_tree, request_version):
     return False, None, req_cvrf_version
 
 
+@typing.no_type_check
 def cvrf_validate(handle: typing.IO, xml_tree: etree.ElementTree) -> typing.Tuple[bool, str]:
     """Validates a CVRF document."""
     try:
@@ -272,6 +280,7 @@ def cvrf_validate(handle: typing.IO, xml_tree: etree.ElementTree) -> typing.Tupl
         return False, xmlschema.error_log
 
 
+@typing.no_type_check
 def push_catalog(catalog, request_version):
     """Isolate side effect interface to os env -> libxml2 <- lxml."""
     fallback_catalog = CVRF_DEFAULT_CATALOG
@@ -285,6 +294,7 @@ def push_catalog(catalog, request_version):
     return catalog
 
 
+@typing.no_type_check
 def derive_schema_path(catalog, request_version, schema):
     """Handle the implicit schema case by falling back on locally provided schema (matching the catalog)."""
     if schema:
@@ -305,6 +315,7 @@ def derive_schema_path(catalog, request_version, schema):
     return schema
 
 
+@typing.no_type_check
 def xml_validate(schema, catalog, xml_tree, request_version):
     """Validate xml tree against given xml schema of request version assisted by catalog."""
     LOG.debug(
@@ -330,6 +341,7 @@ def xml_validate(schema, catalog, xml_tree, request_version):
     return True, f'validation of {xml_tree} against {schema} succeeded with result: {result}'
 
 
+@typing.no_type_check
 def dispatch_embedding(argv, embedded, num_args, pos_args):
     """Dispatch of embedded inputs (documents as arguments)."""
     if embedded:
@@ -355,6 +367,7 @@ def dispatch_embedding(argv, embedded, num_args, pos_args):
     return document, document_data, is_json, is_xml, schema
 
 
+@typing.no_type_check
 def init_logger(name=None, level=None):
     """Temporary refactoring: Initialize module level logger"""
     global LOG  # pylint: disable=global-statement
@@ -369,6 +382,7 @@ def init_logger(name=None, level=None):
     LOG = logging.getLogger(APP if name is None else name)
 
 
+@typing.no_type_check
 def inputs_xml(num_args, pos_args):
     """Derive document and schema inputs for JSON format tasks."""
     if num_args == 2:  # Schema file path is first
@@ -384,6 +398,7 @@ def inputs_xml(num_args, pos_args):
     return document, schema
 
 
+@typing.no_type_check
 def inputs_json(document_data, embedded, num_args, pos_args):
     """Derive document and schema inputs for JSON format tasks."""
     if num_args == 2:  # Schema file path is first
@@ -399,6 +414,7 @@ def inputs_json(document_data, embedded, num_args, pos_args):
     return document, schema
 
 
+@typing.no_type_check
 def main(argv=None, embedded=False, debug=None):
     """Drive the validator.
     This function acts as the command line interface backend.
