@@ -4,8 +4,8 @@ __all__ = ['sbom_sha256']
 
 ENCODING = 'utf-8'
 TARGET = """\
-The [SBOM in CycloneDX v1.4 JSON format](https://github.com/sthagen/laskea/blob/default/sbom.json) with\
- SHA256 checksum ([$hash_8$ ...](https://raw.githubusercontent.com/sthagen/laskea/default/sbom.json.sha256\
+The [SBOM in CycloneDX v1.4 JSON format](https://github.com/sthagen/pilli/blob/default/sbom.json) with\
+ SHA256 checksum ([$hash_8$ ...](https://raw.githubusercontent.com/sthagen/pilli/default/sbom.json.sha256\
  "sha256:$hash_full$")).\
 """
 
