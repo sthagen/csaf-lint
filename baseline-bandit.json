@@ -1,6 +1,6 @@
 {
   "errors": [],
-  "generated_at": "2022-08-30T16:16:58Z",
+  "generated_at": "2022-12-28T15:00:45Z",
   "metrics": {
     "_totals": {
       "CONFIDENCE.HIGH": 3,
@@ -11,7 +11,7 @@
       "SEVERITY.LOW": 1,
       "SEVERITY.MEDIUM": 2,
       "SEVERITY.UNDEFINED": 0,
-      "loc": 397,
+      "loc": 421,
       "nosec": 0,
       "skipped_tests": 0
     },
@@ -24,7 +24,7 @@
       "SEVERITY.LOW": 0,
       "SEVERITY.MEDIUM": 0,
       "SEVERITY.UNDEFINED": 0,
-      "loc": 0,
+      "loc": 4,
       "nosec": 0,
       "skipped_tests": 0
     },
@@ -50,7 +50,7 @@
       "SEVERITY.LOW": 0,
       "SEVERITY.MEDIUM": 0,
       "SEVERITY.UNDEFINED": 0,
-      "loc": 23,
+      "loc": 25,
       "nosec": 0,
       "skipped_tests": 0
     },
@@ -63,14 +63,14 @@
       "SEVERITY.LOW": 1,
       "SEVERITY.MEDIUM": 2,
       "SEVERITY.UNDEFINED": 0,
-      "loc": 370,
+      "loc": 388,
       "nosec": 0,
       "skipped_tests": 0
     }
   },
   "results": [
     {
-      "code": "11 import jsonschema  # type: ignore\n12 from lxml import etree  # type: ignore\n13 \n14 ENCODING = 'utf-8'\n",
+      "code": "9 import jsonschema  # type: ignore\n10 from lxml import etree  # type: ignore\n11 \n12 ENCODING = 'utf-8'\n",
       "col_offset": 0,
       "filename": "csaf_lint/lint.py",
       "issue_confidence": "HIGH",
@@ -80,17 +80,17 @@
       },
       "issue_severity": "LOW",
       "issue_text": "Using etree to parse untrusted XML data is known to be vulnerable to XML attacks. Replace etree with the equivalent defusedxml package.",
-      "line_number": 12,
+      "line_number": 10,
       "line_range": [
-        12,
-        13
+        10,
+        11
       ],
       "more_info": "https://bandit.readthedocs.io/en/1.7.4/blacklists/blacklist_imports.html#b410-import-lxml",
       "test_id": "B410",
       "test_name": "blacklist"
     },
     {
-      "code": "211     try:\n212         cvrf_doc = etree.parse(document_path, etree.XMLParser(encoding=ENCODING))\n213     except IOError as err:\n",
+      "code": "216     try:\n217         cvrf_doc = etree.parse(document_path, etree.XMLParser(encoding=ENCODING))\n218     except IOError as err:\n",
       "col_offset": 19,
       "filename": "csaf_lint/lint.py",
       "issue_confidence": "HIGH",
@@ -100,16 +100,16 @@
       },
       "issue_severity": "MEDIUM",
       "issue_text": "Using lxml.etree.parse to parse untrusted XML data is known to be vulnerable to XML attacks. Replace lxml.etree.parse with its defusedxml equivalent function.",
-      "line_number": 212,
+      "line_number": 217,
       "line_range": [
-        212
+        217
       ],
       "more_info": "https://bandit.readthedocs.io/en/1.7.4/blacklists/blacklist_calls.html#b313-b320-xml-bad-etree",
       "test_id": "B320",
       "test_name": "blacklist"
     },
     {
-      "code": "262     try:\n263         xmlschema_doc = etree.parse(handle)\n264     except etree.XMLSyntaxError as err:\n",
+      "code": "270     try:\n271         xmlschema_doc = etree.parse(handle)\n272     except etree.XMLSyntaxError as err:\n",
       "col_offset": 24,
       "filename": "csaf_lint/lint.py",
       "issue_confidence": "HIGH",
@@ -119,9 +119,9 @@
       },
       "issue_severity": "MEDIUM",
       "issue_text": "Using lxml.etree.parse to parse untrusted XML data is known to be vulnerable to XML attacks. Replace lxml.etree.parse with its defusedxml equivalent function.",
-      "line_number": 263,
+      "line_number": 271,
       "line_range": [
-        263
+        271
       ],
       "more_info": "https://bandit.readthedocs.io/en/1.7.4/blacklists/blacklist_calls.html#b313-b320-xml-bad-etree",
       "test_id": "B320",
