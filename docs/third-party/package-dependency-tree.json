@@ -1,0 +1,46 @@
+[
+    {
+        "key": "jsonschema",
+        "package_name": "jsonschema",
+        "installed_version": "4.17.3",
+        "required_version": "4.17.3",
+        "dependencies": [
+            {
+                "key": "attrs",
+                "package_name": "attrs",
+                "installed_version": "22.2.0",
+                "required_version": ">=17.4.0",
+                "dependencies": []
+            },
+            {
+                "key": "pyrsistent",
+                "package_name": "pyrsistent",
+                "installed_version": "0.19.2",
+                "required_version": ">=0.14.0,!=0.17.2,!=0.17.1,!=0.17.0",
+                "dependencies": []
+            }
+        ]
+    },
+    {
+        "key": "lxml",
+        "package_name": "lxml",
+        "installed_version": "4.9.2",
+        "required_version": "4.9.2",
+        "dependencies": []
+    },
+    {
+        "key": "xmlschema",
+        "package_name": "xmlschema",
+        "installed_version": "2.1.1",
+        "required_version": "2.1.1",
+        "dependencies": [
+            {
+                "key": "elementpath",
+                "package_name": "elementpath",
+                "installed_version": "3.0.2",
+                "required_version": ">=3.0.0,<4.0.0",
+                "dependencies": []
+            }
+        ]
+    }
+]
