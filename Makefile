@@ -28,7 +28,7 @@ init:
 .PHONY: lint
 lint:
 	validate-pyproject pyproject.toml
-	$(lint)
+	$(lint) --diff
 	$(black) --check --diff
 
 .PHONY: types
@@ -54,7 +54,7 @@ sbom:
 
 .PHONY: version
 version:
-	@cog -I. -P -c -r --check --markers="[[fill ]]] [[[end]]]" -p "from gen_version import *" pyproject.toml $(package)/__init__.py
+	@cog -I. -P -c -r --check --markers="[[fill ]]] [[[end]]]" -p "from gen_version import *" $(package)/__init__.py
 
 .PHONY: secure
 secure:
@@ -73,7 +73,7 @@ clean:
 	@rm -f `find . -type f -name '*~' `
 	@rm -f `find . -type f -name '.*~' `
 	@rm -rf .cache htmlcov *.egg-info build dist/*
-	@rm -f .coverage .coverage.* *.log current-bandit.json
+	@rm -f .coverage .coverage.* *.log
 	@echo skipping not yet working pip uninstall $(package)
 	@rm -fr site/*
 
