@@ -12,10 +12,10 @@ __version__ = '$version$+parent.$revision$'\
 
 @functools.lru_cache()
 def _fetch_version():
-    with open(pathlib.Path('setup.cfg'), 'rt', encoding=ENCODING) as handle:
+    with open(pathlib.Path('pyproject.toml'), 'rt', encoding=ENCODING) as handle:
         for line in handle:
             if line.strip().startswith('version'):
-                version = line.strip().split('=')[1].strip()
+                version = line.strip().split('=')[1].strip().strip('"')
     return version
 
 
@@ -27,6 +27,10 @@ def git_describe(always: bool = True) -> None:
         vector.append('--always')
     revision = subprocess.run(vector, capture_output=True, encoding=ENCODING, text=True, check=True).stdout  # nosec
     revision = 'abadcafe' if revision is None else revision.strip()
+    if revision.startswith('nonce-'):
+        revision = revision.split('-')[-1]
+    if '-' in revision:
+        revision = revision.split('-')[-1]
     print(TARGET.replace('$revision$', revision).replace('$version$', version))
 
 
