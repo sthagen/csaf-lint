@@ -1,27 +1,27 @@
 [
   {
-    "Author": "Hynek Schlawack",
+    "Author": "Hynek Schlawack <hs@ox.cx>",
     "Description": "Classes Without Boilerplate",
     "License": "MIT License",
-    "LicenseFile": "/Users/ruth/.pyenv/versions/3.10.9/envs/csaf-lint-3-10-9/lib/python3.10/site-packages/attrs-22.2.0.dist-info/LICENSE",
+    "LicenseFile": "/Users/ruth/.pyenv/versions/3.10.9/envs/csaf-lint-3-10-9/lib/python3.10/site-packages/attrs-23.1.0.dist-info/licenses/LICENSE",
     "LicenseText": "The MIT License (MIT)\n\nCopyright (c) 2015 Hynek Schlawack and the attrs contributors\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
     "Name": "attrs",
     "NoticeFile": "UNKNOWN",
     "NoticeText": "UNKNOWN",
-    "URL": "https://www.attrs.org/",
-    "Version": "22.2.0"
+    "URL": "https://www.attrs.org/en/stable/changelog.html",
+    "Version": "23.1.0"
   },
   {
     "Author": "Davide Brunato",
-    "Description": "XPath 1.0/2.0/3.0 parsers and selectors for ElementTree and lxml",
+    "Description": "XPath 1.0/2.0/3.0/3.1 parsers and selectors for ElementTree and lxml",
     "License": "MIT License",
-    "LicenseFile": "/Users/ruth/.pyenv/versions/3.10.9/envs/csaf-lint-3-10-9/lib/python3.10/site-packages/elementpath-3.0.2.dist-info/LICENSE",
+    "LicenseFile": "/Users/ruth/.pyenv/versions/3.10.9/envs/csaf-lint-3-10-9/lib/python3.10/site-packages/elementpath-4.1.2.dist-info/LICENSE",
     "LicenseText": "The MIT License (MIT)\n\nCopyright (c), 2018-2021, SISSA (Scuola Internazionale Superiore di Studi Avanzati)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is furnished\nto do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
     "Name": "elementpath",
     "NoticeFile": "UNKNOWN",
     "NoticeText": "UNKNOWN",
     "URL": "https://github.com/sissaschool/elementpath",
-    "Version": "3.0.2"
+    "Version": "4.1.2"
   },
   {
     "Author": "Julian Berman",
@@ -32,7 +32,7 @@
     "Name": "jsonschema",
     "NoticeFile": "UNKNOWN",
     "NoticeText": "UNKNOWN",
-    "URL": "UNKNOWN",
+    "URL": "https://github.com/python-jsonschema/jsonschema",
     "Version": "4.17.3"
   },
   {
@@ -63,12 +63,12 @@
     "Author": "Davide Brunato",
     "Description": "An XML Schema validator and decoder",
     "License": "MIT License",
-    "LicenseFile": "/Users/ruth/.pyenv/versions/3.10.9/envs/csaf-lint-3-10-9/lib/python3.10/site-packages/xmlschema-2.1.1.dist-info/LICENSE",
+    "LicenseFile": "/Users/ruth/.pyenv/versions/3.10.9/envs/csaf-lint-3-10-9/lib/python3.10/site-packages/xmlschema-2.3.0.dist-info/LICENSE",
     "LicenseText": "The MIT License (MIT)\n\nCopyright (c), 2016-2022, SISSA (Scuola Internazionale Superiore di Studi Avanzati)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is furnished\nto do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
     "Name": "xmlschema",
     "NoticeFile": "UNKNOWN",
     "NoticeText": "UNKNOWN",
     "URL": "https://github.com/sissaschool/xmlschema",
-    "Version": "2.1.1"
+    "Version": "2.3.0"
   }
 ]

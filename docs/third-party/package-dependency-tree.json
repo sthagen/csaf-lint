@@ -8,7 +8,7 @@
             {
                 "key": "attrs",
                 "package_name": "attrs",
-                "installed_version": "22.2.0",
+                "installed_version": "23.1.0",
                 "required_version": ">=17.4.0",
                 "dependencies": []
             },
@@ -31,14 +31,14 @@
     {
         "key": "xmlschema",
         "package_name": "xmlschema",
-        "installed_version": "2.1.1",
-        "required_version": "2.1.1",
+        "installed_version": "2.3.0",
+        "required_version": "2.3.0",
         "dependencies": [
             {
                 "key": "elementpath",
                 "package_name": "elementpath",
-                "installed_version": "3.0.2",
-                "required_version": ">=3.0.0,<4.0.0",
+                "installed_version": "4.1.2",
+                "required_version": ">=4.1.2,<5.0.0",
                 "dependencies": []
             }
         ]

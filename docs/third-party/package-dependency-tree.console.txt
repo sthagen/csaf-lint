@@ -1,6 +1,6 @@
 jsonschema==4.17.3
-  - attrs [required: >=17.4.0, installed: 22.2.0]
-  - pyrsistent [required: >=0.14.0,!=0.17.2,!=0.17.1,!=0.17.0, installed: 0.19.2]
+├── attrs [required: >=17.4.0, installed: 23.1.0]
+└── pyrsistent [required: >=0.14.0,!=0.17.2,!=0.17.1,!=0.17.0, installed: 0.19.2]
 lxml==4.9.2
-xmlschema==2.1.1
-  - elementpath [required: >=3.0.0,<4.0.0, installed: 3.0.2]
+xmlschema==2.3.0
+└── elementpath [required: >=4.1.2,<5.0.0, installed: 4.1.2]
