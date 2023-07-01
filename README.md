@@ -11,6 +11,7 @@ Third party dependencies are documented in the folder [third-party](docs/third-p
 [![wheel](https://img.shields.io/pypi/wheel/csaf-lint.svg?style=flat)](https://pypi.python.org/pypi/csaf-lint/)
 [![supported-versions](https://img.shields.io/pypi/pyversions/csaf-lint.svg?style=flat)](https://pypi.python.org/pypi/csaf-lint/)
 [![supported-implementations](https://img.shields.io/pypi/implementation/csaf-lint.svg?style=flat)](https://pypi.python.org/pypi/csaf-lint/)
+[![maintenance-status](https://img.shields.io/github/commit-activity/y/sthagen/csaf-lint.svg?style=flat)](https://git.sr.ht/~sthagen/csaf-lint/log)
 
 In short: The current version of the `csaf-lint` validates documents in various
 Common Security Advisory Framework (CSAF) formats against built-in or user custom schema files.
