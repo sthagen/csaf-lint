@@ -1,8 +1,8 @@
 # Third Party Dependencies
 
 <!--[[[fill sbom_sha256()]]]-->
-The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/csaf-lint/blob/default/sbom/cdx.json) with SHA256 checksum ([fd13a204 ...](https://git.sr.ht/~sthagen/csaf-lint/blob/default/sbom/cdx.json.sha256 "sha256:fd13a2048c8984d98374f72ed3f1fbbe4c5a88de77ed4e8a8fc4650c66b70e7b")).
-<!--[[[end]]] (checksum: 1c82739511209f53e6885559efa3890c)-->
+The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/csaf-lint/blob/default/sbom/cdx.json) with SHA256 checksum ([11bd2d40 ...](https://git.sr.ht/~sthagen/csaf-lint/blob/default/sbom/cdx.json.sha256 "sha256:11bd2d404ded0236bb95729289137625e48899b22be181930f9b6e0112147ff3")).
+<!--[[[end]]] (checksum: 78b095a567ca38413c33c7ac381769a8)-->
 ## Licenses
 
 JSON files with complete license info of: [direct dependencies](direct-dependency-licenses.json) | [all dependencies](all-dependency-licenses.json)
@@ -21,9 +21,11 @@ JSON files with complete license info of: [direct dependencies](direct-dependenc
 ### Indirect Dependencies
 
 <!--[[[fill indirect_dependencies_table()]]]-->
-| Name | Version | License | Author | Description (from packaging data) |
-|:-----|:--------|:--------|:-------|:----------------------------------|
-<!--[[[end]]] (checksum: 8a87b89207db0be2864af66f9266660c)-->
+| Name                                                      | Version                                               | License     | Author            | Description (from packaging data)                                    |
+|:----------------------------------------------------------|:------------------------------------------------------|:------------|:------------------|:---------------------------------------------------------------------|
+| [elementpath](https://github.com/sissaschool/elementpath) | [4.1.2](https://pypi.org/project/elementpath/4.1.2/)  | MIT License | Davide Brunato    | XPath 1.0/2.0/3.0/3.1 parsers and selectors for ElementTree and lxml |
+| [pyrsistent](https://github.com/tobgu/pyrsistent/)        | [0.19.2](https://pypi.org/project/pyrsistent/0.19.2/) | MIT License | Tobias Gustafsson | Persistent/Functional/Immutable data structures                      |
+<!--[[[end]]] (checksum: f8a34c2dbbb805acfac36a04ea719070)-->
 
 ## Dependency Tree(s)
 
