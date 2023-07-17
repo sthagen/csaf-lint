@@ -1,4 +1,7 @@
 ---
 packages:
 - elementpath
+- jsonschema-specifications
 - pyrsistent
+- rpds-py
+
