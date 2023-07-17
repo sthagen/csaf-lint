@@ -1,0 +1,14 @@
+name: csaf-lint
+description: Common Security Advisory Framework (CSAF) Verification, Validation, and Application Programming Interface (API).
+license_spdx: MIT
+version: 2022.3.20
+spec_version: 1.0
+home_url: https://git.sr.ht/~sthagen/csaf-lint
+news_url: https://libraries.io/pypi/csaf-lint/versions.atom
+date: 2022-03-20
+about_resource: ./
+libraries_io_url: https://libraries.io/pypi/csaf-lint?number=2022.3.20
+vcs_tool: git
+vcs_repository: https://git.sr.ht/~sthagen/csaf-lint
+vcs_branch: default
+
