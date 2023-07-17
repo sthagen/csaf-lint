@@ -1,6 +1,13 @@
-jsonschema==4.17.3
-├── attrs [required: >=17.4.0, installed: 23.1.0]
-└── pyrsistent [required: >=0.14.0,!=0.17.2,!=0.17.1,!=0.17.0, installed: 0.19.2]
-lxml==4.9.2
-xmlschema==2.3.0
+jsonschema==4.18.2
+├── attrs [required: >=22.2.0, installed: 23.1.0]
+├── jsonschema-specifications [required: >=2023.03.6, installed: 2023.6.1]
+│   └── referencing [required: >=0.28.0, installed: 0.29.1]
+│       ├── attrs [required: >=22.2.0, installed: 23.1.0]
+│       └── rpds-py [required: >=0.7.0, installed: 0.8.10]
+├── referencing [required: >=0.28.4, installed: 0.29.1]
+│   ├── attrs [required: >=22.2.0, installed: 23.1.0]
+│   └── rpds-py [required: >=0.7.0, installed: 0.8.10]
+└── rpds-py [required: >=0.7.1, installed: 0.8.10]
+lxml==4.9.3
+xmlschema==2.3.1
 └── elementpath [required: >=4.1.2,<5.0.0, installed: 4.1.2]

@@ -2,21 +2,73 @@
     {
         "key": "jsonschema",
         "package_name": "jsonschema",
-        "installed_version": "4.17.3",
-        "required_version": "4.17.3",
+        "installed_version": "4.18.2",
+        "required_version": "4.18.2",
         "dependencies": [
             {
                 "key": "attrs",
                 "package_name": "attrs",
                 "installed_version": "23.1.0",
-                "required_version": ">=17.4.0",
+                "required_version": ">=22.2.0",
                 "dependencies": []
             },
             {
-                "key": "pyrsistent",
-                "package_name": "pyrsistent",
-                "installed_version": "0.19.2",
-                "required_version": ">=0.14.0,!=0.17.2,!=0.17.1,!=0.17.0",
+                "key": "jsonschema-specifications",
+                "package_name": "jsonschema-specifications",
+                "installed_version": "2023.6.1",
+                "required_version": ">=2023.03.6",
+                "dependencies": [
+                    {
+                        "key": "referencing",
+                        "package_name": "referencing",
+                        "installed_version": "0.29.1",
+                        "required_version": ">=0.28.0",
+                        "dependencies": [
+                            {
+                                "key": "attrs",
+                                "package_name": "attrs",
+                                "installed_version": "23.1.0",
+                                "required_version": ">=22.2.0",
+                                "dependencies": []
+                            },
+                            {
+                                "key": "rpds-py",
+                                "package_name": "rpds-py",
+                                "installed_version": "0.8.10",
+                                "required_version": ">=0.7.0",
+                                "dependencies": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "referencing",
+                "package_name": "referencing",
+                "installed_version": "0.29.1",
+                "required_version": ">=0.28.4",
+                "dependencies": [
+                    {
+                        "key": "attrs",
+                        "package_name": "attrs",
+                        "installed_version": "23.1.0",
+                        "required_version": ">=22.2.0",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "rpds-py",
+                        "package_name": "rpds-py",
+                        "installed_version": "0.8.10",
+                        "required_version": ">=0.7.0",
+                        "dependencies": []
+                    }
+                ]
+            },
+            {
+                "key": "rpds-py",
+                "package_name": "rpds-py",
+                "installed_version": "0.8.10",
+                "required_version": ">=0.7.1",
                 "dependencies": []
             }
         ]
@@ -24,15 +76,15 @@
     {
         "key": "lxml",
         "package_name": "lxml",
-        "installed_version": "4.9.2",
-        "required_version": "4.9.2",
+        "installed_version": "4.9.3",
+        "required_version": "4.9.3",
         "dependencies": []
     },
     {
         "key": "xmlschema",
         "package_name": "xmlschema",
-        "installed_version": "2.3.0",
-        "required_version": "2.3.0",
+        "installed_version": "2.3.1",
+        "required_version": "2.3.1",
         "dependencies": [
             {
                 "key": "elementpath",
