@@ -1,8 +1,8 @@
 # Third Party Dependencies
 
 <!--[[[fill sbom_sha256()]]]-->
-The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/csaf-lint/blob/default/sbom/cdx.json) with SHA256 checksum ([c023a081 ...](https://git.sr.ht/~sthagen/csaf-lint/blob/default/sbom/cdx.json.sha256 "sha256:c023a081c61e03af0f6cf3b0bb35865d51b0e6f212b4584ee24895b0cf888838")).
-<!--[[[end]]] (checksum: 6615abeeb8559e649638f3114c28fa6c)-->
+The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/csaf-lint/blob/default/sbom/cdx.json) with SHA256 checksum ([435c3844 ...](https://git.sr.ht/~sthagen/csaf-lint/blob/default/sbom/cdx.json.sha256 "sha256:435c3844005f7fc000adbafad5d0a5e238481a93d552f6e26e3ed59862207926")).
+<!--[[[end]]] (checksum: 8cd063d8e2a5148380f72a49375879e1)-->
 ## Licenses
 
 JSON files with complete license info of: [direct dependencies](direct-dependency-licenses.json) | [all dependencies](all-dependency-licenses.json)
@@ -21,11 +21,13 @@ JSON files with complete license info of: [direct dependencies](direct-dependenc
 ### Indirect Dependencies
 
 <!--[[[fill indirect_dependencies_table()]]]-->
-| Name                                                      | Version                                               | License     | Author            | Description (from packaging data)                                    |
-|:----------------------------------------------------------|:------------------------------------------------------|:------------|:------------------|:---------------------------------------------------------------------|
-| [elementpath](https://github.com/sissaschool/elementpath) | [4.1.2](https://pypi.org/project/elementpath/4.1.2/)  | MIT License | Davide Brunato    | XPath 1.0/2.0/3.0/3.1 parsers and selectors for ElementTree and lxml |
-| [pyrsistent](https://github.com/tobgu/pyrsistent/)        | [0.19.2](https://pypi.org/project/pyrsistent/0.19.2/) | MIT License | Tobias Gustafsson | Persistent/Functional/Immutable data structures                      |
-<!--[[[end]]] (checksum: f8a34c2dbbb805acfac36a04ea719070)-->
+| Name                                                                                        | Version                                                                  | License     | Author            | Description (from packaging data)                                    |
+|:--------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------|:------------|:------------------|:---------------------------------------------------------------------|
+| [elementpath](https://github.com/sissaschool/elementpath)                                   | [4.1.2](https://pypi.org/project/elementpath/4.1.2/)                     | MIT License | Davide Brunato    | XPath 1.0/2.0/3.0/3.1 parsers and selectors for ElementTree and lxml |
+| [jsonschema-specifications](https://github.com/python-jsonschema/jsonschema-specifications) | [2023.6.1](https://pypi.org/project/jsonschema-specifications/2023.6.1/) | MIT License | Julian Berman     | The JSON Schema meta-schemas and vocabularies, exposed as a Registry |
+| [pyrsistent](https://github.com/tobgu/pyrsistent/)                                          | [0.19.2](https://pypi.org/project/pyrsistent/0.19.2/)                    | MIT License | Tobias Gustafsson | Persistent/Functional/Immutable data structures                      |
+| [rpds-py](https://github.com/crate-py/rpds)                                                 | [0.8.10](https://pypi.org/project/rpds-py/0.8.10/)                       | MIT License | Julian Berman     | Python bindings to Rust's persistent data structures (rpds)          |
+<!--[[[end]]] (checksum: 86eb2304ca56917f884cd4dd4a329895)-->
 
 ## Dependency Tree(s)
 
