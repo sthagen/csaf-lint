@@ -36,7 +36,7 @@ dependencies = [
     "attrs >= 23.1.0",
     "jsonschema >= 4.18.4",
     "lxml >= 4.9.3",
-    "xmlschema >= 2.3.0",
+    "xmlschema >= 2.4.0",
 ]
 requires-python = ">=3.9"
 
