@@ -1,8 +1,8 @@
 # Third Party Dependencies
 
 <!--[[[fill sbom_sha256()]]]-->
-The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/csaf-lint/blob/default/sbom/cdx.json) with SHA256 checksum ([435c3844 ...](https://git.sr.ht/~sthagen/csaf-lint/blob/default/sbom/cdx.json.sha256 "sha256:435c3844005f7fc000adbafad5d0a5e238481a93d552f6e26e3ed59862207926")).
-<!--[[[end]]] (checksum: 8cd063d8e2a5148380f72a49375879e1)-->
+The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/csaf-lint/blob/default/sbom/cdx.json) with SHA256 checksum ([9ad78f75 ...](https://git.sr.ht/~sthagen/csaf-lint/blob/default/sbom/cdx.json.sha256 "sha256:9ad78f75ac768bfe9f3a7b20357b637182df5e3acfc5b5353ae5aa75cd79b012")).
+<!--[[[end]]] (checksum: 2ae49628335a1585e2c6f5c87c6f49f5)-->
 ## Licenses
 
 JSON files with complete license info of: [direct dependencies](direct-dependency-licenses.json) | [all dependencies](all-dependency-licenses.json)
@@ -13,21 +13,20 @@ JSON files with complete license info of: [direct dependencies](direct-dependenc
 | Name                                                          | Version                                               | License     | Author                     | Description (from packaging data)                                                                |
 |:--------------------------------------------------------------|:------------------------------------------------------|:------------|:---------------------------|:-------------------------------------------------------------------------------------------------|
 | [attrs](https://www.attrs.org/en/stable/changelog.html)       | [23.1.0](https://pypi.org/project/attrs/23.1.0/)      | MIT License | Hynek Schlawack <hs@ox.cx> | Classes Without Boilerplate                                                                      |
-| [jsonschema](https://github.com/python-jsonschema/jsonschema) | [4.18.2](https://pypi.org/project/jsonschema/4.18.2/) | MIT License | Julian Berman              | An implementation of JSON Schema validation for Python                                           |
+| [jsonschema](https://github.com/python-jsonschema/jsonschema) | [4.19.0](https://pypi.org/project/jsonschema/4.19.0/) | MIT License | Julian Berman              | An implementation of JSON Schema validation for Python                                           |
 | [lxml](https://lxml.de/)                                      | [4.9.3](https://pypi.org/project/lxml/4.9.3/)         | BSD License | lxml dev team              | Powerful and Pythonic XML processing library combining libxml2/libxslt with the ElementTree API. |
-| [xmlschema](https://github.com/sissaschool/xmlschema)         | [2.3.1](https://pypi.org/project/xmlschema/2.3.1/)    | MIT License | Davide Brunato             | An XML Schema validator and decoder                                                              |
-<!--[[[end]]] (checksum: a1370fe9e296694e2f00946eb504ef21)-->
+| [xmlschema](https://github.com/sissaschool/xmlschema)         | [2.4.0](https://pypi.org/project/xmlschema/2.4.0/)    | MIT License | Davide Brunato             | An XML Schema validator and decoder                                                              |
+<!--[[[end]]] (checksum: a4e1f2fac6e7943f9c61381e28e49e3f)-->
 
 ### Indirect Dependencies
 
 <!--[[[fill indirect_dependencies_table()]]]-->
-| Name                                                                                        | Version                                                                  | License     | Author            | Description (from packaging data)                                    |
-|:--------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------|:------------|:------------------|:---------------------------------------------------------------------|
-| [elementpath](https://github.com/sissaschool/elementpath)                                   | [4.1.2](https://pypi.org/project/elementpath/4.1.2/)                     | MIT License | Davide Brunato    | XPath 1.0/2.0/3.0/3.1 parsers and selectors for ElementTree and lxml |
-| [jsonschema-specifications](https://github.com/python-jsonschema/jsonschema-specifications) | [2023.6.1](https://pypi.org/project/jsonschema-specifications/2023.6.1/) | MIT License | Julian Berman     | The JSON Schema meta-schemas and vocabularies, exposed as a Registry |
-| [pyrsistent](https://github.com/tobgu/pyrsistent/)                                          | [0.19.2](https://pypi.org/project/pyrsistent/0.19.2/)                    | MIT License | Tobias Gustafsson | Persistent/Functional/Immutable data structures                      |
-| [rpds-py](https://github.com/crate-py/rpds)                                                 | [0.8.10](https://pypi.org/project/rpds-py/0.8.10/)                       | MIT License | Julian Berman     | Python bindings to Rust's persistent data structures (rpds)          |
-<!--[[[end]]] (checksum: 86eb2304ca56917f884cd4dd4a329895)-->
+| Name                                                                                        | Version                                                                  | License     | Author         | Description (from packaging data)                                    |
+|:--------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------|:------------|:---------------|:---------------------------------------------------------------------|
+| [elementpath](https://github.com/sissaschool/elementpath)                                   | [4.1.5](https://pypi.org/project/elementpath/4.1.5/)                     | MIT License | Davide Brunato | XPath 1.0/2.0/3.0/3.1 parsers and selectors for ElementTree and lxml |
+| [jsonschema-specifications](https://github.com/python-jsonschema/jsonschema-specifications) | [2023.6.1](https://pypi.org/project/jsonschema-specifications/2023.6.1/) | MIT License | Julian Berman  | The JSON Schema meta-schemas and vocabularies, exposed as a Registry |
+| [rpds-py](https://github.com/crate-py/rpds)                                                 | [0.8.11](https://pypi.org/project/rpds-py/0.8.11/)                       | MIT License | Julian Berman  | Python bindings to Rust's persistent data structures (rpds)          |
+<!--[[[end]]] (checksum: bc362607d49d8beab9c1afb80d75ab6f)-->
 
 ## Dependency Tree(s)
 
@@ -43,18 +42,18 @@ Base graphviz file in dot format: [Trees of the direct dependencies](package-dep
 
 <!--[[[fill dependency_tree_console_text()]]]-->
 ````console
-jsonschema==4.18.2
+jsonschema==4.19.0
 ├── attrs [required: >=22.2.0, installed: 23.1.0]
 ├── jsonschema-specifications [required: >=2023.03.6, installed: 2023.6.1]
 │   └── referencing [required: >=0.28.0, installed: 0.29.1]
 │       ├── attrs [required: >=22.2.0, installed: 23.1.0]
-│       └── rpds-py [required: >=0.7.0, installed: 0.8.10]
+│       └── rpds-py [required: >=0.7.0, installed: 0.8.11]
 ├── referencing [required: >=0.28.4, installed: 0.29.1]
 │   ├── attrs [required: >=22.2.0, installed: 23.1.0]
-│   └── rpds-py [required: >=0.7.0, installed: 0.8.10]
-└── rpds-py [required: >=0.7.1, installed: 0.8.10]
+│   └── rpds-py [required: >=0.7.0, installed: 0.8.11]
+└── rpds-py [required: >=0.7.1, installed: 0.8.11]
 lxml==4.9.3
-xmlschema==2.3.1
-└── elementpath [required: >=4.1.2,<5.0.0, installed: 4.1.2]
+xmlschema==2.4.0
+└── elementpath [required: >=4.1.5,<5.0.0, installed: 4.1.5]
 ````
-<!--[[[end]]] (checksum: dba73d4cae9fed64046129d5da3e576f)-->
+<!--[[[end]]] (checksum: 2390929355bd364666854b73ebb3ee07)-->

@@ -20,7 +20,7 @@
 <title>jsonschema</title>
 <ellipse fill="none" stroke="black" cx="222.42" cy="-331.42" rx="56.39" ry="25.81"/>
 <text text-anchor="middle" x="222.42" y="-332.37" font-family="Times,serif" font-size="14.00">jsonschema</text>
-<text text-anchor="middle" x="222.42" y="-318.12" font-family="Times,serif" font-size="14.00">4.18.2</text>
+<text text-anchor="middle" x="222.42" y="-318.12" font-family="Times,serif" font-size="14.00">4.19.0</text>
 </g>
 <!-- jsonschema&#45;&gt;attrs -->
 <g id="edge1" class="edge">
@@ -62,7 +62,7 @@
 <title>rpds&#45;py</title>
 <ellipse fill="none" stroke="black" cx="319.42" cy="-25.81" rx="40.48" ry="25.81"/>
 <text text-anchor="middle" x="319.42" y="-26.76" font-family="Times,serif" font-size="14.00">rpds&#45;py</text>
-<text text-anchor="middle" x="319.42" y="-12.51" font-family="Times,serif" font-size="14.00">0.8.10</text>
+<text text-anchor="middle" x="319.42" y="-12.51" font-family="Times,serif" font-size="14.00">0.8.11</text>
 </g>
 <!-- jsonschema&#45;&gt;rpds&#45;py -->
 <g id="edge4" class="edge">
@@ -104,21 +104,21 @@
 <title>xmlschema</title>
 <ellipse fill="none" stroke="black" cx="510.42" cy="-331.42" rx="55.86" ry="25.81"/>
 <text text-anchor="middle" x="510.42" y="-332.37" font-family="Times,serif" font-size="14.00">xmlschema</text>
-<text text-anchor="middle" x="510.42" y="-318.12" font-family="Times,serif" font-size="14.00">2.3.1</text>
+<text text-anchor="middle" x="510.42" y="-318.12" font-family="Times,serif" font-size="14.00">2.4.0</text>
 </g>
 <!-- elementpath -->
 <g id="node8" class="node">
 <title>elementpath</title>
 <ellipse fill="none" stroke="black" cx="510.42" cy="-229.55" rx="58.51" ry="25.81"/>
 <text text-anchor="middle" x="510.42" y="-230.5" font-family="Times,serif" font-size="14.00">elementpath</text>
-<text text-anchor="middle" x="510.42" y="-216.25" font-family="Times,serif" font-size="14.00">4.1.2</text>
+<text text-anchor="middle" x="510.42" y="-216.25" font-family="Times,serif" font-size="14.00">4.1.5</text>
 </g>
 <!-- xmlschema&#45;&gt;elementpath -->
 <g id="edge8" class="edge">
 <title>xmlschema&#45;&gt;elementpath</title>
 <path fill="none" stroke="black" d="M510.42,-305.21C510.42,-293.51 510.42,-279.37 510.42,-266.56"/>
 <polygon fill="black" stroke="black" points="513.92,-266.74 510.42,-256.74 506.92,-266.74 513.92,-266.74"/>
-<text text-anchor="middle" x="552.42" y="-274.31" font-family="Times,serif" font-size="14.00">&gt;=4.1.2,&lt;5.0.0</text>
+<text text-anchor="middle" x="552.42" y="-274.31" font-family="Times,serif" font-size="14.00">&gt;=4.1.5,&lt;5.0.0</text>
 </g>
 </g>
 </svg>
