@@ -48,7 +48,7 @@
 <title>referencing</title>
 <ellipse fill="none" stroke="black" cx="234.42" cy="-127.68" rx="54.8" ry="25.81"/>
 <text text-anchor="middle" x="234.42" y="-128.63" font-family="Times,serif" font-size="14.00">referencing</text>
-<text text-anchor="middle" x="234.42" y="-114.38" font-family="Times,serif" font-size="14.00">0.29.1</text>
+<text text-anchor="middle" x="234.42" y="-114.38" font-family="Times,serif" font-size="14.00">0.30.2</text>
 </g>
 <!-- jsonschema&#45;&gt;referencing -->
 <g id="edge3" class="edge">

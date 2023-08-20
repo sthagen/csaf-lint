@@ -12,7 +12,7 @@ digraph {
 	lxml [label="lxml\n4.9.3"]
 	referencing -> "rpds-py" [label=">=0.7.0"]
 	referencing -> attrs [label=">=22.2.0"]
-	referencing [label="referencing\n0.29.1"]
+	referencing [label="referencing\n0.30.2"]
 	xmlschema -> elementpath [label=">=4.1.5,<5.0.0"]
 	xmlschema [label="xmlschema\n2.4.0"]
 }
