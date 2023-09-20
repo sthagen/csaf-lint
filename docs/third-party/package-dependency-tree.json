@@ -2,8 +2,8 @@
     {
         "key": "jsonschema",
         "package_name": "jsonschema",
-        "installed_version": "4.19.0",
-        "required_version": "4.19.0",
+        "installed_version": "4.19.1",
+        "required_version": "4.19.1",
         "dependencies": [
             {
                 "key": "attrs",

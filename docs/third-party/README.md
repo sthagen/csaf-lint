@@ -1,8 +1,8 @@
 # Third Party Dependencies
 
 <!--[[[fill sbom_sha256()]]]-->
-The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/csaf-lint/blob/default/etc/sbom/cdx.json) with SHA256 checksum ([e9562095 ...](https://git.sr.ht/~sthagen/csaf-lint/blob/default/etc/sbom/cdx.json.sha256 "sha256:e9562095c911dc45673c5474149f23681090f1187a42be5abd9e836132f4b164")).
-<!--[[[end]]] (checksum: 6c04540aa60c188f27621db19fe0696f)-->
+The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/csaf-lint/blob/default/etc/sbom/cdx.json) with SHA256 checksum ([091127cd ...](https://git.sr.ht/~sthagen/csaf-lint/blob/default/etc/sbom/cdx.json.sha256 "sha256:091127cd95a75ab9898f74468a1ea178434e6354ab65a81571b72b12f19f91b0")).
+<!--[[[end]]] (checksum: 862ed6924ad2673835163bf45f566b10)-->
 ## Licenses
 
 JSON files with complete license info of: [direct dependencies](direct-dependency-licenses.json) | [all dependencies](all-dependency-licenses.json)
@@ -13,11 +13,11 @@ JSON files with complete license info of: [direct dependencies](direct-dependenc
 | Name                                                            | Version                                                | License     | Author                     | Description (from packaging data)                                                                |
 |:----------------------------------------------------------------|:-------------------------------------------------------|:------------|:---------------------------|:-------------------------------------------------------------------------------------------------|
 | [attrs](https://www.attrs.org/en/stable/changelog.html)         | [23.1.0](https://pypi.org/project/attrs/23.1.0/)       | MIT License | Hynek Schlawack <hs@ox.cx> | Classes Without Boilerplate                                                                      |
-| [jsonschema](https://github.com/python-jsonschema/jsonschema)   | [4.19.0](https://pypi.org/project/jsonschema/4.19.0/)  | MIT License | Julian Berman              | An implementation of JSON Schema validation for Python                                           |
+| [jsonschema](https://github.com/python-jsonschema/jsonschema)   | [4.19.1](https://pypi.org/project/jsonschema/4.19.1/)  | MIT License | Julian Berman              | An implementation of JSON Schema validation for Python                                           |
 | [lxml](https://lxml.de/)                                        | [4.9.3](https://pypi.org/project/lxml/4.9.3/)          | BSD License | lxml dev team              | Powerful and Pythonic XML processing library combining libxml2/libxslt with the ElementTree API. |
 | [referencing](https://github.com/python-jsonschema/referencing) | [0.30.2](https://pypi.org/project/referencing/0.30.2/) | MIT License | Julian Berman              | JSON Referencing + Python                                                                        |
 | [xmlschema](https://github.com/sissaschool/xmlschema)           | [2.4.0](https://pypi.org/project/xmlschema/2.4.0/)     | MIT License | Davide Brunato             | An XML Schema validator and decoder                                                              |
-<!--[[[end]]] (checksum: 937729b62b117cae61fd135803814260)-->
+<!--[[[end]]] (checksum: 0be63571b3215a96269b1e2e94a940a6)-->
 
 ### Indirect Dependencies
 
@@ -43,7 +43,7 @@ Base graphviz file in dot format: [Trees of the direct dependencies](package-dep
 
 <!--[[[fill dependency_tree_console_text()]]]-->
 ````console
-jsonschema==4.19.0
+jsonschema==4.19.1
 ├── attrs [required: >=22.2.0, installed: 23.1.0]
 ├── jsonschema-specifications [required: >=2023.03.6, installed: 2023.6.1]
 │   └── referencing [required: >=0.28.0, installed: 0.30.2]
@@ -57,4 +57,4 @@ lxml==4.9.3
 xmlschema==2.4.0
 └── elementpath [required: >=4.1.5,<5.0.0, installed: 4.1.5]
 ````
-<!--[[[end]]] (checksum: ff59e79a63600f80fa47a419366726ef)-->
+<!--[[[end]]] (checksum: 14203b5bb031b7a6324d674c4ffd98c7)-->

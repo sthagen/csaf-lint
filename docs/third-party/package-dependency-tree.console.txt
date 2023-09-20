@@ -1,4 +1,4 @@
-jsonschema==4.19.0
+jsonschema==4.19.1
 ├── attrs [required: >=22.2.0, installed: 23.1.0]
 ├── jsonschema-specifications [required: >=2023.03.6, installed: 2023.6.1]
 │   └── referencing [required: >=0.28.0, installed: 0.30.2]
