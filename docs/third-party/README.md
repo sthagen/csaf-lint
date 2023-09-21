@@ -1,8 +1,8 @@
 # Third Party Dependencies
 
 <!--[[[fill sbom_sha256()]]]-->
-The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/csaf-lint/blob/default/etc/sbom/cdx.json) with SHA256 checksum ([091127cd ...](https://git.sr.ht/~sthagen/csaf-lint/blob/default/etc/sbom/cdx.json.sha256 "sha256:091127cd95a75ab9898f74468a1ea178434e6354ab65a81571b72b12f19f91b0")).
-<!--[[[end]]] (checksum: 862ed6924ad2673835163bf45f566b10)-->
+The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/csaf-lint/blob/default/etc/sbom/cdx.json) with SHA256 checksum ([2c5d6f0e ...](https://git.sr.ht/~sthagen/csaf-lint/blob/default/etc/sbom/cdx.json.sha256 "sha256:2c5d6f0e95c24573f1a2abb738272431fc0624d422e6280a02629b59165b02f8")).
+<!--[[[end]]] (checksum: 99ddf748f5414a51175f73b3cc262308)-->
 ## Licenses
 
 JSON files with complete license info of: [direct dependencies](direct-dependency-licenses.json) | [all dependencies](all-dependency-licenses.json)
@@ -16,8 +16,8 @@ JSON files with complete license info of: [direct dependencies](direct-dependenc
 | [jsonschema](https://github.com/python-jsonschema/jsonschema)   | [4.19.1](https://pypi.org/project/jsonschema/4.19.1/)  | MIT License | Julian Berman              | An implementation of JSON Schema validation for Python                                           |
 | [lxml](https://lxml.de/)                                        | [4.9.3](https://pypi.org/project/lxml/4.9.3/)          | BSD License | lxml dev team              | Powerful and Pythonic XML processing library combining libxml2/libxslt with the ElementTree API. |
 | [referencing](https://github.com/python-jsonschema/referencing) | [0.30.2](https://pypi.org/project/referencing/0.30.2/) | MIT License | Julian Berman              | JSON Referencing + Python                                                                        |
-| [xmlschema](https://github.com/sissaschool/xmlschema)           | [2.4.0](https://pypi.org/project/xmlschema/2.4.0/)     | MIT License | Davide Brunato             | An XML Schema validator and decoder                                                              |
-<!--[[[end]]] (checksum: 0be63571b3215a96269b1e2e94a940a6)-->
+| [xmlschema](https://github.com/sissaschool/xmlschema)           | [2.5.0](https://pypi.org/project/xmlschema/2.5.0/)     | MIT License | Davide Brunato             | An XML Schema validator and decoder                                                              |
+<!--[[[end]]] (checksum: a9687a06ba05a791c944a93bf780fce7)-->
 
 ### Indirect Dependencies
 
@@ -54,7 +54,7 @@ jsonschema==4.19.1
 │   └── rpds-py [required: >=0.7.0, installed: 0.8.11]
 └── rpds-py [required: >=0.7.1, installed: 0.8.11]
 lxml==4.9.3
-xmlschema==2.4.0
+xmlschema==2.5.0
 └── elementpath [required: >=4.1.5,<5.0.0, installed: 4.1.5]
 ````
-<!--[[[end]]] (checksum: 14203b5bb031b7a6324d674c4ffd98c7)-->
+<!--[[[end]]] (checksum: 53f9eb01fa26d5f0c0dc574ae08e0d05)-->

@@ -83,8 +83,8 @@
     {
         "key": "xmlschema",
         "package_name": "xmlschema",
-        "installed_version": "2.4.0",
-        "required_version": "2.4.0",
+        "installed_version": "2.5.0",
+        "required_version": "2.5.0",
         "dependencies": [
             {
                 "key": "elementpath",
