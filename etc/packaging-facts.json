@@ -1,0 +1,381 @@
+{
+  "info": {
+    "author": "Stefan Hagen",
+    "author_email": "stefan@hagen.link",
+    "bugtrack_url": null,
+    "classifiers": [
+      "Development Status :: 3 - Alpha",
+      "Intended Audience :: Developers",
+      "License :: OSI Approved :: MIT License",
+      "Programming Language :: Python :: 3.10",
+      "Programming Language :: Python :: 3.8",
+      "Programming Language :: Python :: 3.9",
+      "Topic :: Internet",
+      "Topic :: Software Development :: Build Tools",
+      "Topic :: Software Development :: Libraries :: Python Modules"
+    ],
+    "description": "# CSAF Lint\n\nExperimental CSAF envelope and body profile validator.\n\n[License: MIT](https://github.com/sthagen/csaf-lint/blob/default/LICENSE)\n\n[![version](https://img.shields.io/pypi/v/csaf-lint.svg?style=flat)](https://pypi.python.org/pypi/csaf-lint/)\n[![downloads](https://img.shields.io/pypi/dm/csaf-lint.svg?style=flat)](https://pypi.python.org/pypi/csaf-lint/)\n[![wheel](https://img.shields.io/pypi/wheel/csaf-lint.svg?style=flat)](https://pypi.python.org/pypi/csaf-lint/)\n[![supported-versions](https://img.shields.io/pypi/pyversions/csaf-lint.svg?style=flat)](https://pypi.python.org/pypi/csaf-lint/)\n[![supported-implementations](https://img.shields.io/pypi/implementation/csaf-lint.svg?style=flat)](https://pypi.python.org/pypi/csaf-lint/)\n\nIn short: The current version of the `csaf-lint` validates documents in various\nCommon Security Advisory Framework (CSAF) formats against built-in\nor user custom schema files.\n\nThe supported  versions are:\n\n* CSAF 2.0 (default is now the 2021.03.23 editor version)\n* CSAF 1.2 (aka CVRF 1.2)\n* CSAF 1.1 (aka CVRF 1.1)\n\n## Caveat Emptor\n\n1. Expect changes to the CSAF v2.0 support because the underlying OASIS specification\nis undergoing development by the members of the OASIS technical committee.\n   This may lead to breaking changes until the standard is published on\ncommittee specification level.\n   The current supported draft JSON Schema versions are from 2021-03-23, 2021-03-19, and 2021-03-07.\n2. The previous versions namely CVRF 1.1 and 1.2 were in XML format.\n3. The current version CSAF 2.0-candidates are in JSON Schema format.\n\nAvailable on [PyPI as csaf-lint](https://pypi.org/project/csaf-lint/)\n\n## Installing\n\nRecommended installation of current experimental package:\n\n```console\n\u276f python -m pipx install csaf-lint\n```\n## Status\n\nExperimental.\n\n**Note**: The default branch is `default`.\n",
+    "description_content_type": "text/markdown",
+    "docs_url": null,
+    "download_url": "",
+    "downloads": {
+      "last_day": -1,
+      "last_month": -1,
+      "last_week": -1
+    },
+    "home_page": "https://github.com/sthagen/csaf-lint",
+    "keywords": "baseline,body,core,csaf,cvrf,development,envelope,extension,profile,validation",
+    "license": "",
+    "maintainer": "Stefan Hagen",
+    "maintainer_email": "stefan@hagen.link",
+    "name": "csaf-lint",
+    "package_url": "https://pypi.org/project/csaf-lint/",
+    "platform": null,
+    "project_url": "https://pypi.org/project/csaf-lint/",
+    "project_urls": {
+      "Bug Tracker": "https://github.com/sthagen/csaf-lint/issues",
+      "Documentation": "https://sthagen.github.io/csaf-lint",
+      "Homepage": "https://github.com/sthagen/csaf-lint",
+      "Source Code": "https://github.com/sthagen/csaf-lint"
+    },
+    "release_url": "https://pypi.org/project/csaf-lint/2022.7.17/",
+    "requires_dist": [
+      "attrs (>=21.4.0)",
+      "jsonschema (>=4.7.2)",
+      "lxml (>=4.9.1)",
+      "xmlschema (>=1.11.3)",
+      "black ; extra == 'dev'",
+      "coverage ; extra == 'dev'",
+      "flake8 ; extra == 'dev'",
+      "mypy ; extra == 'dev'",
+      "pytest ; extra == 'dev'",
+      "pytest-cov ; extra == 'dev'",
+      "pytest-flake8 ; extra == 'dev'"
+    ],
+    "requires_python": ">=3.8",
+    "summary": "Experimental CSAF validator for envelope and body profiles.",
+    "version": "2022.7.17",
+    "yanked": false,
+    "yanked_reason": null
+  },
+  "last_serial": 14461296,
+  "releases": {
+    "0.0.1": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "f1d335a7872e2eaf2520f686ac470809ac3c8224099fbfadfd46ac132ef8e679",
+          "md5": "f294e49a65d0b8cbb975df7f02527c1e",
+          "sha256": "b7c6ae310bfaff6b67ac3eed7ac52734a135793a89d4d6a1bf43f5334530a4d7"
+        },
+        "downloads": -1,
+        "filename": "csaf-lint-0.0.1.tar.gz",
+        "has_sig": false,
+        "md5_digest": "f294e49a65d0b8cbb975df7f02527c1e",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 3330,
+        "upload_time": "2021-03-09T23:06:15",
+        "upload_time_iso_8601": "2021-03-09T23:06:15.255015Z",
+        "url": "https://files.pythonhosted.org/packages/f1/d3/35a7872e2eaf2520f686ac470809ac3c8224099fbfadfd46ac132ef8e679/csaf-lint-0.0.1.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.0.2": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "0718e774af5d3f46db10e516c1e4343bfd54a8a3ab485d95bfbd09c329be63e3",
+          "md5": "3b571fb8bc39cee94d7d3bcbaf013730",
+          "sha256": "27e6e2610f85544d7427412bd45fa74493c5f591dc0bb48a4a068a3419a1e911"
+        },
+        "downloads": -1,
+        "filename": "csaf-lint-0.0.2.tar.gz",
+        "has_sig": false,
+        "md5_digest": "3b571fb8bc39cee94d7d3bcbaf013730",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 17784,
+        "upload_time": "2021-03-19T16:26:50",
+        "upload_time_iso_8601": "2021-03-19T16:26:50.465132Z",
+        "url": "https://files.pythonhosted.org/packages/07/18/e774af5d3f46db10e516c1e4343bfd54a8a3ab485d95bfbd09c329be63e3/csaf-lint-0.0.2.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.0.3": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "1c25f797dec4e2d880b35320fbea2c6deb22e1919fe4747ffd34411b95991ada",
+          "md5": "9b6c2224d4f2245a13a58365ada3f30a",
+          "sha256": "68d312cea2f313d17c986d6ad72cab7ac1d79a74afdced2068dcf103b190e8aa"
+        },
+        "downloads": -1,
+        "filename": "csaf-lint-0.0.3.tar.gz",
+        "has_sig": false,
+        "md5_digest": "9b6c2224d4f2245a13a58365ada3f30a",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 8019,
+        "upload_time": "2021-03-21T16:09:28",
+        "upload_time_iso_8601": "2021-03-21T16:09:28.599182Z",
+        "url": "https://files.pythonhosted.org/packages/1c/25/f797dec4e2d880b35320fbea2c6deb22e1919fe4747ffd34411b95991ada/csaf-lint-0.0.3.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.0.4": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "ec02d46901a5cdaf05be17d5e9dcdf7fbe9bd3643a41c6133c72ad5f41052531",
+          "md5": "2718c9c92208d403749fcf8e76e64f89",
+          "sha256": "5555b4f81195e781518138162ba99b3e62e72c8379a9182d51cb6c3f78896057"
+        },
+        "downloads": -1,
+        "filename": "csaf-lint-0.0.4.tar.gz",
+        "has_sig": false,
+        "md5_digest": "2718c9c92208d403749fcf8e76e64f89",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 8873,
+        "upload_time": "2021-03-22T05:26:02",
+        "upload_time_iso_8601": "2021-03-22T05:26:02.562957Z",
+        "url": "https://files.pythonhosted.org/packages/ec/02/d46901a5cdaf05be17d5e9dcdf7fbe9bd3643a41c6133c72ad5f41052531/csaf-lint-0.0.4.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.0.5": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "0619b0c0fb34b79bdc8fc1e6fc224ceb73c35ace6815241610fc25b3904fa788",
+          "md5": "5523b670ca4055e2abc09b5a102d8a0b",
+          "sha256": "b33e6c06d9855056ef426db283d2220b43dc37ac98c59408720a86d28f6ef5ba"
+        },
+        "downloads": -1,
+        "filename": "csaf-lint-0.0.5.tar.gz",
+        "has_sig": false,
+        "md5_digest": "5523b670ca4055e2abc09b5a102d8a0b",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 8988,
+        "upload_time": "2021-03-22T05:43:55",
+        "upload_time_iso_8601": "2021-03-22T05:43:55.914515Z",
+        "url": "https://files.pythonhosted.org/packages/06/19/b0c0fb34b79bdc8fc1e6fc224ceb73c35ace6815241610fc25b3904fa788/csaf-lint-0.0.5.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.0.6": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "8345e3f78b16c1580e6d295ba0fff6dce52bbbc27d2e63e1c6b0a0aa1d26c0e8",
+          "md5": "f7edcdd08cb2f956811cf39f7a5e0b20",
+          "sha256": "f7490f784b4d9e491bba3bbb6241a5e3e8eef692c1d1fb0b475b341f29144b10"
+        },
+        "downloads": -1,
+        "filename": "csaf-lint-0.0.6.tar.gz",
+        "has_sig": false,
+        "md5_digest": "f7edcdd08cb2f956811cf39f7a5e0b20",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 14321,
+        "upload_time": "2021-03-22T21:31:06",
+        "upload_time_iso_8601": "2021-03-22T21:31:06.414087Z",
+        "url": "https://files.pythonhosted.org/packages/83/45/e3f78b16c1580e6d295ba0fff6dce52bbbc27d2e63e1c6b0a0aa1d26c0e8/csaf-lint-0.0.6.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.0.7": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "be2b1dd5bdff376289ccba96fb1efa0ca15b1c684815b76a4ebeabac7d6ecbfc",
+          "md5": "d26429e47ce44bfd9b95c611e8cf014f",
+          "sha256": "86af2fecce3a0e6a3d891026fb0a961bee9632ffeaa580e45967fc87b0b517e2"
+        },
+        "downloads": -1,
+        "filename": "csaf-lint-0.0.7.tar.gz",
+        "has_sig": false,
+        "md5_digest": "d26429e47ce44bfd9b95c611e8cf014f",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 14824,
+        "upload_time": "2021-03-23T22:13:14",
+        "upload_time_iso_8601": "2021-03-23T22:13:14.932264Z",
+        "url": "https://files.pythonhosted.org/packages/be/2b/1dd5bdff376289ccba96fb1efa0ca15b1c684815b76a4ebeabac7d6ecbfc/csaf-lint-0.0.7.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.0.8": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "10cb94cf15ca6f3dd5929e374032303210c88c44f591fa7610d8ea651e0b25d5",
+          "md5": "2823ed36eccd89b7977dae80f15d8a00",
+          "sha256": "9a80c68b077efe17b9b09d17e09afa9fe7de887acd1eb3b6a8bacf795abcfc42"
+        },
+        "downloads": -1,
+        "filename": "csaf-lint-0.0.8.tar.gz",
+        "has_sig": false,
+        "md5_digest": "2823ed36eccd89b7977dae80f15d8a00",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 15122,
+        "upload_time": "2021-03-24T19:14:57",
+        "upload_time_iso_8601": "2021-03-24T19:14:57.649910Z",
+        "url": "https://files.pythonhosted.org/packages/10/cb/94cf15ca6f3dd5929e374032303210c88c44f591fa7610d8ea651e0b25d5/csaf-lint-0.0.8.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "0.0.9": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "138ba0816896c1c0f6bd20fccf1fecf682d2c6dc4efd5c227c1cc144fe7a6ebd",
+          "md5": "2e02c567b58d503524d633062aa14893",
+          "sha256": "c1ff334bcdf0ec7d75039405877e73b2d9bdecf0574f8b922b35d78b789f81f6"
+        },
+        "downloads": -1,
+        "filename": "csaf_lint-0.0.9-py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "2e02c567b58d503524d633062aa14893",
+        "packagetype": "bdist_wheel",
+        "python_version": "py3",
+        "requires_python": null,
+        "size": 11667,
+        "upload_time": "2021-05-13T09:36:27",
+        "upload_time_iso_8601": "2021-05-13T09:36:27.690984Z",
+        "url": "https://files.pythonhosted.org/packages/13/8b/a0816896c1c0f6bd20fccf1fecf682d2c6dc4efd5c227c1cc144fe7a6ebd/csaf_lint-0.0.9-py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "8550ba30559f8847f4c34eecbb26da314c3c0b53e50a2f25d27b0f299959f3ac",
+          "md5": "f8f0f7ecbe10558628ac167fb01e88e3",
+          "sha256": "fd1614823a07fffdb51f1146b3b5e7e5abd4266a3b6f69e995abb1af30bef225"
+        },
+        "downloads": -1,
+        "filename": "csaf-lint-0.0.9.tar.gz",
+        "has_sig": false,
+        "md5_digest": "f8f0f7ecbe10558628ac167fb01e88e3",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": null,
+        "size": 15556,
+        "upload_time": "2021-04-29T19:59:41",
+        "upload_time_iso_8601": "2021-04-29T19:59:41.436140Z",
+        "url": "https://files.pythonhosted.org/packages/85/50/ba30559f8847f4c34eecbb26da314c3c0b53e50a2f25d27b0f299959f3ac/csaf-lint-0.0.9.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ],
+    "2022.7.17": [
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "dd8bb5d1937e2dd0da73dbd3f17049972e0ba7963c89490f96aa0eef11a98de8",
+          "md5": "bde3d48164c837c5acbcf802cb774581",
+          "sha256": "38967558158c3f081ea3427c1757bbfd6551bb8307672fd5a56f5e6197ede115"
+        },
+        "downloads": -1,
+        "filename": "csaf_lint-2022.7.17-py2.py3-none-any.whl",
+        "has_sig": false,
+        "md5_digest": "bde3d48164c837c5acbcf802cb774581",
+        "packagetype": "bdist_wheel",
+        "python_version": "py2.py3",
+        "requires_python": ">=3.8",
+        "size": 3342,
+        "upload_time": "2022-07-17T16:03:07",
+        "upload_time_iso_8601": "2022-07-17T16:03:07.428276Z",
+        "url": "https://files.pythonhosted.org/packages/dd/8b/b5d1937e2dd0da73dbd3f17049972e0ba7963c89490f96aa0eef11a98de8/csaf_lint-2022.7.17-py2.py3-none-any.whl",
+        "yanked": false,
+        "yanked_reason": null
+      },
+      {
+        "comment_text": "",
+        "digests": {
+          "blake2b_256": "d30b05503a55035ca10178031e11123bfa89eaa7f3f51fa4080fc3a7380212c5",
+          "md5": "0988afcf1793cd8ac54faf6cc02cdfcf",
+          "sha256": "af5acb563250954a2c7c359d35c36c199b632066b381a9c8ac7586035cfa6f1d"
+        },
+        "downloads": -1,
+        "filename": "csaf-lint-2022.7.17.tar.gz",
+        "has_sig": false,
+        "md5_digest": "0988afcf1793cd8ac54faf6cc02cdfcf",
+        "packagetype": "sdist",
+        "python_version": "source",
+        "requires_python": ">=3.8",
+        "size": 337919,
+        "upload_time": "2022-07-17T16:03:09",
+        "upload_time_iso_8601": "2022-07-17T16:03:09.437452Z",
+        "url": "https://files.pythonhosted.org/packages/d3/0b/05503a55035ca10178031e11123bfa89eaa7f3f51fa4080fc3a7380212c5/csaf-lint-2022.7.17.tar.gz",
+        "yanked": false,
+        "yanked_reason": null
+      }
+    ]
+  },
+  "urls": [
+    {
+      "comment_text": "",
+      "digests": {
+        "blake2b_256": "dd8bb5d1937e2dd0da73dbd3f17049972e0ba7963c89490f96aa0eef11a98de8",
+        "md5": "bde3d48164c837c5acbcf802cb774581",
+        "sha256": "38967558158c3f081ea3427c1757bbfd6551bb8307672fd5a56f5e6197ede115"
+      },
+      "downloads": -1,
+      "filename": "csaf_lint-2022.7.17-py2.py3-none-any.whl",
+      "has_sig": false,
+      "md5_digest": "bde3d48164c837c5acbcf802cb774581",
+      "packagetype": "bdist_wheel",
+      "python_version": "py2.py3",
+      "requires_python": ">=3.8",
+      "size": 3342,
+      "upload_time": "2022-07-17T16:03:07",
+      "upload_time_iso_8601": "2022-07-17T16:03:07.428276Z",
+      "url": "https://files.pythonhosted.org/packages/dd/8b/b5d1937e2dd0da73dbd3f17049972e0ba7963c89490f96aa0eef11a98de8/csaf_lint-2022.7.17-py2.py3-none-any.whl",
+      "yanked": false,
+      "yanked_reason": null
+    },
+    {
+      "comment_text": "",
+      "digests": {
+        "blake2b_256": "d30b05503a55035ca10178031e11123bfa89eaa7f3f51fa4080fc3a7380212c5",
+        "md5": "0988afcf1793cd8ac54faf6cc02cdfcf",
+        "sha256": "af5acb563250954a2c7c359d35c36c199b632066b381a9c8ac7586035cfa6f1d"
+      },
+      "downloads": -1,
+      "filename": "csaf-lint-2022.7.17.tar.gz",
+      "has_sig": false,
+      "md5_digest": "0988afcf1793cd8ac54faf6cc02cdfcf",
+      "packagetype": "sdist",
+      "python_version": "source",
+      "requires_python": ">=3.8",
+      "size": 337919,
+      "upload_time": "2022-07-17T16:03:09",
+      "upload_time_iso_8601": "2022-07-17T16:03:09.437452Z",
+      "url": "https://files.pythonhosted.org/packages/d3/0b/05503a55035ca10178031e11123bfa89eaa7f3f51fa4080fc3a7380212c5/csaf-lint-2022.7.17.tar.gz",
+      "yanked": false,
+      "yanked_reason": null
+    }
+  ],
+  "vulnerabilities": []
+}
