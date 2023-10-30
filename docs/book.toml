@@ -11,7 +11,16 @@ title = "Csaf-lint"
 builddir = "book"
 
 [output.html]
-mathjax-support = true
-site-url = "/docs/csaf-lint"
+default-theme = "coal"
 git-repository-url = "https://git.sr.ht/~sthagen/csaf-lint"
+git-repository-icon = "fa-code-fork"
+mathjax-support = true
+no-section-label = true
+preferred-dark-theme = "navy"
+site-url = "/docs/csaf-lint"
 
+[output.html.print]
+enable = false
+
+[output.html.fold]
+enable = false
