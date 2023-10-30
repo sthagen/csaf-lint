@@ -8,7 +8,7 @@ Experimental CSAF envelope and body profile validator.
 [![Configuration](badges/configuration-sbom.svg)](third-party/index.html)
 
 [![Version](https://img.shields.io/pypi/v/csaf-lint.svg?style=flat)](https://pypi.python.org/pypi/csaf-lint/)
-[![Downloads](https://static.pepy.tech/badge/csaf-lint/month)](https://pepy.tech/project/csaf-lint)
+[![Downloads](docs/badges/downloads-per-month.svg)](https://pepy.tech/project/csaf-lint)
 [![Supported Versions](https://img.shields.io/pypi/pyversions/csaf-lint.svg?style=flat)](https://pypi.python.org/pypi/csaf-lint/)
 [![Maintenance Status](docs/badges/commits-per-year.svg)](https://git.sr.ht/~sthagen/csaf-lint/log)
 
