@@ -158,7 +158,7 @@
     {
       "category": "null",
       "date": "2023-05",
-      "downloads": 11
+      "downloads": 10
     },
     {
       "category": "null",
@@ -188,7 +188,7 @@
     {
       "category": "null",
       "date": "2023-11",
-      "downloads": 12
+      "downloads": 13
     }
   ],
   "package": "csaf-lint",
