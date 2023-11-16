@@ -34,7 +34,7 @@ keywords = [
 ]
 dependencies = [
     "attrs >= 23.1.0",
-    "jsonschema >= 4.19.2",
+    "jsonschema >= 4.20.0",
     "referencing >= 0.31.0",
     "lxml >= 4.9.3",
     "xmlschema >= 2.5.0",
