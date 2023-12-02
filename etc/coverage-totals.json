@@ -1,7 +1,7 @@
 {
   "csaf-lint": {
-    "version": "7.3.2",
-    "timestamp": "2023-12-02T15:16:23.699570",
+    "coverage_tool_version": "7.3.2",
+    "timestamp": "2023-12-02 15:53:03 +00:00",
     "branch_coverage": true,
     "show_contexts": true,
     "covered_lines": 268,
@@ -13,6 +13,22 @@
     "num_branches": 99,
     "num_partial_branches": 16,
     "covered_branches": 81,
-    "missing_branches": 18
+    "missing_branches": 18,
+    "node_id": "c79891e5-aabf-3a83-95b9-588edcd8327f",
+    "nfiles": 3,
+    "files": [
+      "csaf_lint/__init__.py",
+      "csaf_lint/cli.py",
+      "csaf_lint/lint.py"
+    ],
+    "blake3": "a3cc59d24ce967b3b2af6ce843c9b06fba90743a2f78a2385fd7ade30d8c90eb",
+    "blake2": "2c9d67c2b1988c7b63ae065cead048d511b4856ea89dcaf078c8e8276bed8a5c0c555eaca56f45177ff28f7e9df8c60b88b5a7c98116ac4224a71a769ac9f2d4",
+    "sha512": "b1f928925bc795da7a8b8f2fedb803e1360d9e5938d361d8ebac7a22671e190b918bfb17176681a261047924c5c7b015ec8fceb2e0767220400f377b03cba5e9",
+    "sha384": "9e4c50579cd6b14c0ec888dd8caee5b29a5925981cc9205dbdcf8084aa00f13309df4a26a775f7dd9f7ee0b77135712b",
+    "sha256": "796ff2245e83068cfcfb5814b77aafe75a7ccceb6b48842d5ffa58188eff13e2",
+    "sha1": "def7c07518a02957d49e7068b8ee2b65ba5cba33",
+    "md5": "c2371cfca6e7f1a47c1b75e720ea38bc",
+    "python_version": "3.10.12",
+    "entropy": 5.155219
   }
 }
