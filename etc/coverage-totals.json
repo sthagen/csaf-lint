@@ -1,0 +1,18 @@
+{
+  "csaf-lint": {
+    "version": "7.3.2",
+    "timestamp": "2023-12-02T15:16:23.699570",
+    "branch_coverage": true,
+    "show_contexts": true,
+    "covered_lines": 268,
+    "num_statements": 301,
+    "percent_covered": 87.25,
+    "percent_covered_display": "87.25",
+    "missing_lines": 33,
+    "excluded_lines": 0,
+    "num_branches": 99,
+    "num_partial_branches": 16,
+    "covered_branches": 81,
+    "missing_branches": 18
+  }
+}
