@@ -1,7 +1,7 @@
 {
   "csaf-lint": {
     "coverage_tool_version": "7.3.2",
-    "timestamp": "2023-12-02 20:34:02 +00:00",
+    "timestamp": "2023-12-03 11:42:17 +00:00",
     "branch_coverage": true,
     "show_contexts": true,
     "covered_lines": 268,
