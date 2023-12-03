@@ -101,3 +101,7 @@ pypistats:
 	@bin/packaging-facts
 	@bin/python-versions
 	@bin/latest-release
+
+.PHONY: covstats
+covstats:
+	bin/gen_coverage.sh
