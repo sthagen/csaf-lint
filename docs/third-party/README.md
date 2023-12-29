@@ -1,8 +1,8 @@
 # Third Party Dependencies
 
 <!--[[[fill sbom_sha256()]]]-->
-The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/csaf-lint/blob/default/etc/sbom/cdx.json) with SHA256 checksum ([90319ce9 ...](https://git.sr.ht/~sthagen/csaf-lint/blob/default/etc/sbom/cdx.json.sha256 "sha256:90319ce9f87b94af6df4d38053466e3307f946cccc95d59ba1220e48211651c5")).
-<!--[[[end]]] (checksum: 14fcfc4c72a727703572a5844b79aab0)-->
+The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/csaf-lint/blob/default/etc/sbom/cdx.json) with SHA256 checksum ([db8f51af ...](https://git.sr.ht/~sthagen/csaf-lint/blob/default/etc/sbom/cdx.json.sha256 "sha256:db8f51af1ef949ba3ea01780e9e27b8d7fa5b9bb754d05bf96649bd49aed84a7")).
+<!--[[[end]]] (checksum: 8bd83591677fda58bc545d80720c9f1b)-->
 ## Licenses
 
 JSON files with complete license info of: [direct dependencies](direct-dependency-licenses.json) | [all dependencies](all-dependency-licenses.json)
@@ -14,10 +14,10 @@ JSON files with complete license info of: [direct dependencies](direct-dependenc
 |:----------------------------------------------------------------|:-------------------------------------------------------|:------------|:---------------------------|:-------------------------------------------------------------------------------------------------|
 | [attrs](https://www.attrs.org/en/stable/changelog.html)         | [23.1.0](https://pypi.org/project/attrs/23.1.0/)       | MIT License | Hynek Schlawack <hs@ox.cx> | Classes Without Boilerplate                                                                      |
 | [jsonschema](https://github.com/python-jsonschema/jsonschema)   | [4.20.0](https://pypi.org/project/jsonschema/4.20.0/)  | MIT License | Julian Berman              | An implementation of JSON Schema validation for Python                                           |
-| [lxml](https://lxml.de/)                                        | [4.9.3](https://pypi.org/project/lxml/4.9.3/)          | BSD License | lxml dev team              | Powerful and Pythonic XML processing library combining libxml2/libxslt with the ElementTree API. |
+| [lxml](https://lxml.de/)                                        | [5.0.0](https://pypi.org/project/lxml/5.0.0/)          | BSD License | lxml dev team              | Powerful and Pythonic XML processing library combining libxml2/libxslt with the ElementTree API. |
 | [referencing](https://github.com/python-jsonschema/referencing) | [0.32.0](https://pypi.org/project/referencing/0.32.0/) | MIT License | Julian Berman              | JSON Referencing + Python                                                                        |
 | [xmlschema](https://github.com/sissaschool/xmlschema)           | [2.5.1](https://pypi.org/project/xmlschema/2.5.1/)     | MIT License | Davide Brunato             | An XML Schema validator and decoder                                                              |
-<!--[[[end]]] (checksum: ccc28a400d091c9aafc87bea617176b3)-->
+<!--[[[end]]] (checksum: d400ea3e5e9a9096bc410fadf3be4055)-->
 
 ### Indirect Dependencies
 
@@ -53,8 +53,8 @@ jsonschema==4.20.0
 │   ├── attrs [required: >=22.2.0, installed: 23.1.0]
 │   └── rpds-py [required: >=0.7.0, installed: 0.8.11]
 └── rpds-py [required: >=0.7.1, installed: 0.8.11]
-lxml==4.9.3
+lxml==5.0.0
 xmlschema==2.5.1
 └── elementpath [required: >=4.1.5,<5.0.0, installed: 4.1.5]
 ````
-<!--[[[end]]] (checksum: d00dad71871855b95150a5a57c0fd75f)-->
+<!--[[[end]]] (checksum: f55e3ea84726e094713f0fc9cef17a04)-->

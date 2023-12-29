@@ -76,8 +76,8 @@
     {
         "key": "lxml",
         "package_name": "lxml",
-        "installed_version": "4.9.3",
-        "required_version": "4.9.3",
+        "installed_version": "5.0.0",
+        "required_version": "5.0.0",
         "dependencies": []
     },
     {
