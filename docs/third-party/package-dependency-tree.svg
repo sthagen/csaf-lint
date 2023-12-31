@@ -13,7 +13,7 @@
 <title>attrs</title>
 <ellipse fill="none" stroke="black" cx="146.55" cy="-28.99" rx="35.71" ry="28.99"/>
 <text text-anchor="middle" x="146.55" y="-32.19" font-family="Times,serif" font-size="14.00">attrs</text>
-<text text-anchor="middle" x="146.55" y="-15.69" font-family="Times,serif" font-size="14.00">23.1.0</text>
+<text text-anchor="middle" x="146.55" y="-15.69" font-family="Times,serif" font-size="14.00">23.2.0</text>
 </g>
 <!-- jsonschema -->
 <g id="node2" class="node">

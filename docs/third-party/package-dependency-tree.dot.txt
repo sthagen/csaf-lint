@@ -2,7 +2,7 @@ digraph {
 	"jsonschema-specifications" -> referencing [label=">=0.28.0"]
 	"jsonschema-specifications" [label="jsonschema-specifications\n2023.6.1"]
 	"rpds-py" [label="rpds-py\n0.8.11"]
-	attrs [label="attrs\n23.1.0"]
+	attrs [label="attrs\n23.2.0"]
 	elementpath [label="elementpath\n4.1.5"]
 	jsonschema -> "jsonschema-specifications" [label=">=2023.03.6"]
 	jsonschema -> "rpds-py" [label=">=0.7.1"]

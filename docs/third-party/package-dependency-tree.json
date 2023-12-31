@@ -8,7 +8,7 @@
             {
                 "key": "attrs",
                 "package_name": "attrs",
-                "installed_version": "23.1.0",
+                "installed_version": "23.2.0",
                 "required_version": ">=22.2.0",
                 "dependencies": []
             },
@@ -27,7 +27,7 @@
                             {
                                 "key": "attrs",
                                 "package_name": "attrs",
-                                "installed_version": "23.1.0",
+                                "installed_version": "23.2.0",
                                 "required_version": ">=22.2.0",
                                 "dependencies": []
                             },
@@ -51,7 +51,7 @@
                     {
                         "key": "attrs",
                         "package_name": "attrs",
-                        "installed_version": "23.1.0",
+                        "installed_version": "23.2.0",
                         "required_version": ">=22.2.0",
                         "dependencies": []
                     },
