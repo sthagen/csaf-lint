@@ -1,8 +1,8 @@
 # Third Party Dependencies
 
 <!--[[[fill sbom_sha256()]]]-->
-The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/csaf-lint/blob/default/etc/sbom/cdx.json) with SHA256 checksum ([7da3ccce ...](https://git.sr.ht/~sthagen/csaf-lint/blob/default/etc/sbom/cdx.json.sha256 "sha256:7da3cccef99da379fb6ae823b52ba2191116e15e1b6bacf3d8fe4335f54d3cd2")).
-<!--[[[end]]] (checksum: b7d79de04a982b2a36d4abc614c0889d)-->
+The [SBOM in CycloneDX v1.4 JSON format](https://git.sr.ht/~sthagen/csaf-lint/blob/default/etc/sbom/cdx.json) with SHA256 checksum ([280cf554 ...](https://git.sr.ht/~sthagen/csaf-lint/blob/default/etc/sbom/cdx.json.sha256 "sha256:280cf554b24fe06ae4fca5864c76c4860ebc22a1d12f395904a1709f0f3522ab")).
+<!--[[[end]]] (checksum: b6b6f256294985c3546da72227139d0e)-->
 ## Licenses
 
 JSON files with complete license info of: [direct dependencies](direct-dependency-licenses.json) | [all dependencies](all-dependency-licenses.json)
@@ -15,9 +15,9 @@ JSON files with complete license info of: [direct dependencies](direct-dependenc
 | [attrs](https://www.attrs.org/en/stable/changelog.html)         | [23.2.0](https://pypi.org/project/attrs/23.2.0/)       | MIT License | Hynek Schlawack <hs@ox.cx> | Classes Without Boilerplate                                                                      |
 | [jsonschema](https://github.com/python-jsonschema/jsonschema)   | [4.20.0](https://pypi.org/project/jsonschema/4.20.0/)  | MIT License | Julian Berman              | An implementation of JSON Schema validation for Python                                           |
 | [lxml](https://lxml.de/)                                        | [5.0.0](https://pypi.org/project/lxml/5.0.0/)          | BSD License | lxml dev team              | Powerful and Pythonic XML processing library combining libxml2/libxslt with the ElementTree API. |
-| [referencing](https://github.com/python-jsonschema/referencing) | [0.32.0](https://pypi.org/project/referencing/0.32.0/) | MIT License | Julian Berman              | JSON Referencing + Python                                                                        |
+| [referencing](https://github.com/python-jsonschema/referencing) | [0.32.1](https://pypi.org/project/referencing/0.32.1/) | MIT License | Julian Berman              | JSON Referencing + Python                                                                        |
 | [xmlschema](https://github.com/sissaschool/xmlschema)           | [2.5.1](https://pypi.org/project/xmlschema/2.5.1/)     | MIT License | Davide Brunato             | An XML Schema validator and decoder                                                              |
-<!--[[[end]]] (checksum: 16b1e602c9566a1cb09e2e695c924a77)-->
+<!--[[[end]]] (checksum: d0ed7e3db5ad67c62c8c799227ecc78f)-->
 
 ### Indirect Dependencies
 
@@ -46,10 +46,10 @@ Base graphviz file in dot format: [Trees of the direct dependencies](package-dep
 jsonschema==4.20.0
 ├── attrs [required: >=22.2.0, installed: 23.2.0]
 ├── jsonschema-specifications [required: >=2023.03.6, installed: 2023.6.1]
-│   └── referencing [required: >=0.28.0, installed: 0.32.0]
+│   └── referencing [required: >=0.28.0, installed: 0.32.1]
 │       ├── attrs [required: >=22.2.0, installed: 23.2.0]
 │       └── rpds-py [required: >=0.7.0, installed: 0.8.11]
-├── referencing [required: >=0.28.4, installed: 0.32.0]
+├── referencing [required: >=0.28.4, installed: 0.32.1]
 │   ├── attrs [required: >=22.2.0, installed: 23.2.0]
 │   └── rpds-py [required: >=0.7.0, installed: 0.8.11]
 └── rpds-py [required: >=0.7.1, installed: 0.8.11]
@@ -57,4 +57,4 @@ lxml==5.0.0
 xmlschema==2.5.1
 └── elementpath [required: >=4.1.5,<5.0.0, installed: 4.1.5]
 ````
-<!--[[[end]]] (checksum: d78c4e7fd062f1f5ac132fbc83b0f5d4)-->
+<!--[[[end]]] (checksum: 6cc0a7b4f2d86f9579c17c83773377b3)-->
