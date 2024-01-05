@@ -1,6 +1,6 @@
 SPDXVersion: SPDX-2.3
 DataLicense: CC0-1.0
-DocumentNamespace: https://cyclonedx/8280aaf8-46c5-42b5-a06c-f45f97bfef48_1
+DocumentNamespace: https://cyclonedx/fa23c62e-e27e-437a-8b44-e95b045504cd_1
 DocumentName: From-Cyclone-DX
 SPDXID: SPDXRef-DOCUMENT
 
@@ -8,25 +8,25 @@ SPDXID: SPDXRef-DOCUMENT
 Creator: Tool: CycloneDX:cyclonedx-bom-3.11.7
 Creator: Tool: CycloneDX:cyclonedx-python-lib-3.1.5
 Creator: Tool: CycloneToSpdx-0.1.4
-Created: 2024-01-05T19:09:50Z
+Created: 2024-01-05T19:55:21Z
 CreatorComment: <text>Converted from CycloneDX spec version 1.4</text>
 LicenseListVersion: 3.22
 ## Annotations
 Annotator: Tool: CycloneToSpdx
-AnnotationDate: 2024-01-05T19:09:51Z
+AnnotationDate: 2024-01-05T19:55:23Z
 AnnotationComment: <text>MISSING_CDX_PROPERTY:extensions={}</text>
 AnnotationType: OTHER
 SPDXREF: SPDXRef-DOCUMENT
 ## Relationships
-Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-179ffd14-9fbc-42c7-8a39-3afb96414ec9
-Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-339add8a-55d3-49d1-bc77-c01fa9261ede
-Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-8fe979b2-7780-4f6e-84d3-54ae708e5c85
-Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-c1ed84c7-be9e-498e-84d7-8cf35a02fc0c
-Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-db013d9d-ff76-461b-912a-d07a339d0ae7
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-0080abb5-a3ef-4f9a-8f4d-d05ba04ef399
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-14510fce-81ee-466e-88f7-5bfde531d248
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-3d599fe7-86fe-4cad-affc-3a8a9be5aa65
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-6904dd95-cec1-42bc-9115-fd67a84b79b8
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-9a06824c-ed7f-41ba-a00d-df3156fcaad6
 
 ## Package Information
 PackageName: attrs
-SPDXID: SPDXRef-179ffd14-9fbc-42c7-8a39-3afb96414ec9
+SPDXID: SPDXRef-9a06824c-ed7f-41ba-a00d-df3156fcaad6
 PackageVersion: 23.2.0
 PackageDownloadLocation: NOASSERTION
 PrimaryPackagePurpose: LIBRARY
@@ -36,15 +36,15 @@ PackageCopyrightText: NOASSERTION
 ExternalRef: PACKAGE-MANAGER purl pkg:pypi/attrs@23.2.0
 ## Annotations
 Annotator: Tool: CycloneToSpdx
-AnnotationDate: 2024-01-05T19:09:51Z
+AnnotationDate: 2024-01-05T19:55:23Z
 AnnotationComment: <text>MISSING_CDX_PROPERTY:componentType="LIBRARY"</text>
 AnnotationType: OTHER
-SPDXREF: SPDXRef-179ffd14-9fbc-42c7-8a39-3afb96414ec9
+SPDXREF: SPDXRef-9a06824c-ed7f-41ba-a00d-df3156fcaad6
 FilesAnalyzed: false
 
 ## Package Information
 PackageName: jsonschema
-SPDXID: SPDXRef-c1ed84c7-be9e-498e-84d7-8cf35a02fc0c
+SPDXID: SPDXRef-3d599fe7-86fe-4cad-affc-3a8a9be5aa65
 PackageVersion: 4.20.0
 PackageDownloadLocation: NOASSERTION
 PrimaryPackagePurpose: LIBRARY
@@ -54,33 +54,33 @@ PackageCopyrightText: NOASSERTION
 ExternalRef: PACKAGE-MANAGER purl pkg:pypi/jsonschema@4.20.0
 ## Annotations
 Annotator: Tool: CycloneToSpdx
-AnnotationDate: 2024-01-05T19:09:51Z
+AnnotationDate: 2024-01-05T19:55:23Z
 AnnotationComment: <text>MISSING_CDX_PROPERTY:componentType="LIBRARY"</text>
 AnnotationType: OTHER
-SPDXREF: SPDXRef-c1ed84c7-be9e-498e-84d7-8cf35a02fc0c
+SPDXREF: SPDXRef-3d599fe7-86fe-4cad-affc-3a8a9be5aa65
 FilesAnalyzed: false
 
 ## Package Information
 PackageName: lxml
-SPDXID: SPDXRef-339add8a-55d3-49d1-bc77-c01fa9261ede
-PackageVersion: 5.0.0
+SPDXID: SPDXRef-6904dd95-cec1-42bc-9115-fd67a84b79b8
+PackageVersion: 5.0.1
 PackageDownloadLocation: NOASSERTION
 PrimaryPackagePurpose: LIBRARY
 PackageLicenseConcluded: NOASSERTION
 PackageLicenseDeclared: NOASSERTION
 PackageCopyrightText: NOASSERTION
-ExternalRef: PACKAGE-MANAGER purl pkg:pypi/lxml@5.0.0
+ExternalRef: PACKAGE-MANAGER purl pkg:pypi/lxml@5.0.1
 ## Annotations
 Annotator: Tool: CycloneToSpdx
-AnnotationDate: 2024-01-05T19:09:51Z
+AnnotationDate: 2024-01-05T19:55:23Z
 AnnotationComment: <text>MISSING_CDX_PROPERTY:componentType="LIBRARY"</text>
 AnnotationType: OTHER
-SPDXREF: SPDXRef-339add8a-55d3-49d1-bc77-c01fa9261ede
+SPDXREF: SPDXRef-6904dd95-cec1-42bc-9115-fd67a84b79b8
 FilesAnalyzed: false
 
 ## Package Information
 PackageName: referencing
-SPDXID: SPDXRef-db013d9d-ff76-461b-912a-d07a339d0ae7
+SPDXID: SPDXRef-14510fce-81ee-466e-88f7-5bfde531d248
 PackageVersion: 0.32.1
 PackageDownloadLocation: NOASSERTION
 PrimaryPackagePurpose: LIBRARY
@@ -90,15 +90,15 @@ PackageCopyrightText: NOASSERTION
 ExternalRef: PACKAGE-MANAGER purl pkg:pypi/referencing@0.32.1
 ## Annotations
 Annotator: Tool: CycloneToSpdx
-AnnotationDate: 2024-01-05T19:09:51Z
+AnnotationDate: 2024-01-05T19:55:23Z
 AnnotationComment: <text>MISSING_CDX_PROPERTY:componentType="LIBRARY"</text>
 AnnotationType: OTHER
-SPDXREF: SPDXRef-db013d9d-ff76-461b-912a-d07a339d0ae7
+SPDXREF: SPDXRef-14510fce-81ee-466e-88f7-5bfde531d248
 FilesAnalyzed: false
 
 ## Package Information
 PackageName: xmlschema
-SPDXID: SPDXRef-8fe979b2-7780-4f6e-84d3-54ae708e5c85
+SPDXID: SPDXRef-0080abb5-a3ef-4f9a-8f4d-d05ba04ef399
 PackageVersion: 2.5.1
 PackageDownloadLocation: NOASSERTION
 PrimaryPackagePurpose: LIBRARY
@@ -108,10 +108,10 @@ PackageCopyrightText: NOASSERTION
 ExternalRef: PACKAGE-MANAGER purl pkg:pypi/xmlschema@2.5.1
 ## Annotations
 Annotator: Tool: CycloneToSpdx
-AnnotationDate: 2024-01-05T19:09:51Z
+AnnotationDate: 2024-01-05T19:55:23Z
 AnnotationComment: <text>MISSING_CDX_PROPERTY:componentType="LIBRARY"</text>
 AnnotationType: OTHER
-SPDXREF: SPDXRef-8fe979b2-7780-4f6e-84d3-54ae708e5c85
+SPDXREF: SPDXRef-0080abb5-a3ef-4f9a-8f4d-d05ba04ef399
 FilesAnalyzed: false
 
 
