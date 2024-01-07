@@ -2,4 +2,4 @@ attrs==23.2.0
 jsonschema==4.20.0
 lxml==5.0.1
 referencing==0.32.1
-xmlschema==2.5.1
+xmlschema==3.0.0
