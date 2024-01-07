@@ -97,14 +97,14 @@
 <title>lxml</title>
 <ellipse fill="none" stroke="black" cx="380.55" cy="-360.44" rx="30.94" ry="28.99"/>
 <text text-anchor="middle" x="380.55" y="-363.64" font-family="Times,serif" font-size="14.00">lxml</text>
-<text text-anchor="middle" x="380.55" y="-347.14" font-family="Times,serif" font-size="14.00">5.0.0</text>
+<text text-anchor="middle" x="380.55" y="-347.14" font-family="Times,serif" font-size="14.00">5.0.1</text>
 </g>
 <!-- xmlschema -->
 <g id="node7" class="node">
 <title>xmlschema</title>
 <ellipse fill="none" stroke="black" cx="511.55" cy="-360.44" rx="55.86" ry="28.99"/>
 <text text-anchor="middle" x="511.55" y="-363.64" font-family="Times,serif" font-size="14.00">xmlschema</text>
-<text text-anchor="middle" x="511.55" y="-347.14" font-family="Times,serif" font-size="14.00">2.5.1</text>
+<text text-anchor="middle" x="511.55" y="-347.14" font-family="Times,serif" font-size="14.00">3.0.0</text>
 </g>
 <!-- elementpath -->
 <g id="node8" class="node">

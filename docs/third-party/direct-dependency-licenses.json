@@ -27,13 +27,13 @@
     "Author": "lxml dev team",
     "Description": "Powerful and Pythonic XML processing library combining libxml2/libxslt with the ElementTree API.",
     "License": "BSD License",
-    "LicenseFile": "/Users/ruth/.pyenv/versions/3.10.12/envs/csaf-lint-3-10-12/lib/python3.10/site-packages/lxml-5.0.0.dist-info/LICENSE.txt",
+    "LicenseFile": "/Users/ruth/.pyenv/versions/3.10.12/envs/csaf-lint-3-10-12/lib/python3.10/site-packages/lxml-5.0.1.dist-info/LICENSE.txt",
     "LicenseText": "Copyright (c) 2004 Infrae. All rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are\nmet:\n\n  1. Redistributions of source code must retain the above copyright\n     notice, this list of conditions and the following disclaimer.\n   \n  2. Redistributions in binary form must reproduce the above copyright\n     notice, this list of conditions and the following disclaimer in\n     the documentation and/or other materials provided with the\n     distribution.\n\n  3. Neither the name of Infrae nor the names of its contributors may\n     be used to endorse or promote products derived from this software\n     without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS\n\"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT\nLIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR\nA PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL INFRAE OR\nCONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,\nEXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,\nPROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR\nPROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF\nLIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING\nNEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n",
     "Name": "lxml",
     "NoticeFile": "UNKNOWN",
     "NoticeText": "UNKNOWN",
     "URL": "https://lxml.de/",
-    "Version": "5.0.0"
+    "Version": "5.0.1"
   },
   {
     "Author": "Julian Berman",
@@ -51,12 +51,12 @@
     "Author": "Davide Brunato",
     "Description": "An XML Schema validator and decoder",
     "License": "MIT License",
-    "LicenseFile": "/Users/ruth/.pyenv/versions/3.10.12/envs/csaf-lint-3-10-12/lib/python3.10/site-packages/xmlschema-2.5.1.dist-info/LICENSE",
-    "LicenseText": "The MIT License (MIT)\n\nCopyright (c), 2016-2022, SISSA (Scuola Internazionale Superiore di Studi Avanzati)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is furnished\nto do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
+    "LicenseFile": "/Users/ruth/.pyenv/versions/3.10.12/envs/csaf-lint-3-10-12/lib/python3.10/site-packages/xmlschema-3.0.0.dist-info/LICENSE",
+    "LicenseText": "The MIT License (MIT)\n\nCopyright (c), 2016-2024, SISSA (Scuola Internazionale Superiore di Studi Avanzati)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is furnished\nto do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n",
     "Name": "xmlschema",
     "NoticeFile": "UNKNOWN",
     "NoticeText": "UNKNOWN",
     "URL": "https://github.com/sissaschool/xmlschema",
-    "Version": "2.5.1"
+    "Version": "3.0.0"
   }
 ]
