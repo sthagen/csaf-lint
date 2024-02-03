@@ -1,4 +1,5 @@
 """Visit CSAF/CVRF files and validate them against envelope (core) and given body profiles."""
+
 import json
 import logging
 import os
@@ -355,10 +356,10 @@ def dispatch_embedding(argv, embedded, num_args, pos_args):
         is_json = any(arg and str(arg).endswith(json_token) for arg in pos_args)
         is_xml = not is_json and any(arg and str(arg).endswith(xml_token) for arg in pos_args)
     document_data, document, schema = '', '', ''
-    if not (embedded or is_json or is_xml):
+    if not (embedded or is_json or is_xml):  # type: ignore
         LOG.debug(
             f'streaming dispatch embedded={embedded}, argv={argv}, num_args={num_args}, pos_args={pos_args},'
-            f' is_json={is_json}, is_xml={is_xml}'
+            f' is_json={is_json}, is_xml={is_xml}'  # type: ignore
         )
         document_data = read_stdin()
         json_token, xml_token = '{', '<'

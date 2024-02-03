@@ -1,4 +1,5 @@
 """Visit folder tree with CSAF or CVRF documents, validate the latter, and generate reports."""
+
 import os
 import pathlib
 import sys
