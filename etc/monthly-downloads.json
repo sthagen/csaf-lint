@@ -33,7 +33,7 @@
     {
       "category": "3.10",
       "date": "2024-02",
-      "downloads": 94
+      "downloads": 102
     },
     {
       "category": "3.11",
@@ -68,7 +68,7 @@
     {
       "category": "3.11",
       "date": "2024-02",
-      "downloads": 117
+      "downloads": 125
     },
     {
       "category": "3.12",
@@ -78,7 +78,7 @@
     {
       "category": "3.12",
       "date": "2024-02",
-      "downloads": 92
+      "downloads": 100
     },
     {
       "category": "3.3",
@@ -128,7 +128,7 @@
     {
       "category": "3.8",
       "date": "2024-02",
-      "downloads": 93
+      "downloads": 101
     },
     {
       "category": "3.9",
@@ -178,7 +178,7 @@
     {
       "category": "null",
       "date": "2024-02",
-      "downloads": 14
+      "downloads": 15
     }
   ],
   "package": "csaf-lint",
