@@ -23,6 +23,7 @@
       "last_month": -1,
       "last_week": -1
     },
+    "dynamic": null,
     "home_page": "https://github.com/sthagen/csaf-lint",
     "keywords": "baseline,body,core,csaf,cvrf,development,envelope,extension,profile,validation",
     "license": "",
@@ -38,6 +39,7 @@
       "Homepage": "https://github.com/sthagen/csaf-lint",
       "Source Code": "https://github.com/sthagen/csaf-lint"
     },
+    "provides_extra": null,
     "release_url": "https://pypi.org/project/csaf-lint/2022.7.17/",
     "requires_dist": [
       "attrs (>=21.4.0)",
