@@ -7,16 +7,18 @@ name = "csaf-lint"
 version = "2022.3.20"
 description = "Common Security Advisory Framework (CSAF) Verification, Validation, and Application Programming Interface (API)."
 readme = "README.md"
-license = {file = "LICENSE"}
+license = "MIT"
+license-files = ["LICENSE"]
 authors = [{ name = "Stefan Hagen", email = "stefan@hagen.link" }]
 maintainers = [{ name = "Stefan Hagen", email = "stefan@hagen.link" }]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
-    "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
     "Programming Language :: Python :: 3.9",
     "Topic :: Software Development :: Build Tools",
     "Topic :: Software Development :: Libraries",
@@ -34,11 +36,11 @@ keywords = [
     "validation",
 ]
 dependencies = [
-    "attrs >= 23.1.0",
-    "jsonschema >= 4.20.0",
-    "referencing >= 0.31.0",
-    "lxml >= 4.9.3",
-    "xmlschema >= 2.5.0",
+    "attrs >= 25.4.0",
+    "jsonschema >= 4.25.1",
+    "referencing >= 0.37.0",
+    "lxml >= 6.0.2",
+    "xmlschema >= 4.2.0",
 ]
 requires-python = ">=3.9"
 
@@ -66,7 +68,7 @@ exclude = ["test*"]
 [tool.black]
 line-length = 120
 skip-string-normalization = true
-target-version = [ "py39", "py310", "py311", "py312" ]
+target-version = [ "py39", "py310", "py311", "py312", "py313", "py314" ]
 
 [tool.coverage.run]
 branch = true
@@ -81,13 +83,9 @@ strict = true
 implicit_reexport = true
 
 [tool.pytest]
-testpaths = "test"
-filterwarnings = "error"
-
-[tool.pytest.ini_options]
+testpaths = ["test"]
+filterwarnings = ["error"]
 asyncio_default_fixture_loop_scope = "function"
-
-[tool.pytest.ini_options]
 markers = [
   "slow: marks tests as slow (deselect with '-m \"not slow\"')",
   "serial",
