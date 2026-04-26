@@ -1,5 +1,5 @@
 attrs==26.1.0
 jsonschema==4.26.0
-lxml==6.0.2
+lxml==6.0.3
 referencing==0.37.0
 xmlschema==4.3.1
